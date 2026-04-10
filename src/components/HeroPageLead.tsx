@@ -27,9 +27,9 @@ export function HeroPageLead({ className }: HeroPageLeadProps) {
       )}
     >
       {/* Scroll runway (mobile Safari-friendly). */}
-      <div className="relative h-[200svh] sm:h-[220svh] md:min-h-[340vh] md:h-auto">
+      <div className="relative h-[200dvh] sm:h-[220dvh] md:min-h-[340vh] md:h-auto">
         {/* Sticky visual layer */}
-        <div className="sticky top-0 h-[100lvh] overflow-hidden md:h-[100svh]">
+        <div className="sticky top-0 h-[100dvh] overflow-hidden md:h-[100svh]">
           {/* Liquid background (EcoTrace x Solugen-like) */}
           <div className="absolute inset-0">
             {/* Base paper */}
@@ -61,7 +61,7 @@ export function HeroPageLead({ className }: HeroPageLeadProps) {
             <div className="absolute inset-0 opacity-[0.22] [background-image:linear-gradient(to_right,rgba(17,17,17,0.10)_1px,transparent_1px),linear-gradient(to_bottom,rgba(17,17,17,0.08)_1px,transparent_1px)] [background-size:96px_96px]" />
           </div>
 
-          <div className="relative flex h-[100lvh] w-full items-center justify-center px-4 sm:px-8 md:h-[100svh]">
+          <div className="relative flex h-[100dvh] w-full items-center justify-center px-4 sm:px-8 md:h-[100svh]">
             <div className="mx-auto flex w-full max-w-7xl flex-col items-center justify-center text-center">
               <h1 className="mx-auto max-w-[min(92vw,1200px)] text-center font-heading text-[clamp(30px,9vw,76px)] font-light leading-[1.08] tracking-[0.01em] text-[#161616] [text-shadow:0_1px_0_rgba(255,255,255,0.48)]">
                 <span className="block">
@@ -82,7 +82,7 @@ export function HeroPageLead({ className }: HeroPageLeadProps) {
                 industrial data to verifiable, evidence-based environmental reporting.
               </p>
 
-              <div className="mt-8 flex flex-wrap justify-center gap-3">
+              <div className="mt-8 flex flex-wrap justify-center gap-3 pb-10 sm:pb-0">
                 <a
                   href="#motores"
                   className="inline-flex h-10 w-full items-center justify-center rounded-full bg-accent px-5 py-3 text-xs font-medium uppercase tracking-[0.14em] text-accent-foreground shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md sm:h-auto sm:w-auto"
