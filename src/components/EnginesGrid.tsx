@@ -89,7 +89,7 @@ export function EnginesGrid({ className }: { className?: string }) {
          * then restore the natural content position via padding-top.
          */
         // Keep the 100% swallow, but start content much sooner to avoid any blank viewport.
-        "relative z-40 -mt-[100lvh] pt-[14lvh] sm:pt-[16lvh] md:-mt-[100svh] md:pt-[20svh] rounded-t-[32px] bg-background text-foreground shadow-[0_-40px_120px_rgba(0,0,0,0.10)]",
+        "relative z-50 pt-8 sm:pt-10 md:z-40 md:-mt-[100svh] md:pt-[20svh] rounded-t-[32px] bg-background text-foreground shadow-[0_-40px_120px_rgba(0,0,0,0.10)]",
         className,
       )}
     >

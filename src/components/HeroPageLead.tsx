@@ -22,12 +22,12 @@ export function HeroPageLead({ className }: HeroPageLeadProps) {
          * the hero is taller than the viewport, but its visual layer is sticky (h-screen).
          * The next section can slide over it while the header stays fixed.
          */
-        "relative w-full overflow-x-hidden bg-background text-foreground md:overflow-visible",
+        "relative z-10 w-full bg-background text-foreground",
         className,
       )}
     >
-      {/* Scroll runway (mobile-first with svh to avoid Safari viewport jumps). */}
-      <div className="relative min-h-[280svh] sm:min-h-[300svh] md:min-h-[340vh]">
+      {/* Scroll runway (mobile Safari-friendly). */}
+      <div className="relative h-[200svh] sm:h-[220svh] md:min-h-[340vh] md:h-auto">
         {/* Sticky visual layer */}
         <div className="sticky top-0 h-[100lvh] overflow-hidden md:h-[100svh]">
           {/* Liquid background (EcoTrace x Solugen-like) */}
