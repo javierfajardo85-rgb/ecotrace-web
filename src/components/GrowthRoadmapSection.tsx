@@ -85,11 +85,11 @@ const milestones: Milestone[] = [
 
 function MilestoneContent({ milestone }: { milestone: Milestone }) {
   return (
-    <div className="max-w-xs">
-      <div className="text-2xl font-light tracking-tight text-foreground/95">
+    <div className="mx-auto max-w-[90%] text-center md:mx-0 md:max-w-xs md:text-left">
+      <div className="text-[31px] font-light tracking-tight text-foreground/95 md:text-2xl">
         {milestone.title}
       </div>
-      <div className="mt-3 whitespace-pre-line text-sm leading-relaxed text-gray-500">
+      <div className="mt-3 whitespace-pre-line text-[15px] leading-relaxed text-gray-500 md:text-sm">
         {milestone.description}
       </div>
     </div>
@@ -149,9 +149,8 @@ function RoadmapMilestoneRow({
     <div
       className={cn(
         "relative",
-        // ~25% shorter track vs 40/44vh; scroll sync unchanged (thresholds measured from layout).
-        "min-h-[30vh] md:min-h-[33vh]",
-        "pl-12",
+        "min-h-[36vh] py-6 sm:min-h-[40vh] md:min-h-[33vh] md:py-0",
+        "pl-14 pr-4",
         "md:grid md:pl-0 md:grid-cols-[minmax(0,1fr)_80px_minmax(0,1fr)] md:items-center",
       )}
     >
@@ -165,7 +164,7 @@ function RoadmapMilestoneRow({
       <div
         className={cn(
           "pointer-events-none absolute top-1/2 -translate-y-1/2",
-          "left-5 translate-x-4",
+          "left-5 -translate-x-[calc(100%+10px)] text-right",
           "md:left-1/2 md:translate-x-0",
           side === "left"
             ? "md:-translate-x-[calc(100%+14px)]"
@@ -173,7 +172,7 @@ function RoadmapMilestoneRow({
         )}
       >
         <motion.div
-          className="text-[11px] font-medium uppercase tracking-[0.18em] text-muted-foreground"
+          className="whitespace-nowrap text-[10px] font-medium uppercase tracking-[0.18em] text-muted-foreground md:text-[11px]"
           style={{ opacity: textOpacity, x: textX }}
       >
         {milestone.quarter}
