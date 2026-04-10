@@ -2,7 +2,7 @@
      Run `bash scripts/sync-agent-rules.sh` to regenerate. -->
 
 ---
-description: Project conventions for AI Website Clone Template
+description: Project conventions for EcoTrace Green Solutions Ltd
 alwaysApply: true
 ---
 <!-- BEGIN:nextjs-agent-rules -->

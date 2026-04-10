@@ -5,8 +5,8 @@ import { CookieBanner } from "@/components/CookieBanner";
 import { geistMono, inter, outfit } from "@/lib/fonts";
 
 export const metadata: Metadata = {
-  title: "Website Clone",
-  description: "Pixel-perfect website clone",
+  title: "EcoTrace Green Solutions Ltd",
+  description: "Advanced autonomous scientific traceability platform.",
   icons: {
     icon: [{ url: "/favicon.png?v=1" }, { url: "/icon.png?v=1" }],
     apple: [{ url: "/apple-touch-icon.png?v=1" }],

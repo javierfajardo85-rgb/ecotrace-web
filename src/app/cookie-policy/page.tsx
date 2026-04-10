@@ -26,6 +26,10 @@ export default function CookiePolicyPage() {
               This Cookie Policy explains how EcoTrace Green Solutions Ltd uses cookies and similar
               technologies on this website and related UK-based SaaS services.
             </p>
+            <p className="mt-3">
+              For the purposes of UK GDPR, the data controller is EcoTrace Green Solutions Ltd,
+              London, United Kingdom.
+            </p>
           </section>
 
           <section>

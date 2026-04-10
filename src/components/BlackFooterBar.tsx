@@ -26,6 +26,9 @@ export function BlackFooterBar({ className }: { className?: string }) {
             <Link href="/privacy-policy" className="whitespace-nowrap hover:text-white">
               Privacy Policy
             </Link>
+            <Link href="/cookie-policy" className="whitespace-nowrap hover:text-white">
+              Cookie Policy
+            </Link>
             <div className="whitespace-nowrap">London, Greater London, United Kigdom</div>
           </div>
 

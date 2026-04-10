@@ -6,8 +6,15 @@ import Link from "next/link";
 import { cn } from "@/lib/utils";
 
 const STORAGE_KEY = "ecotrace_cookie_consent_v1";
+const CONSENT_TTL_DAYS = 180;
+const CONSENT_TTL_MS = CONSENT_TTL_DAYS * 24 * 60 * 60 * 1000;
 
 type CookieChoice = "accepted_all" | "essential_only";
+type StoredConsent = {
+  choice: CookieChoice;
+  updatedAt: number;
+  expiresAt: number;
+};
 
 export function CookieBanner({ className }: { className?: string }) {
   const [visible, setVisible] = React.useState(false);
@@ -15,7 +22,23 @@ export function CookieBanner({ className }: { className?: string }) {
   React.useEffect(() => {
     try {
       const saved = window.localStorage.getItem(STORAGE_KEY);
-      if (!saved) setVisible(true);
+      if (!saved) {
+        setVisible(true);
+        return;
+      }
+
+      const parsed = JSON.parse(saved) as Partial<StoredConsent>;
+      if (
+        typeof parsed.expiresAt !== "number" ||
+        Number.isNaN(parsed.expiresAt) ||
+        Date.now() >= parsed.expiresAt
+      ) {
+        window.localStorage.removeItem(STORAGE_KEY);
+        setVisible(true);
+        return;
+      }
+
+      setVisible(false);
     } catch {
       setVisible(true);
     }
@@ -23,7 +46,13 @@ export function CookieBanner({ className }: { className?: string }) {
 
   function saveChoice(choice: CookieChoice) {
     try {
-      window.localStorage.setItem(STORAGE_KEY, choice);
+      const now = Date.now();
+      const payload: StoredConsent = {
+        choice,
+        updatedAt: now,
+        expiresAt: now + CONSENT_TTL_MS,
+      };
+      window.localStorage.setItem(STORAGE_KEY, JSON.stringify(payload));
     } catch {
       // no-op; keep UX functional even if storage is blocked
     }
