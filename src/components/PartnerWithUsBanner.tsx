@@ -5,20 +5,18 @@ export function PartnerWithUsBanner({ className }: { className?: string }) {
     <section className={cn("w-full bg-background text-foreground", className)}>
       {/* Full-bleed video background */}
       <div className="relative w-full overflow-hidden bg-[#010101]">
-        {/* Video (desktop+) */}
+        {/* Video background (Safari iOS compatible autoplay). */}
         <video
-          className="absolute inset-0 hidden h-full w-full object-cover md:block [filter:brightness(1.35)_contrast(1.1)_saturate(1.2)]"
+          className="absolute inset-0 h-full w-full object-cover [filter:brightness(1.35)_contrast(1.1)_saturate(1.2)]"
           autoPlay
           muted
           loop
           playsInline
           preload="metadata"
+          poster="/images/partner-links-bg-v2.png"
         >
           <source src="/videos/partner-fluid.mp4" type="video/mp4" />
         </video>
-
-        {/* Mobile fallback (no video) */}
-        <div className="absolute inset-0 bg-[radial-gradient(900px_circle_at_30%_35%,rgba(0,162,230,0.26),transparent_62%),radial-gradient(900px_circle_at_70%_55%,rgba(30,64,175,0.22),transparent_60%),linear-gradient(135deg,rgba(0,0,0,0.84),rgba(0,0,0,0.92))] md:hidden" />
 
         {/* Readability overlay (lighter to keep video luminous) */}
         <div className="absolute inset-0 bg-[radial-gradient(1000px_circle_at_50%_40%,rgba(0,0,0,0.18),rgba(0,0,0,0.62))]" />
