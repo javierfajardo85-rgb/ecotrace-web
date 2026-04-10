@@ -38,7 +38,8 @@ export function HeaderNav() {
     <header
       className={cn(
         "fixed inset-x-0 top-0 z-[100]",
-        isOurMarkets && "bg-white/92 backdrop-blur supports-[backdrop-filter]:bg-white/75",
+        isOurMarkets &&
+          "md:bg-white/92 md:backdrop-blur md:supports-[backdrop-filter]:bg-white/75",
         hidden && "pointer-events-none",
       )}
       style={{

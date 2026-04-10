@@ -51,8 +51,11 @@ export default function NuestrosMercadosPage() {
   return (
     <main className="min-h-screen bg-background text-foreground">
       <HeaderNav />
-      {/* Solugen-like page lead (background image will be added later) */}
-      <header className="relative h-[62vh] min-h-[420px] overflow-hidden bg-white">
+      {/* Hero with video background and mobile-safe fallback. */}
+      <header
+        className="relative h-[62vh] min-h-[420px] overflow-hidden bg-black bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: "url('/images/ecotrace-hero-bg.png')" }}
+      >
         <video
           className="absolute inset-0 h-full w-full object-cover"
           autoPlay
@@ -60,14 +63,15 @@ export default function NuestrosMercadosPage() {
           loop
           playsInline
           preload="auto"
+          poster="/images/ecotrace-hero-bg.png"
         >
           <source src="/videos/our-markets-bg.mov" type="video/quicktime" />
         </video>
-        <div className="absolute inset-0 bg-white/45" />
-        <div className="absolute inset-0 bg-[radial-gradient(900px_circle_at_50%_45%,rgba(255,255,255,0.25),rgba(255,255,255,0.85))]" />
+        <div className="absolute inset-0 bg-black/25 md:bg-white/45" />
+        <div className="absolute inset-0 bg-[radial-gradient(900px_circle_at_50%_45%,rgba(0,0,0,0.05),rgba(0,0,0,0.45))] md:bg-[radial-gradient(900px_circle_at_50%_45%,rgba(255,255,255,0.25),rgba(255,255,255,0.85))]" />
 
-        <div className="relative mx-auto flex h-full max-w-6xl items-center justify-center px-4 sm:px-6">
-          <h1 className="font-heading text-[33px] leading-none tracking-[-0.03em] text-foreground/90 sm:text-[48px]">
+        <div className="relative z-10 mx-auto flex h-full max-w-6xl items-center justify-center px-4 pt-20 sm:px-6 md:pt-0">
+          <h1 className="font-heading text-[33px] leading-none tracking-[-0.03em] text-white/95 md:text-foreground/90 sm:text-[48px]">
             Market Applications
           </h1>
         </div>
