@@ -53,7 +53,7 @@ export default function NuestrosMercadosPage() {
       <HeaderNav />
       {/* Hero with cloud video as the single background source on mobile. */}
       <header
-        className="relative h-[62vh] min-h-[420px] overflow-hidden bg-white bg-[url('/images/engine-digital-carbon-cloud.png')] bg-cover bg-center"
+        className="relative h-[62vh] min-h-[420px] overflow-hidden bg-[#eef3f5]"
       >
         <video
           className="absolute inset-0 z-0 h-full w-full object-cover"
@@ -62,6 +62,7 @@ export default function NuestrosMercadosPage() {
           loop
           playsInline
           preload="auto"
+          poster="/images/ecotrace-hero-bg.png"
         >
           <source src="/videos/our-markets-bg.mov" type="video/quicktime" />
         </video>
