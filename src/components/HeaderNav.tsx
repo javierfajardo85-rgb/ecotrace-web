@@ -49,7 +49,7 @@ export function HeaderNav() {
       <div className="flex h-[85px] w-full items-center justify-between px-4 sm:px-6 lg:px-10">
         <Link
           href="/"
-          className="group inline-flex items-center gap-2 text-sm font-medium tracking-tight text-foreground"
+          className="group inline-flex max-w-[72vw] items-center gap-2 text-sm font-medium tracking-tight text-foreground sm:max-w-none"
         >
           <span className="relative inline-flex h-7 w-7 items-center justify-center rounded-full border border-foreground/20 bg-white/50 backdrop-blur">
             <Image
@@ -61,7 +61,7 @@ export function HeaderNav() {
               priority
             />
           </span>
-          <span className="leading-none">
+          <span className="min-w-0 leading-none">
             <span className="opacity-95">
               <BrandWordmark />
             </span>

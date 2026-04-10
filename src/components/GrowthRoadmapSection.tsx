@@ -123,6 +123,7 @@ type RoadmapMilestoneRowProps = {
   scrollYProgress: MotionValue<number>;
   threshold: number;
   dotRef: React.RefCallback<HTMLDivElement | null>;
+  isMdUp: boolean;
 };
 
 function RoadmapMilestoneRow({
@@ -131,9 +132,11 @@ function RoadmapMilestoneRow({
   scrollYProgress,
   threshold,
   dotRef,
+  isMdUp,
 }: RoadmapMilestoneRowProps) {
   const isLeftSide = side === "left";
-  const xFrom = isLeftSide ? 144 : -144;
+  // Disable horizontal slide-in on mobile to avoid overflow on narrow Safari viewports.
+  const xFrom = isMdUp ? (isLeftSide ? 144 : -144) : 0;
 
   const textOpacity = useTransform(scrollYProgress, (v) =>
     slideMotion(v, threshold, xFrom).opacity,
@@ -202,6 +205,15 @@ export function GrowthRoadmapSection({ className }: { className?: string }) {
       milestones.length <= 1 ? 1 : (i / (milestones.length - 1)) * 0.92,
     ),
   );
+  const [isMdUp, setIsMdUp] = React.useState(false);
+
+  React.useEffect(() => {
+    const media = window.matchMedia("(min-width: 768px)");
+    const update = () => setIsMdUp(media.matches);
+    update();
+    media.addEventListener("change", update);
+    return () => media.removeEventListener("change", update);
+  }, []);
 
   const measure = React.useCallback(() => {
     const track = timelineRef.current;
@@ -257,7 +269,7 @@ export function GrowthRoadmapSection({ className }: { className?: string }) {
     <section
       ref={sectionRef}
       id="roadmap"
-      className={cn("bg-background text-foreground", className)}
+      className={cn("overflow-x-hidden bg-background text-foreground", className)}
       aria-label="Growth & Scalability Roadmap"
     >
       <div className="mx-auto max-w-6xl px-4 pb-16 pt-32 sm:px-6 sm:pb-20 sm:pt-40">
@@ -289,6 +301,7 @@ export function GrowthRoadmapSection({ className }: { className?: string }) {
                   scrollYProgress={scrollYProgress}
                   threshold={threshold}
                   dotRef={dotRefCallbacks[i]!}
+                  isMdUp={isMdUp}
                 />
               );
             })}

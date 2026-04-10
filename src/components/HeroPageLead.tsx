@@ -22,7 +22,7 @@ export function HeroPageLead({ className }: HeroPageLeadProps) {
          * the hero is taller than the viewport, but its visual layer is sticky (h-screen).
          * The next section can slide over it while the header stays fixed.
          */
-        "relative w-full bg-background text-foreground",
+        "relative w-full overflow-x-hidden bg-background text-foreground",
         className,
       )}
     >
@@ -62,20 +62,20 @@ export function HeroPageLead({ className }: HeroPageLeadProps) {
           </div>
 
           <div className="relative flex h-[100svh] w-full items-center justify-center px-4 sm:px-8">
-            <div className="flex flex-col items-center justify-center text-center w-full max-w-7xl mx-auto">
-              <h1 className="mx-auto text-center font-heading text-[34px] font-light leading-[1.08] tracking-[0.01em] text-[#161616] [text-shadow:0_1px_0_rgba(255,255,255,0.48)] sm:text-[58px] sm:leading-[1.08] md:text-[76px]">
-                <span className="block whitespace-nowrap">
+            <div className="mx-auto flex w-full max-w-7xl flex-col items-center justify-center text-center">
+              <h1 className="mx-auto max-w-[min(92vw,1200px)] text-center font-heading text-[clamp(30px,9vw,76px)] font-light leading-[1.08] tracking-[0.01em] text-[#161616] [text-shadow:0_1px_0_rgba(255,255,255,0.48)]">
+                <span className="block">
                   <BrandWordmark className="text-[1em]" />
                   <span>:</span>
                 </span>
-                <span className="block whitespace-nowrap">
+                <span className="block">
                   <span>Autonomous </span>
                   <span className="font-semibold text-white">Scientific</span>
                   <span> Traceability</span>
                 </span>
-                <span className="block whitespace-nowrap">for Global Supply Chains</span>
+                <span className="block">for Global Supply Chains</span>
               </h1>
-              <p className="mx-auto mt-10 max-w-3xl text-center text-lg font-light leading-relaxed text-gray-600">
+              <p className="mx-auto mt-8 max-w-3xl text-center text-base font-light leading-relaxed text-gray-600 sm:mt-10 sm:text-lg">
                 Advancing the UK’s technical infrastructure for Scope 3 visibility. Through{" "}
                 <strong className="text-[1.08em] font-semibold text-foreground">Algorithm Ω</strong>
                 , we provide an R&amp;D-driven SaaS platform that automates the transition from
@@ -85,13 +85,13 @@ export function HeroPageLead({ className }: HeroPageLeadProps) {
               <div className="mt-8 flex flex-wrap justify-center gap-3">
                 <a
                   href="#motores"
-                  className="inline-flex items-center justify-center rounded-full bg-accent px-5 py-3 text-xs font-medium uppercase tracking-[0.14em] text-accent-foreground shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md"
+                  className="inline-flex h-10 w-full items-center justify-center rounded-full bg-accent px-5 py-3 text-xs font-medium uppercase tracking-[0.14em] text-accent-foreground shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md sm:h-auto sm:w-auto"
                 >
                   Explore Engines
                 </a>
                 <a
                   href="#contacto"
-                  className="inline-flex items-center justify-center rounded-full border border-foreground/20 bg-white/50 px-5 py-3 text-xs font-medium uppercase tracking-[0.14em] text-foreground/80 shadow-sm backdrop-blur transition-all duration-200 hover:-translate-y-0.5 hover:bg-white/70 hover:text-foreground hover:shadow-md"
+                  className="inline-flex h-10 w-full items-center justify-center rounded-full border border-foreground/20 bg-white/50 px-5 py-3 text-xs font-medium uppercase tracking-[0.14em] text-foreground/80 shadow-sm backdrop-blur transition-all duration-200 hover:-translate-y-0.5 hover:bg-white/70 hover:text-foreground hover:shadow-md sm:h-auto sm:w-auto"
                 >
                   Talk to Us
                 </a>

@@ -102,13 +102,13 @@ export function EnginesGrid({ className }: { className?: string }) {
             MULTI-VECTOR VALIDATION INFRASTRUCTURE (SCVE)
           </p>
           <h2 className="mt-3 font-heading text-[clamp(16px,3.2vw,36px)] leading-tight tracking-[-0.03em]">
-            <span className="block whitespace-nowrap text-center">
+            <span className="block text-center">
               A modular architecture engineered
             </span>
-            <span className="block whitespace-nowrap text-center">
+            <span className="block text-center">
               for the standardization and certification
             </span>
-            <span className="block whitespace-nowrap text-center">
+            <span className="block text-center">
               of physical evidence on a global scale.
             </span>
           </h2>

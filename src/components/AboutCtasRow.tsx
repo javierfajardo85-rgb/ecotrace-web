@@ -16,19 +16,17 @@ export function AboutCtasRow({ className }: { className?: string }) {
 
   return (
     <div className={cn("w-full", className)}>
-      <div className="w-full overflow-x-auto overscroll-x-contain">
-        <div className="mx-auto flex w-fit min-w-max flex-nowrap items-center justify-center gap-4 sm:gap-6">
-          {actions.map((a) => (
-            <button
-              key={a.label}
-              type="button"
-              onClick={() => openContactModal(a.inquiry)}
-              className="inline-flex h-9 w-[195px] shrink-0 items-center justify-center rounded-full border border-white/35 px-4 text-center text-[9px] font-medium uppercase leading-tight tracking-[0.14em] text-white/90 transition-colors hover:border-white/60 hover:text-white focus:outline-none focus:ring-2 focus:ring-white/50 sm:text-[10px]"
-            >
-              <span>{a.label}</span>
-            </button>
-          ))}
-        </div>
+      <div className="mx-auto grid w-full max-w-4xl grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-4 lg:gap-4">
+        {actions.map((a) => (
+          <button
+            key={a.label}
+            type="button"
+            onClick={() => openContactModal(a.inquiry)}
+            className="inline-flex h-10 w-full items-center justify-center rounded-full border border-white/35 px-4 text-center text-[10px] font-medium uppercase leading-tight tracking-[0.14em] text-white/90 transition-colors hover:border-white/60 hover:text-white focus:outline-none focus:ring-2 focus:ring-white/50"
+          >
+            <span>{a.label}</span>
+          </button>
+        ))}
       </div>
     </div>
   );

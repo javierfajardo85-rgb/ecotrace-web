@@ -14,15 +14,13 @@ export function BlackFooterBar({ className }: { className?: string }) {
   const { openContactModal } = useContactModal();
 
   return (
-    <footer className={cn("w-full overflow-x-hidden bg-[#010101] text-white", className)}>
-      {/* Scroll is confined to this bar (no page-level horizontal overflow). */}
-      <div className="w-full overflow-x-auto overscroll-x-contain">
-        <div className="mx-auto flex w-fit min-w-max items-center justify-between gap-8 px-6 py-10 sm:px-12">
-          <div className="shrink-0 whitespace-nowrap text-xs leading-relaxed text-white/80">
+    <footer className={cn("w-full bg-[#010101] text-white", className)}>
+      <div className="mx-auto flex w-full max-w-7xl flex-col items-center gap-6 px-6 py-10 text-center sm:px-12 lg:flex-row lg:items-center lg:justify-between lg:text-left">
+        <div className="text-xs leading-relaxed text-white/80">
             ©2026 EcoTrace Green Solutions. All rights reserved
-          </div>
+        </div>
 
-          <div className="flex shrink-0 items-center gap-8 whitespace-nowrap text-xs text-white/80">
+        <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-xs text-white/80 lg:justify-start">
             <Link href="/privacy-policy" className="whitespace-nowrap hover:text-white">
               Privacy Policy
             </Link>
@@ -30,28 +28,27 @@ export function BlackFooterBar({ className }: { className?: string }) {
               Cookie Policy
             </Link>
             <div className="whitespace-nowrap">London, Greater London, United Kigdom</div>
-          </div>
+        </div>
 
-          <div className="flex shrink-0 flex-nowrap items-center gap-3 pr-6 sm:pr-12">
-            {social.map((s) => (
-              <a
-                key={s.label}
-                href={s.href}
-                className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-white/25 text-xs font-medium text-white/90 transition-colors hover:border-white/45 hover:text-white"
-                aria-label={s.label}
-              >
-                {s.label}
-              </a>
-            ))}
-
-            <button
-              type="button"
-              onClick={() => openContactModal("general")}
-              className="inline-flex h-10 items-center justify-center rounded-full border border-white/25 px-6 text-xs font-medium text-white/90 transition-colors hover:border-white/45 hover:text-white"
+        <div className="flex flex-wrap items-center justify-center gap-3">
+          {social.map((s) => (
+            <a
+              key={s.label}
+              href={s.href}
+              className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-white/25 text-xs font-medium text-white/90 transition-colors hover:border-white/45 hover:text-white"
+              aria-label={s.label}
             >
-              Contact
-            </button>
-          </div>
+              {s.label}
+            </a>
+          ))}
+
+          <button
+            type="button"
+            onClick={() => openContactModal("general")}
+            className="inline-flex h-10 items-center justify-center rounded-full border border-white/25 px-6 text-xs font-medium text-white/90 transition-colors hover:border-white/45 hover:text-white"
+          >
+            Contact
+          </button>
         </div>
       </div>
     </footer>
