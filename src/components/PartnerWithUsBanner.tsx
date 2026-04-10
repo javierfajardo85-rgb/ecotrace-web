@@ -4,7 +4,10 @@ export function PartnerWithUsBanner({ className }: { className?: string }) {
   return (
     <section className={cn("w-full bg-background text-foreground", className)}>
       {/* Full-bleed video background */}
-      <div className="relative w-full overflow-hidden bg-[#010101]">
+      <div
+        className="relative w-full overflow-hidden bg-[#010101] bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: "url('/images/partner-links-bg-v2.png')" }}
+      >
         {/* Video background (Safari iOS compatible autoplay). */}
         <video
           className="absolute inset-0 h-full w-full object-cover [filter:brightness(1.35)_contrast(1.1)_saturate(1.2)]"
