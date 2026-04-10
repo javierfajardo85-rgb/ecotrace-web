@@ -85,11 +85,11 @@ const milestones: Milestone[] = [
 
 function MilestoneContent({ milestone }: { milestone: Milestone }) {
   return (
-    <div className="mx-auto max-w-[90%] text-center md:mx-0 md:max-w-xs md:text-left">
-      <div className="text-[31px] font-light tracking-tight text-foreground/95 md:text-2xl">
+    <div className="mx-auto max-w-[88%] text-left md:mx-0 md:max-w-xs">
+      <div className="text-[19px] font-light tracking-tight text-foreground/95 md:text-2xl">
         {milestone.title}
       </div>
-      <div className="mt-3 whitespace-pre-line text-[15px] leading-relaxed text-gray-500 md:text-sm">
+      <div className="mt-2.5 whitespace-pre-line text-xs leading-relaxed text-gray-500 md:mt-3 md:text-sm">
         {milestone.description}
       </div>
     </div>
@@ -135,8 +135,8 @@ function RoadmapMilestoneRow({
   isMdUp,
 }: RoadmapMilestoneRowProps) {
   const isLeftSide = side === "left";
-  // Disable horizontal slide-in on mobile to avoid overflow on narrow Safari viewports.
-  const xFrom = isMdUp ? (isLeftSide ? 144 : -144) : 0;
+  // Mobile: slide from the timeline toward the right. Desktop keeps alternating directions.
+  const xFrom = isMdUp ? (isLeftSide ? 144 : -144) : -42;
 
   const textOpacity = useTransform(scrollYProgress, (v) =>
     slideMotion(v, threshold, xFrom).opacity,
