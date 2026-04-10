@@ -22,7 +22,7 @@ export function HeroPageLead({ className }: HeroPageLeadProps) {
          * the hero is taller than the viewport, but its visual layer is sticky (h-screen).
          * The next section can slide over it while the header stays fixed.
          */
-        "relative z-10 w-full bg-background text-foreground",
+        "relative z-0 w-full bg-background text-foreground",
         className,
       )}
     >
