@@ -124,7 +124,7 @@ export function EnginesGrid({ className }: { className?: string }) {
           {previewEngines.map((engine) => (
             <div
               key={engine.tag}
-              className="group flex cursor-pointer flex-col text-foreground"
+              className="group flex cursor-pointer flex-col text-center text-foreground"
             >
               {/* Floating sphere (no “window” container) */}
               <div className="relative mx-auto w-full max-w-[240px]">
