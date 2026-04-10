@@ -2,24 +2,25 @@
   "name": "ecotrace-green-solutions",
   "version": "0.3.1",
   "private": true,
-  "description": "Clone any website into a clean, modern Next.js codebase using AI coding agents",
-  "author": "JCodesMore",
+  "description": "Advanced autonomous scientific traceability platform for global supply chains.",
+  "author": "EcoTrace Green Solutions Ltd",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/JCodesMore/ai-website-cloner-template.git"
+    "url": "https://github.com/EcoTrace/ecoTrace.git"
   },
-  "homepage": "https://github.com/JCodesMore/ai-website-cloner-template",
+  "homepage": "https://github.com/EcoTrace/ecoTrace",
   "bugs": {
-    "url": "https://github.com/JCodesMore/ai-website-cloner-template/issues"
+    "url": "https://github.com/EcoTrace/ecoTrace/issues"
   },
   "keywords": [
-    "claude-code",
-    "website-clone",
-    "reverse-engineering",
+    "ecotrace",
+    "supply-chain",
+    "traceability",
+    "sustainability",
+    "scope-3",
     "nextjs",
-    "ai",
-    "template",
+    "typescript",
     "tailwindcss",
     "shadcn-ui"
   ],
