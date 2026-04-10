@@ -20,13 +20,13 @@ export default function Home() {
       <PartnerLinksStrip />
       <section
         id="contacto"
-        className="h-[calc((min(100vw,2492px)*1535/2492)/2)] w-full bg-[#010101]"
+        className="w-full bg-[#010101] pt-28 pb-16 md:h-[calc((min(100vw,2492px)*1535/2492)/2)] md:pt-0 md:pb-0"
       >
-        <div className="mx-auto flex h-full w-full max-w-6xl flex-col items-center justify-start px-6 pt-6 sm:px-12 sm:pt-8">
+        <div className="mx-auto flex h-full w-full max-w-6xl flex-col items-center justify-start px-6 sm:px-12 md:pt-8">
           <p className="text-center text-[11px] font-medium uppercase tracking-[0.18em] text-white/70">
             The Path to Scale
           </p>
-          <div className="mt-6 w-full">
+          <div className="mt-8 w-full md:mt-6">
             <AboutCtasRow />
           </div>
         </div>
