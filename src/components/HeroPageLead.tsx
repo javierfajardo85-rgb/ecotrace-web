@@ -26,8 +26,8 @@ export function HeroPageLead({ className }: HeroPageLeadProps) {
         className,
       )}
     >
-      {/* Scroll runway (taller than viewport) */}
-      <div className="relative min-h-[300vh] md:min-h-[340vh]">
+      {/* Scroll runway (mobile-first with svh to avoid Safari viewport jumps). */}
+      <div className="relative min-h-[250svh] sm:min-h-[270svh] md:min-h-[340vh]">
         {/* Sticky visual layer */}
         <div className="sticky top-0 h-[100svh] overflow-hidden">
           {/* Liquid background (EcoTrace x Solugen-like) */}
