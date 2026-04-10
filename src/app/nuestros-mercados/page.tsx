@@ -54,18 +54,17 @@ export default function NuestrosMercadosPage() {
       {/* Hero with cloud video as the single background source on mobile. */}
       <header className="relative h-[62vh] min-h-[420px] overflow-hidden bg-black">
         <video
-          className="absolute inset-0 h-full w-full object-cover"
+          className="absolute inset-0 z-0 h-full w-full object-cover"
           autoPlay
           muted
           loop
           playsInline
           preload="auto"
-          poster="/images/engine-digital-carbon-cloud.png"
         >
           <source src="/videos/our-markets-bg.mov" type="video/quicktime" />
         </video>
-        <div className="absolute inset-0 bg-black/25 md:bg-white/45" />
-        <div className="absolute inset-0 bg-[radial-gradient(900px_circle_at_50%_45%,rgba(0,0,0,0.05),rgba(0,0,0,0.45))] md:bg-[radial-gradient(900px_circle_at_50%_45%,rgba(255,255,255,0.25),rgba(255,255,255,0.85))]" />
+        <div className="absolute inset-0 z-[1] bg-black/25 md:bg-white/45" />
+        <div className="absolute inset-0 z-[1] bg-[radial-gradient(900px_circle_at_50%_45%,rgba(0,0,0,0.05),rgba(0,0,0,0.45))] md:bg-[radial-gradient(900px_circle_at_50%_45%,rgba(255,255,255,0.25),rgba(255,255,255,0.85))]" />
 
         <div className="relative z-10 mx-auto flex h-full max-w-6xl items-center justify-center px-4 pt-20 sm:px-6 md:pt-0">
           <h1 className="font-heading text-[33px] leading-none tracking-[-0.03em] text-white/95 md:text-foreground/90 sm:text-[48px]">
