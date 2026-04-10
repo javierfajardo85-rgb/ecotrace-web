@@ -28,10 +28,10 @@ export function PartnerLinksStrip({ className }: { className?: string }) {
             <div className="absolute inset-0 flex items-center justify-center">
               <div className="flex w-full max-w-3xl flex-col items-center px-4 text-center">
                 <div className="w-full">
-                  <p className="text-[11px] font-extralight uppercase tracking-[0.20em] text-white/65">
+                  <p className="text-[8px] font-extralight uppercase tracking-[0.18em] text-white/65 md:text-[11px] md:tracking-[0.20em]">
                     About us
                   </p>
-                  <p className="mt-4 text-sm font-light leading-relaxed tracking-[-0.01em] text-white/78 sm:text-base">
+                  <p className="mt-2 text-xs font-light leading-normal tracking-[-0.01em] text-white/78 md:mt-4 md:text-base md:leading-relaxed">
                     EcoTrace was established as a high-scalability SaaS infrastructure designed to
                     automate industrial data integrity within global supply chains. Our mission is
                     to eliminate reliance on manual processes through Algorithm Ω, transforming
