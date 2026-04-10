@@ -1,0 +1,1480 @@
+{
+  "url": "https://www.solugen.com/",
+  "capturedAt": "2026-04-08T06:06:31.162Z",
+  "desktop": {
+    "viewport": {
+      "name": "desktop",
+      "width": 1440,
+      "height": 900,
+      "deviceScaleFactor": 1
+    },
+    "screenshotPath": "docs/design-references/solugen.com/home-desktop-1440x900.png",
+    "extracted": {
+      "title": "Home - New - Solugen | Solugen",
+      "fonts": [
+        "\"Times New Roman\"",
+        "\"GT America\", sans-serif",
+        "\"GT Zirkon\", sans-serif",
+        "\"GT America\"",
+        "\"GT Zirkon\""
+      ],
+      "colors": [
+        "rgb(17, 17, 17)",
+        "rgb(243, 243, 243)",
+        "rgb(255, 255, 255)",
+        "rgba(0, 0, 0, 0)",
+        "rgb(237, 237, 237)"
+      ],
+      "favicons": [
+        {
+          "rel": "apple-touch-icon",
+          "href": "https://solugen.com/wp-content/themes/solugen/static/img/favicon/apple-touch-icon.png",
+          "as": null,
+          "type": null,
+          "sizes": "180x180"
+        },
+        {
+          "rel": "icon",
+          "href": "https://solugen.com/wp-content/themes/solugen/static/img/favicon/favicon-32x32.png",
+          "as": null,
+          "type": "image/png",
+          "sizes": "32x32"
+        },
+        {
+          "rel": "icon",
+          "href": "https://solugen.com/wp-content/themes/solugen/static/img/favicon/favicon-16x16.png",
+          "as": null,
+          "type": "image/png",
+          "sizes": "16x16"
+        },
+        {
+          "rel": "mask-icon",
+          "href": "https://solugen.com/wp-content/themes/solugen/static/img/favicon/safari-pinned-tab.svg",
+          "as": null,
+          "type": null,
+          "sizes": null
+        },
+        {
+          "rel": "shortcut icon",
+          "href": "https://solugen.com/wp-content/themes/solugen/static/img/favicon/favicon.ico",
+          "as": null,
+          "type": null,
+          "sizes": null
+        }
+      ],
+      "links": [
+        {
+          "rel": "apple-touch-icon",
+          "href": "https://solugen.com/wp-content/themes/solugen/static/img/favicon/apple-touch-icon.png",
+          "as": null,
+          "type": null,
+          "sizes": "180x180"
+        },
+        {
+          "rel": "icon",
+          "href": "https://solugen.com/wp-content/themes/solugen/static/img/favicon/favicon-32x32.png",
+          "as": null,
+          "type": "image/png",
+          "sizes": "32x32"
+        },
+        {
+          "rel": "icon",
+          "href": "https://solugen.com/wp-content/themes/solugen/static/img/favicon/favicon-16x16.png",
+          "as": null,
+          "type": "image/png",
+          "sizes": "16x16"
+        },
+        {
+          "rel": "manifest",
+          "href": "https://solugen.com/wp-content/themes/solugen/static/img/favicon/site.webmanifest",
+          "as": null,
+          "type": null,
+          "sizes": null
+        },
+        {
+          "rel": "mask-icon",
+          "href": "https://solugen.com/wp-content/themes/solugen/static/img/favicon/safari-pinned-tab.svg",
+          "as": null,
+          "type": null,
+          "sizes": null
+        },
+        {
+          "rel": "shortcut icon",
+          "href": "https://solugen.com/wp-content/themes/solugen/static/img/favicon/favicon.ico",
+          "as": null,
+          "type": null,
+          "sizes": null
+        },
+        {
+          "rel": "stylesheet",
+          "href": "https://solugen.com/wp-content/themes/solugen/dist/app.css?v=1.0.113",
+          "as": null,
+          "type": "text/css",
+          "sizes": null
+        },
+        {
+          "rel": "canonical",
+          "href": "https://solugen.com/",
+          "as": null,
+          "type": null,
+          "sizes": null
+        },
+        {
+          "rel": "canonical",
+          "href": "https://solugen.com/?ref=echojobs.io&utm_source=echojobs.io",
+          "as": null,
+          "type": null,
+          "sizes": null
+        },
+        {
+          "rel": "canonical",
+          "href": "https://solugen.com/?ref=maxibestof.one",
+          "as": null,
+          "type": null,
+          "sizes": null
+        },
+        {
+          "rel": "canonical",
+          "href": "https://solugen.com/?ref=briolink",
+          "as": null,
+          "type": null,
+          "sizes": null
+        },
+        {
+          "rel": "canonical",
+          "href": "https://solugen.com/?tpcc=nltermsheet",
+          "as": null,
+          "type": null,
+          "sizes": null
+        },
+        {
+          "rel": "canonical",
+          "href": "https://solugen.com/?utm_source=himalayas.app&ref=himalayas.app",
+          "as": null,
+          "type": null,
+          "sizes": null
+        },
+        {
+          "rel": "canonical",
+          "href": "https://solugen.com/?ref=himalayas.app",
+          "as": null,
+          "type": null,
+          "sizes": null
+        }
+      ],
+      "scripts": [
+        "https://snap.licdn.com/li.lms-analytics/insight.min.js",
+        "https://s3-us-west-2.amazonaws.com/b2bjsstore/b/YE63P0H9Y0OW/reb2b.js.gz",
+        "https://sc.lfeeder.com/lftracker_v1_lAxoEaKzNWW4OYGd.js",
+        "https://www.google-analytics.com/analytics.js",
+        "https://www.googletagmanager.com/gtag/js?id=G-ZQV966ZFX9&cx=c&gtm=4e6461",
+        "https://www.googletagmanager.com/gtm.js?id=GTM-NCJKNQT2",
+        "https://www.googletagmanager.com/gtag/js?id=UA-171597993-1",
+        "https://player.vimeo.com/api/player.js",
+        "https://wec-assets.terminus.services/c631a7bc-fbbc-4520-838b-9f090a869d24/t.js",
+        "https://cdn.getsmartcontent.com/7XVHQ8CG.js",
+        "https://solugen.com/wp-content/themes/solugen/dist/vendor.js?ver=1.0.113",
+        "https://solugen.com/wp-content/themes/solugen/dist/app.js?ver=1.0.113"
+      ],
+      "sections": [
+        {
+          "idx": 0,
+          "id": "page-lead",
+          "className": "section page-lead section--page-lead page-lead--parallax page-lead--larger-headline",
+          "dataInit": "PageLead",
+          "textPreview": ".page-lead__background-images { @media (max-width: 431px) { background-image: url(https://solugen.com/wp-content/uploads/2024/05/Homepage-Mo"
+        },
+        {
+          "idx": 1,
+          "id": null,
+          "className": "section section--markets-slider markets-slider",
+          "dataInit": "MarketSlider",
+          "textPreview": "Solutions Prioritizing collaboration and speed, we deliver American-made solutions that enhance performance and drive success for the indust"
+        },
+        {
+          "idx": 2,
+          "id": "js-bioforge-home",
+          "className": "bioforge bioforge--modular",
+          "dataInit": null,
+          "textPreview": "Our Technology Our Bioforge platform brings versatility and precision to the manufacturing process, cutting inefficiencies, reducing costs, "
+        },
+        {
+          "idx": 3,
+          "id": null,
+          "className": "section section--centered centered-eyebrow-text centered-eyebrow-text--black centered-eyebrow-text--full-height",
+          "dataInit": "CenteredEyebrowText",
+          "textPreview": "We’re committed to solving complex challenges by working side by side with our customers to create lasting impact. Together, let’s tackle wh"
+        },
+        {
+          "idx": 4,
+          "id": null,
+          "className": "section section--previews section--previews--black",
+          "dataInit": "Tabs",
+          "textPreview": "In Good Company Press 10.30.23 Solugen Announces Biomanufacturing Facility in U.S. Midwest Through Strategic Partnership with ADM Press 10.1"
+        },
+        {
+          "idx": 5,
+          "id": null,
+          "className": "ctas",
+          "dataInit": null,
+          "textPreview": "Partner With Us Explore Careers Read the Latest Subscribe Now Thank you! Sign Up"
+        }
+      ],
+      "smoothScrollHints": {
+        "hasLenis": false,
+        "hasLocomotive": false
+      },
+      "headerStylesAtTop": {
+        "position": "fixed",
+        "top": "0px",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "backdropFilter": "none",
+        "boxShadow": "none",
+        "height": "85px"
+      }
+    },
+    "headerStylesAfterScroll": {
+      "position": "fixed",
+      "top": "0px",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "backdropFilter": "none",
+      "boxShadow": "none",
+      "height": "85px"
+    },
+    "clickSweep": {
+      "navOpened": true,
+      "bodyClassAfterNav": "home wp-singular page-template page-template-page-modular page-template-page-modular-php page page-id-4010 wp-theme-solugen ",
+      "navVisible": true
+    },
+    "requests": [
+      {
+        "url": "https://solugen.com/wp-content/themes/solugen/dist/app.css?v=1.0.113",
+        "resourceType": "stylesheet"
+      },
+      {
+        "url": "https://www.googletagmanager.com/gtag/js?id=UA-171597993-1",
+        "resourceType": "script"
+      },
+      {
+        "url": "https://player.vimeo.com/api/player.js",
+        "resourceType": "script"
+      },
+      {
+        "url": "https://wec-assets.terminus.services/c631a7bc-fbbc-4520-838b-9f090a869d24/t.js",
+        "resourceType": "script"
+      },
+      {
+        "url": "https://cdn.getsmartcontent.com/7XVHQ8CG.js",
+        "resourceType": "script"
+      },
+      {
+        "url": "https://solugen.com/wp-content/themes/solugen/static/img/s-molecule-black.png?v=1.0.113",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://solugen.com/wp-content/uploads/2024/05/Energy_Header-edit0-copy-1536x864.jpg",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://solugen.com/wp-content/uploads/2024/10/Biofuels-Header0-1536x864.jpg",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://solugen.com/wp-content/uploads/2024/05/Defense_Header_40-1536x864.jpg",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://solugen.com/wp-content/themes/solugen/static/videos/bioforge/png/Solugen_Forge_B03_00001.png",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://solugen.com/wp-content/uploads/2023/11/Metal-Catalysis-Cropped.jpg",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://solugen.com/wp-content/uploads/2023/11/Modularity-Cropped-scaled-1.jpg",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://solugen.com/wp-content/uploads/2023/11/Engineered-Enzymes-Cropped.png",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://solugen.com/wp-content/uploads/2023/11/Yield-Cropped.png",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://solugen.com/wp-content/uploads/2023/11/How-It-Works-Cropped-100x100-c-default.png",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://solugen.com/wp-content/uploads/2024/06/20240221_102758-2-100x100-c-default.jpg",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://solugen.com/wp-content/uploads/2024/04/Bioforge-Marshall-Blog-1000x0-c-default.jpg",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://solugen.com/wp-content/uploads/2023/12/Sasol.jpg.optimal-scaled-1000x0-c-default.jpg",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://solugen.com/wp-content/uploads/2024/07/Kurita-Social-Announcement2-1000x0-c-default.jpg",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://solugen.com/wp-content/uploads/2023/11/Partner-With-Us-Cropped-100x100-c-default.png",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://solugen.com/wp-content/uploads/2023/11/Explore-Careers-Cropped-100x100-c-default.png",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://solugen.com/wp-content/uploads/2023/11/Read-the-Latest-Cropped-100x100-c-default.png",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://solugen.com/wp-content/uploads/2023/11/Newsletter.jpg",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://solugen.com/wp-content/uploads/2023/11/S_Molecule_Primary.png",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://solugen.com/wp-content/uploads/2023/11/Apply-Cropped-100x100-c-default.png",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://solugen.com/wp-content/uploads/2023/11/Contact-Cropped-100x100-c-default.png",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://solugen.com/wp-content/uploads/2024/04/230620-SOLUGEN-NEW-LABS-0717-600x0-c-default.jpg",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://solugen.com/wp-content/uploads/2024/04/210812-SOLUGEN-HOUSTON-0324-600x0-c-default.jpg",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://solugen.com/wp-content/uploads/2024/04/210812-SOLUGEN-HOUSTON-1372-600x0-c-default.jpg",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://solugen.com/wp-content/uploads/2024/04/230620-SOLUGEN-NEW-LABS-0539-600x0-c-default.jpg",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://solugen.com/wp-content/themes/solugen/dist/vendor.js?ver=1.0.113",
+        "resourceType": "script"
+      },
+      {
+        "url": "https://solugen.com/wp-content/themes/solugen/dist/app.js?ver=1.0.113",
+        "resourceType": "script"
+      },
+      {
+        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-NCJKNQT2",
+        "resourceType": "script"
+      },
+      {
+        "url": "https://www.googletagmanager.com/gtag/js?id=G-ZQV966ZFX9&cx=c&gtm=4e6461",
+        "resourceType": "script"
+      },
+      {
+        "url": "https://www.google-analytics.com/analytics.js",
+        "resourceType": "script"
+      },
+      {
+        "url": "https://match.adsrvr.org/track/cmf/generic?ttd_pid=id17evj&ttd_tpi=1&ttd_puid=c631a7bc-fbbc-4520-838b-9f090a869d24|dc2827f9-7eb8-43ec-b4f8-e3f93b786c1c",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://wec-assets.terminus.services/c631a7bc-fbbc-4520-838b-9f090a869d24/t.gif?d=dc2827f9-7eb8-43ec-b4f8-e3f93b786c1c&s=29ebf698-4e53-433e-802c-3fc3ef764f71&p=https%3A%2F%2Fsolugen.com%2F&cb=1775628375852&t=Home%20-%20New%20-%20Solugen%20%7C%20Solugen&r=&e=page_viewed&u=b3416e67-4a5a-41e3-990f-e36b8689fff7-1775628375852",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://sc.lfeeder.com/lftracker_v1_lAxoEaKzNWW4OYGd.js",
+        "resourceType": "script"
+      },
+      {
+        "url": "https://s3-us-west-2.amazonaws.com/b2bjsstore/b/YE63P0H9Y0OW/reb2b.js.gz",
+        "resourceType": "script"
+      },
+      {
+        "url": "https://solugen.com/wp-content/uploads/2024/04/Solugen_Hero_Factory01-scaled.jpg",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://solugen.com/wp-content/themes/solugen/dist/fonts/GT-America-Standard-Regular.woff2",
+        "resourceType": "font"
+      },
+      {
+        "url": "https://solugen.com/wp-content/themes/solugen/dist/fonts/GT-Zirkon-Regular.woff2",
+        "resourceType": "font"
+      },
+      {
+        "url": "https://solugen.com/wp-content/themes/solugen/dist/fonts/GT-America-Standard-Medium.woff2",
+        "resourceType": "font"
+      },
+      {
+        "url": "https://snap.licdn.com/li.lms-analytics/insight.min.js",
+        "resourceType": "script"
+      },
+      {
+        "url": "https://www.google.co.uk/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-ZQV966ZFX9&cid=592222363.1775628376&gtm=45je6461v887357159za20g&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=0~115616985~115938466~115938468~116991816&z=1331206058",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://px.ads.linkedin.com/collect?v=2&fmt=js&pid=5045916&time=1775628376151&url=https%3A%2F%2Fsolugen.com%2F",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://tr-rc.lfeeder.com/?sid=lAxoEaKzNWW4OYGd&data=eyJnYVRyYWNraW5nSWRzIjpbIlVBLTE3MTU5Nzk5My0xIl0sImdhTWVhc3VyZW1lbnRJZHMiOlsiVUEtMTcxNTk3OTkzLTEiLCJHLVpRVjk2NlpGWDkiXSwiZ2FDbGllbnRJZHMiOlsiNTkyMjIyMzYzLjE3NzU2MjgzNzYiXSwiY29udGV4dCI6eyJsaWJyYXJ5Ijp7Im5hbWUiOiJsZnRyYWNrZXIiLCJ2ZXJzaW9uIjoiMi43MC4wIn0sInBhZ2VVcmwiOiJodHRwczovL3NvbHVnZW4uY29tLyIsInBhZ2VUaXRsZSI6IkhvbWUgLSBOZXcgLSBTb2x1Z2VuIHwgU29sdWdlbiIsInJlZmVycmVyIjoiIn0sImV2ZW50IjoidHJhY2tpbmctZXZlbnQiLCJjbGllbnRFdmVudElkIjoiMmY0OTA1YmU1Njg5ZDMyYSIsInNjcmlwdElkIjoibEF4b0VhS3pOV1c0T1lHZCIsImNvb2tpZXNFbmFibGVkIjp0cnVlLCJjb25zZW50TGV2ZWwiOiJub25lIiwiYW5vbnltaXplSXAiOmZhbHNlLCJsZkNsaWVudElkIjoiTEYxLjEuMzI0Njc0Njg3NDZiOTg1MC4xNzc1NjI4Mzc2MTU2IiwiZm9yZWlnbkNvb2tpZXMiOltdLCJwcm9wZXJ0aWVzIjp7fSwiYXV0b1RyYWNraW5nRW5hYmxlZCI6dHJ1ZSwiYXV0b1RyYWNraW5nTW9kZSI6InNwYSJ9",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://f.vimeocdn.com/p/4.46.37/js/player.module.js",
+        "resourceType": "script"
+      },
+      {
+        "url": "https://f.vimeocdn.com/p/4.46.37/js/vendor.module.js",
+        "resourceType": "script"
+      },
+      {
+        "url": "https://f.vimeocdn.com/p/4.46.37/css/player.css",
+        "resourceType": "stylesheet"
+      },
+      {
+        "url": "https://f.vimeocdn.com/p/4.46.37/js/player.module.js",
+        "resourceType": "script"
+      },
+      {
+        "url": "https://f.vimeocdn.com/p/4.46.37/js/vendor.module.js",
+        "resourceType": "script"
+      },
+      {
+        "url": "https://f.vimeocdn.com/p/4.46.37/css/player.css",
+        "resourceType": "stylesheet"
+      },
+      {
+        "url": "https://f.vimeocdn.com/js_opt/modules/utils/vuid.min.js",
+        "resourceType": "script"
+      },
+      {
+        "url": "https://i.vimeocdn.com/video/1947494288-77e1395a6b168799b289a6c0a5057ee59a281a725a09478d1d25b2df207134eb-d?mw=1600&mh=900",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://px4.ads.linkedin.com/collect?v=2&fmt=js&pid=5045916&time=1775628376151&url=https%3A%2F%2Fsolugen.com%2F&e_ipv6=AQLHOqtKdkoMhgAAAZ1rstnjOnxTWcsShZ68hRQT1nf7bu8Ifebv7rSDtCptwqGaLZZVbZiey0rKylaVVl8Qs_eayWTaFbMr",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://f.vimeocdn.com/js_opt/modules/utils/vuid.min.js",
+        "resourceType": "script"
+      },
+      {
+        "url": "https://i.vimeocdn.com/video/1754712178-b91600d704fcd27b5afafc375218914639c9bec63e37fd985dba6fc75705391f-d?mw=1600&mh=900",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://i.vimeocdn.com/video/1754712178-b91600d704fcd27b5afafc375218914639c9bec63e37fd985dba6fc75705391f-d?mw=80&q=85",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://tr-rc.lfeeder.com/?sid=lAxoEaKzNWW4OYGd&data=eyJnYVRyYWNraW5nSWRzIjpbIlVBLTE3MTU5Nzk5My0xIl0sImdhTWVhc3VyZW1lbnRJZHMiOlsiVUEtMTcxNTk3OTkzLTEiLCJHLVpRVjk2NlpGWDkiXSwiZ2FDbGllbnRJZHMiOlsiNTkyMjIyMzYzLjE3NzU2MjgzNzYiXSwiY29udGV4dCI6eyJsaWJyYXJ5Ijp7Im5hbWUiOiJsZnRyYWNrZXIiLCJ2ZXJzaW9uIjoiMi43MC4wIn0sInBhZ2VVcmwiOiJodHRwczovL3NvbHVnZW4uY29tLyIsInBhZ2VUaXRsZSI6IkhvbWUgLSBOZXcgLSBTb2x1Z2VuIHwgU29sdWdlbiIsInJlZmVycmVyIjoiIn0sImV2ZW50IjoidmlkZW8tc3RhcnQiLCJjbGllbnRFdmVudElkIjoiNmUwOTg4MGU2ZmYzYjJkZSIsInNjcmlwdElkIjoibEF4b0VhS3pOV1c0T1lHZCIsImNvb2tpZXNFbmFibGVkIjp0cnVlLCJjb25zZW50TGV2ZWwiOiJub25lIiwiYW5vbnltaXplSXAiOmZhbHNlLCJsZkNsaWVudElkIjoiTEYxLjEuMzI0Njc0Njg3NDZiOTg1MC4xNzc1NjI4Mzc2MTU2IiwiZm9yZWlnbkNvb2tpZXMiOltdLCJwcm9wZXJ0aWVzIjp7InZpZGVvVXJsIjoiaHR0cHM6Ly92aW1lby5jb20vMTAyNzUxMTYxMSIsInZpZGVvVGl0bGUiOiJJcmlkZXNjZW50IFRleHR1cmUgMTZ4OSJ9LCJhdXRvVHJhY2tpbmdFbmFibGVkIjp0cnVlLCJhdXRvVHJhY2tpbmdNb2RlIjoic3BhIn0=",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://tr-rc.lfeeder.com/?sid=lAxoEaKzNWW4OYGd&data=eyJnYVRyYWNraW5nSWRzIjpbIlVBLTE3MTU5Nzk5My0xIl0sImdhTWVhc3VyZW1lbnRJZHMiOlsiVUEtMTcxNTk3OTkzLTEiLCJHLVpRVjk2NlpGWDkiXSwiZ2FDbGllbnRJZHMiOlsiNTkyMjIyMzYzLjE3NzU2MjgzNzYiXSwiY29udGV4dCI6eyJsaWJyYXJ5Ijp7Im5hbWUiOiJsZnRyYWNrZXIiLCJ2ZXJzaW9uIjoiMi43MC4wIn0sInBhZ2VVcmwiOiJodHRwczovL3NvbHVnZW4uY29tLyIsInBhZ2VUaXRsZSI6IkhvbWUgLSBOZXcgLSBTb2x1Z2VuIHwgU29sdWdlbiIsInJlZmVycmVyIjoiIn0sImV2ZW50IjoidmlkZW8tc3RhcnQiLCJjbGllbnRFdmVudElkIjoiZjhlNDlmMDgxOTJkMWNiYiIsInNjcmlwdElkIjoibEF4b0VhS3pOV1c0T1lHZCIsImNvb2tpZXNFbmFibGVkIjp0cnVlLCJjb25zZW50TGV2ZWwiOiJub25lIiwiYW5vbnltaXplSXAiOmZhbHNlLCJsZkNsaWVudElkIjoiTEYxLjEuMzI0Njc0Njg3NDZiOTg1MC4xNzc1NjI4Mzc2MTU2IiwiZm9yZWlnbkNvb2tpZXMiOltdLCJwcm9wZXJ0aWVzIjp7InZpZGVvVXJsIjoiaHR0cHM6Ly92aW1lby5jb20vODg1MjU2MzczIiwidmlkZW9UaXRsZSI6IlNvbHVnZW4gSGVybyAyIFtEZXNrdG9wXSJ9LCJhdXRvVHJhY2tpbmdFbmFibGVkIjp0cnVlLCJhdXRvVHJhY2tpbmdNb2RlIjoic3BhIn0=",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://i.vimeocdn.com/video/1947494288-77e1395a6b168799b289a6c0a5057ee59a281a725a09478d1d25b2df207134eb-d?mw=80&q=85",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://solugen.com/wp-content/uploads/2024/05/Homepage-Mobile000.jpg",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://solugen.com/wp-content/themes/solugen/dist/app.css?v=1.0.113",
+        "resourceType": "stylesheet"
+      },
+      {
+        "url": "https://www.googletagmanager.com/gtag/js?id=UA-171597993-1",
+        "resourceType": "script"
+      },
+      {
+        "url": "https://player.vimeo.com/api/player.js",
+        "resourceType": "script"
+      },
+      {
+        "url": "https://wec-assets.terminus.services/c631a7bc-fbbc-4520-838b-9f090a869d24/t.js",
+        "resourceType": "script"
+      },
+      {
+        "url": "https://cdn.getsmartcontent.com/7XVHQ8CG.js",
+        "resourceType": "script"
+      },
+      {
+        "url": "https://solugen.com/wp-content/themes/solugen/static/img/s-molecule-black.png?v=1.0.113",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://solugen.com/wp-content/uploads/2024/05/Energy_Header-edit0-copy-1536x864.jpg",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://solugen.com/wp-content/uploads/2024/10/Biofuels-Header0-1536x864.jpg",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://solugen.com/wp-content/uploads/2024/05/Defense_Header_40-1536x864.jpg",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://solugen.com/wp-content/themes/solugen/static/videos/bioforge/png/Solugen_Forge_B03_00001.png",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://solugen.com/wp-content/uploads/2023/11/Metal-Catalysis-Cropped.jpg",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://solugen.com/wp-content/uploads/2023/11/Modularity-Cropped-scaled-1.jpg",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://solugen.com/wp-content/uploads/2023/11/Engineered-Enzymes-Cropped.png",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://solugen.com/wp-content/uploads/2023/11/Yield-Cropped.png",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://solugen.com/wp-content/uploads/2023/11/How-It-Works-Cropped-100x100-c-default.png",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://solugen.com/wp-content/uploads/2024/06/20240221_102758-2-100x100-c-default.jpg",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://solugen.com/wp-content/uploads/2024/04/Bioforge-Marshall-Blog-1000x0-c-default.jpg",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://solugen.com/wp-content/uploads/2023/12/Sasol.jpg.optimal-scaled-1000x0-c-default.jpg",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://solugen.com/wp-content/uploads/2024/07/Kurita-Social-Announcement2-1000x0-c-default.jpg",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://solugen.com/wp-content/uploads/2023/11/Partner-With-Us-Cropped-100x100-c-default.png",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://solugen.com/wp-content/uploads/2023/11/Explore-Careers-Cropped-100x100-c-default.png",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://solugen.com/wp-content/uploads/2023/11/Read-the-Latest-Cropped-100x100-c-default.png",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://solugen.com/wp-content/uploads/2023/11/Newsletter.jpg",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://solugen.com/wp-content/uploads/2023/11/S_Molecule_Primary.png",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://solugen.com/wp-content/uploads/2023/11/Apply-Cropped-100x100-c-default.png",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://solugen.com/wp-content/uploads/2023/11/Contact-Cropped-100x100-c-default.png",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://solugen.com/wp-content/uploads/2024/04/230620-SOLUGEN-NEW-LABS-0717-600x0-c-default.jpg",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://solugen.com/wp-content/uploads/2024/04/210812-SOLUGEN-HOUSTON-0324-600x0-c-default.jpg",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://solugen.com/wp-content/uploads/2024/04/210812-SOLUGEN-HOUSTON-1372-600x0-c-default.jpg",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://solugen.com/wp-content/uploads/2024/04/230620-SOLUGEN-NEW-LABS-0539-600x0-c-default.jpg",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://solugen.com/wp-content/themes/solugen/dist/vendor.js?ver=1.0.113",
+        "resourceType": "script"
+      },
+      {
+        "url": "https://solugen.com/wp-content/themes/solugen/dist/app.js?ver=1.0.113",
+        "resourceType": "script"
+      },
+      {
+        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-NCJKNQT2",
+        "resourceType": "script"
+      },
+      {
+        "url": "https://www.googletagmanager.com/gtag/js?id=G-ZQV966ZFX9&cx=c&gtm=4e6461",
+        "resourceType": "script"
+      },
+      {
+        "url": "https://www.google-analytics.com/analytics.js",
+        "resourceType": "script"
+      },
+      {
+        "url": "https://wec-assets.terminus.services/c631a7bc-fbbc-4520-838b-9f090a869d24/t.gif?d=dc2827f9-7eb8-43ec-b4f8-e3f93b786c1c&s=29ebf698-4e53-433e-802c-3fc3ef764f71&p=https%3A%2F%2Fsolugen.com%2F&cb=1775628380373&t=Home%20-%20New%20-%20Solugen%20%7C%20Solugen&r=https%3A%2F%2Fsolugen.com%2F&e=page_viewed&u=4f2e1d9d-3dfc-4485-bd82-991d39da1e12-1775628380373",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://solugen.com/wp-content/themes/solugen/dist/fonts/GT-America-Standard-Regular.woff2",
+        "resourceType": "font"
+      },
+      {
+        "url": "https://solugen.com/wp-content/themes/solugen/dist/fonts/GT-America-Standard-Medium.woff2",
+        "resourceType": "font"
+      },
+      {
+        "url": "https://solugen.com/wp-content/themes/solugen/dist/fonts/GT-Zirkon-Regular.woff2",
+        "resourceType": "font"
+      },
+      {
+        "url": "https://sc.lfeeder.com/lftracker_v1_lAxoEaKzNWW4OYGd.js",
+        "resourceType": "script"
+      },
+      {
+        "url": "https://s3-us-west-2.amazonaws.com/b2bjsstore/b/YE63P0H9Y0OW/reb2b.js.gz",
+        "resourceType": "script"
+      },
+      {
+        "url": "https://solugen.com/wp-content/uploads/2024/04/Solugen_Hero_Factory01-scaled.jpg",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://tr-rc.lfeeder.com/?sid=lAxoEaKzNWW4OYGd&data=eyJnYVRyYWNraW5nSWRzIjpbIlVBLTE3MTU5Nzk5My0xIl0sImdhTWVhc3VyZW1lbnRJZHMiOlsiVUEtMTcxNTk3OTkzLTEiLCJHLVpRVjk2NlpGWDkiXSwiZ2FDbGllbnRJZHMiOlsiNTkyMjIyMzYzLjE3NzU2MjgzNzYiXSwiY29udGV4dCI6eyJsaWJyYXJ5Ijp7Im5hbWUiOiJsZnRyYWNrZXIiLCJ2ZXJzaW9uIjoiMi43MC4wIn0sInBhZ2VVcmwiOiJodHRwczovL3NvbHVnZW4uY29tLyIsInBhZ2VUaXRsZSI6IkhvbWUgLSBOZXcgLSBTb2x1Z2VuIHwgU29sdWdlbiIsInJlZmVycmVyIjoiaHR0cHM6Ly9zb2x1Z2VuLmNvbS8ifSwiZXZlbnQiOiJ0cmFja2luZy1ldmVudCIsImNsaWVudEV2ZW50SWQiOiJiNjgxZDNlNTQ5YWEyZjFkIiwic2NyaXB0SWQiOiJsQXhvRWFLek5XVzRPWUdkIiwiY29va2llc0VuYWJsZWQiOnRydWUsImNvbnNlbnRMZXZlbCI6Im5vbmUiLCJhbm9ueW1pemVJcCI6ZmFsc2UsImxmQ2xpZW50SWQiOiJMRjEuMS4zMjQ2NzQ2ODc0NmI5ODUwLjE3NzU2MjgzNzYxNTYiLCJmb3JlaWduQ29va2llcyI6W10sInByb3BlcnRpZXMiOnt9LCJhdXRvVHJhY2tpbmdFbmFibGVkIjp0cnVlLCJhdXRvVHJhY2tpbmdNb2RlIjoic3BhIn0=",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://snap.licdn.com/li.lms-analytics/insight.min.js",
+        "resourceType": "script"
+      },
+      {
+        "url": "https://px.ads.linkedin.com/collect?v=2&fmt=js&pid=5045916&time=1775628380428&url=https%3A%2F%2Fsolugen.com%2F",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://px4.ads.linkedin.com/collect?v=2&fmt=js&pid=5045916&time=1775628380428&url=https%3A%2F%2Fsolugen.com%2F&e_ipv6=AQKA1gLoLSqWZwAAAZ1rsumaieTX3-E9GttoanQGk3oU35RSCKLxwy-Nimp9gCxg_20jwGdMC0OWcqGY0tfC_cuSlSm7Rn8t",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://f.vimeocdn.com/p/4.46.37/js/player.module.js",
+        "resourceType": "script"
+      },
+      {
+        "url": "https://f.vimeocdn.com/p/4.46.37/js/vendor.module.js",
+        "resourceType": "script"
+      },
+      {
+        "url": "https://f.vimeocdn.com/p/4.46.37/css/player.css",
+        "resourceType": "stylesheet"
+      },
+      {
+        "url": "https://f.vimeocdn.com/p/4.46.37/js/player.module.js",
+        "resourceType": "script"
+      },
+      {
+        "url": "https://f.vimeocdn.com/p/4.46.37/js/vendor.module.js",
+        "resourceType": "script"
+      },
+      {
+        "url": "https://f.vimeocdn.com/p/4.46.37/css/player.css",
+        "resourceType": "stylesheet"
+      },
+      {
+        "url": "https://f.vimeocdn.com/js_opt/modules/utils/vuid.min.js",
+        "resourceType": "script"
+      },
+      {
+        "url": "https://i.vimeocdn.com/video/1754712178-b91600d704fcd27b5afafc375218914639c9bec63e37fd985dba6fc75705391f-d?mw=1600&mh=900",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://f.vimeocdn.com/js_opt/modules/utils/vuid.min.js",
+        "resourceType": "script"
+      },
+      {
+        "url": "https://i.vimeocdn.com/video/1947494288-77e1395a6b168799b289a6c0a5057ee59a281a725a09478d1d25b2df207134eb-d?mw=1600&mh=900",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://i.vimeocdn.com/video/1754712178-b91600d704fcd27b5afafc375218914639c9bec63e37fd985dba6fc75705391f-d?mw=80&q=85",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://tr-rc.lfeeder.com/?sid=lAxoEaKzNWW4OYGd&data=eyJnYVRyYWNraW5nSWRzIjpbIlVBLTE3MTU5Nzk5My0xIl0sImdhTWVhc3VyZW1lbnRJZHMiOlsiVUEtMTcxNTk3OTkzLTEiLCJHLVpRVjk2NlpGWDkiXSwiZ2FDbGllbnRJZHMiOlsiNTkyMjIyMzYzLjE3NzU2MjgzNzYiXSwiY29udGV4dCI6eyJsaWJyYXJ5Ijp7Im5hbWUiOiJsZnRyYWNrZXIiLCJ2ZXJzaW9uIjoiMi43MC4wIn0sInBhZ2VVcmwiOiJodHRwczovL3NvbHVnZW4uY29tLyIsInBhZ2VUaXRsZSI6IkhvbWUgLSBOZXcgLSBTb2x1Z2VuIHwgU29sdWdlbiIsInJlZmVycmVyIjoiaHR0cHM6Ly9zb2x1Z2VuLmNvbS8ifSwiZXZlbnQiOiJ2aWRlby1zdGFydCIsImNsaWVudEV2ZW50SWQiOiI0M2I1NzcxN2ZlNjUxNzQ5Iiwic2NyaXB0SWQiOiJsQXhvRWFLek5XVzRPWUdkIiwiY29va2llc0VuYWJsZWQiOnRydWUsImNvbnNlbnRMZXZlbCI6Im5vbmUiLCJhbm9ueW1pemVJcCI6ZmFsc2UsImxmQ2xpZW50SWQiOiJMRjEuMS4zMjQ2NzQ2ODc0NmI5ODUwLjE3NzU2MjgzNzYxNTYiLCJmb3JlaWduQ29va2llcyI6W10sInByb3BlcnRpZXMiOnsidmlkZW9VcmwiOiJodHRwczovL3ZpbWVvLmNvbS84ODUyNTYzNzMiLCJ2aWRlb1RpdGxlIjoiU29sdWdlbiBIZXJvIDIgW0Rlc2t0b3BdIn0sImF1dG9UcmFja2luZ0VuYWJsZWQiOnRydWUsImF1dG9UcmFja2luZ01vZGUiOiJzcGEifQ==",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://tr-rc.lfeeder.com/?sid=lAxoEaKzNWW4OYGd&data=eyJnYVRyYWNraW5nSWRzIjpbIlVBLTE3MTU5Nzk5My0xIl0sImdhTWVhc3VyZW1lbnRJZHMiOlsiVUEtMTcxNTk3OTkzLTEiLCJHLVpRVjk2NlpGWDkiXSwiZ2FDbGllbnRJZHMiOlsiNTkyMjIyMzYzLjE3NzU2MjgzNzYiXSwiY29udGV4dCI6eyJsaWJyYXJ5Ijp7Im5hbWUiOiJsZnRyYWNrZXIiLCJ2ZXJzaW9uIjoiMi43MC4wIn0sInBhZ2VVcmwiOiJodHRwczovL3NvbHVnZW4uY29tLyIsInBhZ2VUaXRsZSI6IkhvbWUgLSBOZXcgLSBTb2x1Z2VuIHwgU29sdWdlbiIsInJlZmVycmVyIjoiaHR0cHM6Ly9zb2x1Z2VuLmNvbS8ifSwiZXZlbnQiOiJ2aWRlby1zdGFydCIsImNsaWVudEV2ZW50SWQiOiIzOGU3Yzk4Y2NiZmRkNjM5Iiwic2NyaXB0SWQiOiJsQXhvRWFLek5XVzRPWUdkIiwiY29va2llc0VuYWJsZWQiOnRydWUsImNvbnNlbnRMZXZlbCI6Im5vbmUiLCJhbm9ueW1pemVJcCI6ZmFsc2UsImxmQ2xpZW50SWQiOiJMRjEuMS4zMjQ2NzQ2ODc0NmI5ODUwLjE3NzU2MjgzNzYxNTYiLCJmb3JlaWduQ29va2llcyI6W10sInByb3BlcnRpZXMiOnsidmlkZW9VcmwiOiJodHRwczovL3ZpbWVvLmNvbS8xMDI3NTExNjExIiwidmlkZW9UaXRsZSI6IklyaWRlc2NlbnQgVGV4dHVyZSAxNng5In0sImF1dG9UcmFja2luZ0VuYWJsZWQiOnRydWUsImF1dG9UcmFja2luZ01vZGUiOiJzcGEifQ==",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://i.vimeocdn.com/video/1947494288-77e1395a6b168799b289a6c0a5057ee59a281a725a09478d1d25b2df207134eb-d?mw=80&q=85",
+        "resourceType": "image"
+      }
+    ]
+  },
+  "mobile": {
+    "viewport": {
+      "name": "mobile",
+      "width": 390,
+      "height": 844,
+      "deviceScaleFactor": 2
+    },
+    "screenshotPath": "docs/design-references/solugen.com/home-mobile-390x844.png",
+    "extracted": {
+      "title": "Home - New - Solugen | Solugen",
+      "fonts": [
+        "\"Times New Roman\"",
+        "\"GT America\", sans-serif",
+        "\"GT Zirkon\", sans-serif",
+        "\"GT America\"",
+        "\"GT Zirkon\""
+      ],
+      "colors": [
+        "rgb(17, 17, 17)",
+        "rgb(243, 243, 243)",
+        "rgb(255, 255, 255)",
+        "rgba(0, 0, 0, 0)",
+        "rgb(237, 237, 237)"
+      ],
+      "favicons": [
+        {
+          "rel": "apple-touch-icon",
+          "href": "https://solugen.com/wp-content/themes/solugen/static/img/favicon/apple-touch-icon.png",
+          "as": null,
+          "type": null,
+          "sizes": "180x180"
+        },
+        {
+          "rel": "icon",
+          "href": "https://solugen.com/wp-content/themes/solugen/static/img/favicon/favicon-32x32.png",
+          "as": null,
+          "type": "image/png",
+          "sizes": "32x32"
+        },
+        {
+          "rel": "icon",
+          "href": "https://solugen.com/wp-content/themes/solugen/static/img/favicon/favicon-16x16.png",
+          "as": null,
+          "type": "image/png",
+          "sizes": "16x16"
+        },
+        {
+          "rel": "mask-icon",
+          "href": "https://solugen.com/wp-content/themes/solugen/static/img/favicon/safari-pinned-tab.svg",
+          "as": null,
+          "type": null,
+          "sizes": null
+        },
+        {
+          "rel": "shortcut icon",
+          "href": "https://solugen.com/wp-content/themes/solugen/static/img/favicon/favicon.ico",
+          "as": null,
+          "type": null,
+          "sizes": null
+        }
+      ],
+      "links": [
+        {
+          "rel": "apple-touch-icon",
+          "href": "https://solugen.com/wp-content/themes/solugen/static/img/favicon/apple-touch-icon.png",
+          "as": null,
+          "type": null,
+          "sizes": "180x180"
+        },
+        {
+          "rel": "icon",
+          "href": "https://solugen.com/wp-content/themes/solugen/static/img/favicon/favicon-32x32.png",
+          "as": null,
+          "type": "image/png",
+          "sizes": "32x32"
+        },
+        {
+          "rel": "icon",
+          "href": "https://solugen.com/wp-content/themes/solugen/static/img/favicon/favicon-16x16.png",
+          "as": null,
+          "type": "image/png",
+          "sizes": "16x16"
+        },
+        {
+          "rel": "manifest",
+          "href": "https://solugen.com/wp-content/themes/solugen/static/img/favicon/site.webmanifest",
+          "as": null,
+          "type": null,
+          "sizes": null
+        },
+        {
+          "rel": "mask-icon",
+          "href": "https://solugen.com/wp-content/themes/solugen/static/img/favicon/safari-pinned-tab.svg",
+          "as": null,
+          "type": null,
+          "sizes": null
+        },
+        {
+          "rel": "shortcut icon",
+          "href": "https://solugen.com/wp-content/themes/solugen/static/img/favicon/favicon.ico",
+          "as": null,
+          "type": null,
+          "sizes": null
+        },
+        {
+          "rel": "stylesheet",
+          "href": "https://solugen.com/wp-content/themes/solugen/dist/app.css?v=1.0.113",
+          "as": null,
+          "type": "text/css",
+          "sizes": null
+        },
+        {
+          "rel": "canonical",
+          "href": "https://solugen.com/",
+          "as": null,
+          "type": null,
+          "sizes": null
+        },
+        {
+          "rel": "canonical",
+          "href": "https://solugen.com/?ref=echojobs.io&utm_source=echojobs.io",
+          "as": null,
+          "type": null,
+          "sizes": null
+        },
+        {
+          "rel": "canonical",
+          "href": "https://solugen.com/?ref=maxibestof.one",
+          "as": null,
+          "type": null,
+          "sizes": null
+        },
+        {
+          "rel": "canonical",
+          "href": "https://solugen.com/?ref=briolink",
+          "as": null,
+          "type": null,
+          "sizes": null
+        },
+        {
+          "rel": "canonical",
+          "href": "https://solugen.com/?tpcc=nltermsheet",
+          "as": null,
+          "type": null,
+          "sizes": null
+        },
+        {
+          "rel": "canonical",
+          "href": "https://solugen.com/?utm_source=himalayas.app&ref=himalayas.app",
+          "as": null,
+          "type": null,
+          "sizes": null
+        },
+        {
+          "rel": "canonical",
+          "href": "https://solugen.com/?ref=himalayas.app",
+          "as": null,
+          "type": null,
+          "sizes": null
+        }
+      ],
+      "scripts": [
+        "https://snap.licdn.com/li.lms-analytics/insight.min.js",
+        "https://s3-us-west-2.amazonaws.com/b2bjsstore/b/YE63P0H9Y0OW/reb2b.js.gz",
+        "https://sc.lfeeder.com/lftracker_v1_lAxoEaKzNWW4OYGd.js",
+        "https://www.google-analytics.com/analytics.js",
+        "https://www.googletagmanager.com/gtag/js?id=G-ZQV966ZFX9&cx=c&gtm=4e6461",
+        "https://www.googletagmanager.com/gtm.js?id=GTM-NCJKNQT2",
+        "https://www.googletagmanager.com/gtag/js?id=UA-171597993-1",
+        "https://player.vimeo.com/api/player.js",
+        "https://wec-assets.terminus.services/c631a7bc-fbbc-4520-838b-9f090a869d24/t.js",
+        "https://cdn.getsmartcontent.com/7XVHQ8CG.js",
+        "https://solugen.com/wp-content/themes/solugen/dist/vendor.js?ver=1.0.113",
+        "https://solugen.com/wp-content/themes/solugen/dist/app.js?ver=1.0.113"
+      ],
+      "sections": [
+        {
+          "idx": 0,
+          "id": "page-lead",
+          "className": "section page-lead section--page-lead page-lead--parallax page-lead--larger-headline",
+          "dataInit": "PageLead",
+          "textPreview": ".page-lead__background-images { @media (max-width: 431px) { background-image: url(https://solugen.com/wp-content/uploads/2024/05/Homepage-Mo"
+        },
+        {
+          "idx": 1,
+          "id": null,
+          "className": "section section--markets-slider markets-slider",
+          "dataInit": "MarketSlider",
+          "textPreview": "Solutions Prioritizing collaboration and speed, we deliver American-made solutions that enhance performance and drive success for the indust"
+        },
+        {
+          "idx": 2,
+          "id": "js-bioforge-home",
+          "className": "bioforge bioforge--modular",
+          "dataInit": null,
+          "textPreview": "Our Technology Our Bioforge platform brings versatility and precision to the manufacturing process, cutting inefficiencies, reducing costs, "
+        },
+        {
+          "idx": 3,
+          "id": null,
+          "className": "section section--centered centered-eyebrow-text centered-eyebrow-text--black centered-eyebrow-text--full-height",
+          "dataInit": "CenteredEyebrowText",
+          "textPreview": "We’re committed to solving complex challenges by working side by side with our customers to create lasting impact. Together, let’s tackle wh"
+        },
+        {
+          "idx": 4,
+          "id": null,
+          "className": "section section--previews section--previews--black",
+          "dataInit": "Tabs",
+          "textPreview": "In Good Company Press 10.30.23 Solugen Announces Biomanufacturing Facility in U.S. Midwest Through Strategic Partnership with ADM Press 10.1"
+        },
+        {
+          "idx": 5,
+          "id": null,
+          "className": "ctas",
+          "dataInit": null,
+          "textPreview": "Partner With Us Explore Careers Read the Latest Subscribe Now Thank you! Sign Up"
+        }
+      ],
+      "smoothScrollHints": {
+        "hasLenis": false,
+        "hasLocomotive": false
+      },
+      "headerStylesAtTop": {
+        "position": "fixed",
+        "top": "0px",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "backdropFilter": "none",
+        "boxShadow": "none",
+        "height": "85px"
+      }
+    },
+    "headerStylesAfterScroll": {
+      "position": "fixed",
+      "top": "0px",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "backdropFilter": "none",
+      "boxShadow": "none",
+      "height": "85px"
+    },
+    "clickSweep": {
+      "navOpened": true,
+      "bodyClassAfterNav": "home wp-singular page-template page-template-page-modular page-template-page-modular-php page page-id-4010 wp-theme-solugen ",
+      "navVisible": true
+    },
+    "requests": [
+      {
+        "url": "https://solugen.com/wp-content/themes/solugen/dist/app.css?v=1.0.113",
+        "resourceType": "stylesheet"
+      },
+      {
+        "url": "https://www.googletagmanager.com/gtag/js?id=UA-171597993-1",
+        "resourceType": "script"
+      },
+      {
+        "url": "https://player.vimeo.com/api/player.js",
+        "resourceType": "script"
+      },
+      {
+        "url": "https://wec-assets.terminus.services/c631a7bc-fbbc-4520-838b-9f090a869d24/t.js",
+        "resourceType": "script"
+      },
+      {
+        "url": "https://cdn.getsmartcontent.com/7XVHQ8CG.js",
+        "resourceType": "script"
+      },
+      {
+        "url": "https://solugen.com/wp-content/themes/solugen/static/img/s-molecule-black.png?v=1.0.113",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://solugen.com/wp-content/uploads/2024/05/Energy_Header-edit0-copy-1024x576.jpg",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://solugen.com/wp-content/uploads/2024/10/Biofuels-Header0-1024x576.jpg",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://solugen.com/wp-content/uploads/2024/05/Defense_Header_40-1024x576.jpg",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://solugen.com/wp-content/themes/solugen/static/videos/bioforge/png/Solugen_Forge_B03_00001.png",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://solugen.com/wp-content/uploads/2023/11/Metal-Catalysis-Cropped.jpg",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://solugen.com/wp-content/uploads/2023/11/Modularity-Cropped-scaled-1.jpg",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://solugen.com/wp-content/uploads/2023/11/Engineered-Enzymes-Cropped.png",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://solugen.com/wp-content/uploads/2023/11/Yield-Cropped.png",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://solugen.com/wp-content/uploads/2023/11/How-It-Works-Cropped-100x100-c-default.png",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://solugen.com/wp-content/uploads/2024/06/20240221_102758-2-100x100-c-default.jpg",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://solugen.com/wp-content/uploads/2024/04/Bioforge-Marshall-Blog-1000x0-c-default.jpg",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://solugen.com/wp-content/uploads/2023/12/Sasol.jpg.optimal-scaled-1000x0-c-default.jpg",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://solugen.com/wp-content/uploads/2024/07/Kurita-Social-Announcement2-1000x0-c-default.jpg",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://solugen.com/wp-content/uploads/2023/11/Partner-With-Us-Cropped-100x100-c-default.png",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://solugen.com/wp-content/uploads/2023/11/Explore-Careers-Cropped-100x100-c-default.png",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://solugen.com/wp-content/uploads/2023/11/Read-the-Latest-Cropped-100x100-c-default.png",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://solugen.com/wp-content/uploads/2023/11/Newsletter.jpg",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://solugen.com/wp-content/uploads/2023/11/S_Molecule_Primary.png",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://solugen.com/wp-content/uploads/2023/11/Apply-Cropped-100x100-c-default.png",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://solugen.com/wp-content/uploads/2023/11/Contact-Cropped-100x100-c-default.png",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://solugen.com/wp-content/uploads/2024/04/230620-SOLUGEN-NEW-LABS-0717-600x0-c-default.jpg",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://solugen.com/wp-content/uploads/2024/04/210812-SOLUGEN-HOUSTON-0324-600x0-c-default.jpg",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://solugen.com/wp-content/uploads/2024/04/210812-SOLUGEN-HOUSTON-1372-600x0-c-default.jpg",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://solugen.com/wp-content/uploads/2024/04/230620-SOLUGEN-NEW-LABS-0539-600x0-c-default.jpg",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://solugen.com/wp-content/themes/solugen/dist/vendor.js?ver=1.0.113",
+        "resourceType": "script"
+      },
+      {
+        "url": "https://solugen.com/wp-content/themes/solugen/dist/app.js?ver=1.0.113",
+        "resourceType": "script"
+      },
+      {
+        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-NCJKNQT2",
+        "resourceType": "script"
+      },
+      {
+        "url": "https://match.adsrvr.org/track/cmf/generic?ttd_pid=id17evj&ttd_tpi=1&ttd_puid=c631a7bc-fbbc-4520-838b-9f090a869d24|39f60d47-31f6-4e32-8dfa-a79152dbd866",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://wec-assets.terminus.services/c631a7bc-fbbc-4520-838b-9f090a869d24/t.gif?d=39f60d47-31f6-4e32-8dfa-a79152dbd866&s=fc95eb40-534c-4bf9-af99-c894361da6ea&p=https%3A%2F%2Fsolugen.com%2F&cb=1775628383074&t=Home%20-%20New%20-%20Solugen%20%7C%20Solugen&r=&e=page_viewed&u=b8d1a501-c1d9-4a28-9606-d06c70cfa28e-1775628383074",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://sc.lfeeder.com/lftracker_v1_lAxoEaKzNWW4OYGd.js",
+        "resourceType": "script"
+      },
+      {
+        "url": "https://s3-us-west-2.amazonaws.com/b2bjsstore/b/YE63P0H9Y0OW/reb2b.js.gz",
+        "resourceType": "script"
+      },
+      {
+        "url": "https://solugen.com/wp-content/uploads/2024/05/Homepage-Mobile000.jpg",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://solugen.com/wp-content/themes/solugen/dist/fonts/GT-America-Standard-Regular.woff2",
+        "resourceType": "font"
+      },
+      {
+        "url": "https://solugen.com/wp-content/themes/solugen/dist/fonts/GT-Zirkon-Regular.woff2",
+        "resourceType": "font"
+      },
+      {
+        "url": "https://solugen.com/wp-content/themes/solugen/dist/fonts/GT-America-Standard-Medium.woff2",
+        "resourceType": "font"
+      },
+      {
+        "url": "https://snap.licdn.com/li.lms-analytics/insight.min.js",
+        "resourceType": "script"
+      },
+      {
+        "url": "https://www.googletagmanager.com/gtag/js?id=G-ZQV966ZFX9&cx=c&gtm=4e6461",
+        "resourceType": "script"
+      },
+      {
+        "url": "https://www.google-analytics.com/analytics.js",
+        "resourceType": "script"
+      },
+      {
+        "url": "https://px.ads.linkedin.com/collect?v=2&fmt=js&pid=5045916&time=1775628383234&url=https%3A%2F%2Fsolugen.com%2F",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://www.google.co.uk/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-ZQV966ZFX9&cid=1883847328.1775628383&gtm=45je6461v887357159za20g&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=0~115938465~115938469~116991817&z=1307715682",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://tr-rc.lfeeder.com/?sid=lAxoEaKzNWW4OYGd&data=eyJnYVRyYWNraW5nSWRzIjpbIlVBLTE3MTU5Nzk5My0xIl0sImdhTWVhc3VyZW1lbnRJZHMiOlsiVUEtMTcxNTk3OTkzLTEiLCJHLVpRVjk2NlpGWDkiXSwiZ2FDbGllbnRJZHMiOlsiMTg4Mzg0NzMyOC4xNzc1NjI4MzgzIl0sImNvbnRleHQiOnsibGlicmFyeSI6eyJuYW1lIjoibGZ0cmFja2VyIiwidmVyc2lvbiI6IjIuNzAuMCJ9LCJwYWdlVXJsIjoiaHR0cHM6Ly9zb2x1Z2VuLmNvbS8iLCJwYWdlVGl0bGUiOiJIb21lIC0gTmV3IC0gU29sdWdlbiB8IFNvbHVnZW4iLCJyZWZlcnJlciI6IiJ9LCJldmVudCI6InRyYWNraW5nLWV2ZW50IiwiY2xpZW50RXZlbnRJZCI6Ijk5ZGRiZGIwMWEzNDM0YWEiLCJzY3JpcHRJZCI6ImxBeG9FYUt6TldXNE9ZR2QiLCJjb29raWVzRW5hYmxlZCI6dHJ1ZSwiY29uc2VudExldmVsIjoibm9uZSIsImFub255bWl6ZUlwIjpmYWxzZSwibGZDbGllbnRJZCI6IkxGMS4xLjA2N2YxNThmMGQ3OTgwYjQuMTc3NTYyODM4MzMxMiIsImZvcmVpZ25Db29raWVzIjpbXSwicHJvcGVydGllcyI6e30sImF1dG9UcmFja2luZ0VuYWJsZWQiOnRydWUsImF1dG9UcmFja2luZ01vZGUiOiJzcGEifQ==",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://px4.ads.linkedin.com/collect?v=2&fmt=js&pid=5045916&time=1775628383234&url=https%3A%2F%2Fsolugen.com%2F&e_ipv6=AQLpvAoCfBRItQAAAZ1rsvTf_bEX1NM4NqNA3PsqK_TE1Z0e1z57mwT0-McsR3yWh3EO6DH8NJTmHvkn8QFSg_16wfFmhGdM",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://f.vimeocdn.com/p/4.46.37/js/player.module.js",
+        "resourceType": "script"
+      },
+      {
+        "url": "https://f.vimeocdn.com/p/4.46.37/js/vendor.module.js",
+        "resourceType": "script"
+      },
+      {
+        "url": "https://f.vimeocdn.com/p/4.46.37/css/player.css",
+        "resourceType": "stylesheet"
+      },
+      {
+        "url": "https://f.vimeocdn.com/js_opt/modules/utils/vuid.min.js",
+        "resourceType": "script"
+      },
+      {
+        "url": "https://i.vimeocdn.com/video/1947494288-77e1395a6b168799b289a6c0a5057ee59a281a725a09478d1d25b2df207134eb-d?mw=3000&mh=1688&q=70",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://f.vimeocdn.com/p/4.46.37/js/player.module.js",
+        "resourceType": "script"
+      },
+      {
+        "url": "https://f.vimeocdn.com/p/4.46.37/js/vendor.module.js",
+        "resourceType": "script"
+      },
+      {
+        "url": "https://f.vimeocdn.com/p/4.46.37/css/player.css",
+        "resourceType": "stylesheet"
+      },
+      {
+        "url": "https://tr-rc.lfeeder.com/?sid=lAxoEaKzNWW4OYGd&data=eyJnYVRyYWNraW5nSWRzIjpbIlVBLTE3MTU5Nzk5My0xIl0sImdhTWVhc3VyZW1lbnRJZHMiOlsiVUEtMTcxNTk3OTkzLTEiLCJHLVpRVjk2NlpGWDkiXSwiZ2FDbGllbnRJZHMiOlsiMTg4Mzg0NzMyOC4xNzc1NjI4MzgzIl0sImNvbnRleHQiOnsibGlicmFyeSI6eyJuYW1lIjoibGZ0cmFja2VyIiwidmVyc2lvbiI6IjIuNzAuMCJ9LCJwYWdlVXJsIjoiaHR0cHM6Ly9zb2x1Z2VuLmNvbS8iLCJwYWdlVGl0bGUiOiJIb21lIC0gTmV3IC0gU29sdWdlbiB8IFNvbHVnZW4iLCJyZWZlcnJlciI6IiJ9LCJldmVudCI6InZpZGVvLXN0YXJ0IiwiY2xpZW50RXZlbnRJZCI6IjI4ZGE4ODFkYzZmYTk4YmYiLCJzY3JpcHRJZCI6ImxBeG9FYUt6TldXNE9ZR2QiLCJjb29raWVzRW5hYmxlZCI6dHJ1ZSwiY29uc2VudExldmVsIjoibm9uZSIsImFub255bWl6ZUlwIjpmYWxzZSwibGZDbGllbnRJZCI6IkxGMS4xLjA2N2YxNThmMGQ3OTgwYjQuMTc3NTYyODM4MzMxMiIsImZvcmVpZ25Db29raWVzIjpbXSwicHJvcGVydGllcyI6eyJ2aWRlb1VybCI6Imh0dHBzOi8vdmltZW8uY29tLzEwMjc1MTE2MTEiLCJ2aWRlb1RpdGxlIjoiSXJpZGVzY2VudCBUZXh0dXJlIDE2eDkifSwiYXV0b1RyYWNraW5nRW5hYmxlZCI6dHJ1ZSwiYXV0b1RyYWNraW5nTW9kZSI6InNwYSJ9",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://f.vimeocdn.com/js_opt/modules/utils/vuid.min.js",
+        "resourceType": "script"
+      },
+      {
+        "url": "https://i.vimeocdn.com/video/1754772774-ea339a26e02d9dfe537a2e72fe59519db3e3d4e942f30c2ee20854a7c3fdf330-d?mw=1000&mh=1778&q=70",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://i.vimeocdn.com/video/1754772774-ea339a26e02d9dfe537a2e72fe59519db3e3d4e942f30c2ee20854a7c3fdf330-d?mw=80&q=85",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://tr-rc.lfeeder.com/?sid=lAxoEaKzNWW4OYGd&data=eyJnYVRyYWNraW5nSWRzIjpbIlVBLTE3MTU5Nzk5My0xIl0sImdhTWVhc3VyZW1lbnRJZHMiOlsiVUEtMTcxNTk3OTkzLTEiLCJHLVpRVjk2NlpGWDkiXSwiZ2FDbGllbnRJZHMiOlsiMTg4Mzg0NzMyOC4xNzc1NjI4MzgzIl0sImNvbnRleHQiOnsibGlicmFyeSI6eyJuYW1lIjoibGZ0cmFja2VyIiwidmVyc2lvbiI6IjIuNzAuMCJ9LCJwYWdlVXJsIjoiaHR0cHM6Ly9zb2x1Z2VuLmNvbS8iLCJwYWdlVGl0bGUiOiJIb21lIC0gTmV3IC0gU29sdWdlbiB8IFNvbHVnZW4iLCJyZWZlcnJlciI6IiJ9LCJldmVudCI6InZpZGVvLXN0YXJ0IiwiY2xpZW50RXZlbnRJZCI6IjhmYzMxZWNlOWY5ZWNkNzgiLCJzY3JpcHRJZCI6ImxBeG9FYUt6TldXNE9ZR2QiLCJjb29raWVzRW5hYmxlZCI6dHJ1ZSwiY29uc2VudExldmVsIjoibm9uZSIsImFub255bWl6ZUlwIjpmYWxzZSwibGZDbGllbnRJZCI6IkxGMS4xLjA2N2YxNThmMGQ3OTgwYjQuMTc3NTYyODM4MzMxMiIsImZvcmVpZ25Db29raWVzIjpbXSwicHJvcGVydGllcyI6eyJ2aWRlb1VybCI6Imh0dHBzOi8vdmltZW8uY29tLzg4NTI5OTg2OCIsInZpZGVvVGl0bGUiOiJTb2x1Z2VuIEhlcm8gMiBbTW9iaWxlXSJ9LCJhdXRvVHJhY2tpbmdFbmFibGVkIjp0cnVlLCJhdXRvVHJhY2tpbmdNb2RlIjoic3BhIn0=",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://i.vimeocdn.com/video/1947494288-77e1395a6b168799b289a6c0a5057ee59a281a725a09478d1d25b2df207134eb-d?mw=80&q=85",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://solugen.com/wp-content/themes/solugen/dist/app.css?v=1.0.113",
+        "resourceType": "stylesheet"
+      },
+      {
+        "url": "https://www.googletagmanager.com/gtag/js?id=UA-171597993-1",
+        "resourceType": "script"
+      },
+      {
+        "url": "https://player.vimeo.com/api/player.js",
+        "resourceType": "script"
+      },
+      {
+        "url": "https://wec-assets.terminus.services/c631a7bc-fbbc-4520-838b-9f090a869d24/t.js",
+        "resourceType": "script"
+      },
+      {
+        "url": "https://cdn.getsmartcontent.com/7XVHQ8CG.js",
+        "resourceType": "script"
+      },
+      {
+        "url": "https://solugen.com/wp-content/themes/solugen/static/img/s-molecule-black.png?v=1.0.113",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://solugen.com/wp-content/uploads/2024/05/Energy_Header-edit0-copy-1024x576.jpg",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://solugen.com/wp-content/uploads/2024/10/Biofuels-Header0-1024x576.jpg",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://solugen.com/wp-content/uploads/2024/05/Defense_Header_40-1024x576.jpg",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://solugen.com/wp-content/themes/solugen/static/videos/bioforge/png/Solugen_Forge_B03_00001.png",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://solugen.com/wp-content/uploads/2023/11/Metal-Catalysis-Cropped.jpg",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://solugen.com/wp-content/uploads/2023/11/Modularity-Cropped-scaled-1.jpg",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://solugen.com/wp-content/uploads/2023/11/Engineered-Enzymes-Cropped.png",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://solugen.com/wp-content/uploads/2023/11/Yield-Cropped.png",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://solugen.com/wp-content/uploads/2023/11/How-It-Works-Cropped-100x100-c-default.png",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://solugen.com/wp-content/uploads/2024/06/20240221_102758-2-100x100-c-default.jpg",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://solugen.com/wp-content/uploads/2024/04/Bioforge-Marshall-Blog-1000x0-c-default.jpg",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://solugen.com/wp-content/uploads/2023/12/Sasol.jpg.optimal-scaled-1000x0-c-default.jpg",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://solugen.com/wp-content/uploads/2024/07/Kurita-Social-Announcement2-1000x0-c-default.jpg",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://solugen.com/wp-content/uploads/2023/11/Partner-With-Us-Cropped-100x100-c-default.png",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://solugen.com/wp-content/uploads/2023/11/Explore-Careers-Cropped-100x100-c-default.png",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://solugen.com/wp-content/uploads/2023/11/Read-the-Latest-Cropped-100x100-c-default.png",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://solugen.com/wp-content/uploads/2023/11/Newsletter.jpg",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://solugen.com/wp-content/uploads/2023/11/S_Molecule_Primary.png",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://solugen.com/wp-content/uploads/2023/11/Apply-Cropped-100x100-c-default.png",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://solugen.com/wp-content/uploads/2023/11/Contact-Cropped-100x100-c-default.png",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://solugen.com/wp-content/uploads/2024/04/230620-SOLUGEN-NEW-LABS-0717-600x0-c-default.jpg",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://solugen.com/wp-content/uploads/2024/04/210812-SOLUGEN-HOUSTON-0324-600x0-c-default.jpg",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://solugen.com/wp-content/uploads/2024/04/210812-SOLUGEN-HOUSTON-1372-600x0-c-default.jpg",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://solugen.com/wp-content/uploads/2024/04/230620-SOLUGEN-NEW-LABS-0539-600x0-c-default.jpg",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://solugen.com/wp-content/themes/solugen/dist/vendor.js?ver=1.0.113",
+        "resourceType": "script"
+      },
+      {
+        "url": "https://solugen.com/wp-content/themes/solugen/dist/app.js?ver=1.0.113",
+        "resourceType": "script"
+      },
+      {
+        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-NCJKNQT2",
+        "resourceType": "script"
+      },
+      {
+        "url": "https://www.googletagmanager.com/gtag/js?id=G-ZQV966ZFX9&cx=c&gtm=4e6461",
+        "resourceType": "script"
+      },
+      {
+        "url": "https://www.google-analytics.com/analytics.js",
+        "resourceType": "script"
+      },
+      {
+        "url": "https://wec-assets.terminus.services/c631a7bc-fbbc-4520-838b-9f090a869d24/t.gif?d=39f60d47-31f6-4e32-8dfa-a79152dbd866&s=fc95eb40-534c-4bf9-af99-c894361da6ea&p=https%3A%2F%2Fsolugen.com%2F&cb=1775628388681&t=Home%20-%20New%20-%20Solugen%20%7C%20Solugen&r=https%3A%2F%2Fsolugen.com%2F&e=page_viewed&u=7fd7cee5-11af-4560-bb68-50316c23bfe9-1775628388681",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://solugen.com/wp-content/themes/solugen/dist/fonts/GT-America-Standard-Regular.woff2",
+        "resourceType": "font"
+      },
+      {
+        "url": "https://solugen.com/wp-content/themes/solugen/dist/fonts/GT-America-Standard-Medium.woff2",
+        "resourceType": "font"
+      },
+      {
+        "url": "https://solugen.com/wp-content/themes/solugen/dist/fonts/GT-Zirkon-Regular.woff2",
+        "resourceType": "font"
+      },
+      {
+        "url": "https://sc.lfeeder.com/lftracker_v1_lAxoEaKzNWW4OYGd.js",
+        "resourceType": "script"
+      },
+      {
+        "url": "https://s3-us-west-2.amazonaws.com/b2bjsstore/b/YE63P0H9Y0OW/reb2b.js.gz",
+        "resourceType": "script"
+      },
+      {
+        "url": "https://snap.licdn.com/li.lms-analytics/insight.min.js",
+        "resourceType": "script"
+      },
+      {
+        "url": "https://solugen.com/wp-content/uploads/2024/05/Homepage-Mobile000.jpg",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://tr-rc.lfeeder.com/?sid=lAxoEaKzNWW4OYGd&data=eyJnYVRyYWNraW5nSWRzIjpbIlVBLTE3MTU5Nzk5My0xIl0sImdhTWVhc3VyZW1lbnRJZHMiOlsiVUEtMTcxNTk3OTkzLTEiLCJHLVpRVjk2NlpGWDkiXSwiZ2FDbGllbnRJZHMiOlsiMTg4Mzg0NzMyOC4xNzc1NjI4MzgzIl0sImNvbnRleHQiOnsibGlicmFyeSI6eyJuYW1lIjoibGZ0cmFja2VyIiwidmVyc2lvbiI6IjIuNzAuMCJ9LCJwYWdlVXJsIjoiaHR0cHM6Ly9zb2x1Z2VuLmNvbS8iLCJwYWdlVGl0bGUiOiJIb21lIC0gTmV3IC0gU29sdWdlbiB8IFNvbHVnZW4iLCJyZWZlcnJlciI6Imh0dHBzOi8vc29sdWdlbi5jb20vIn0sImV2ZW50IjoidHJhY2tpbmctZXZlbnQiLCJjbGllbnRFdmVudElkIjoiY2NjOTk0NDNhNzlkNDVlMiIsInNjcmlwdElkIjoibEF4b0VhS3pOV1c0T1lHZCIsImNvb2tpZXNFbmFibGVkIjp0cnVlLCJjb25zZW50TGV2ZWwiOiJub25lIiwiYW5vbnltaXplSXAiOmZhbHNlLCJsZkNsaWVudElkIjoiTEYxLjEuMDY3ZjE1OGYwZDc5ODBiNC4xNzc1NjI4MzgzMzEyIiwiZm9yZWlnbkNvb2tpZXMiOltdLCJwcm9wZXJ0aWVzIjp7fSwiYXV0b1RyYWNraW5nRW5hYmxlZCI6dHJ1ZSwiYXV0b1RyYWNraW5nTW9kZSI6InNwYSJ9",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://px.ads.linkedin.com/collect?v=2&fmt=js&pid=5045916&time=1775628388726&url=https%3A%2F%2Fsolugen.com%2F",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://px4.ads.linkedin.com/collect?v=2&fmt=js&pid=5045916&time=1775628388726&url=https%3A%2F%2Fsolugen.com%2F&e_ipv6=AQJBteFLsOcktAAAAZ1rswoCCiAEAJQ_rUHJ39RFF3YMFaiWKInwcjy8j2yoz4qIjy9dRqioGHXHDp5Yb3PthmttJLFnF2_W",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://f.vimeocdn.com/p/4.46.37/js/player.module.js",
+        "resourceType": "script"
+      },
+      {
+        "url": "https://f.vimeocdn.com/p/4.46.37/js/vendor.module.js",
+        "resourceType": "script"
+      },
+      {
+        "url": "https://f.vimeocdn.com/p/4.46.37/css/player.css",
+        "resourceType": "stylesheet"
+      },
+      {
+        "url": "https://f.vimeocdn.com/p/4.46.37/js/player.module.js",
+        "resourceType": "script"
+      },
+      {
+        "url": "https://f.vimeocdn.com/p/4.46.37/js/vendor.module.js",
+        "resourceType": "script"
+      },
+      {
+        "url": "https://f.vimeocdn.com/p/4.46.37/css/player.css",
+        "resourceType": "stylesheet"
+      },
+      {
+        "url": "https://f.vimeocdn.com/js_opt/modules/utils/vuid.min.js",
+        "resourceType": "script"
+      },
+      {
+        "url": "https://i.vimeocdn.com/video/1754772774-ea339a26e02d9dfe537a2e72fe59519db3e3d4e942f30c2ee20854a7c3fdf330-d?mw=1000&mh=1778&q=70",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://f.vimeocdn.com/js_opt/modules/utils/vuid.min.js",
+        "resourceType": "script"
+      },
+      {
+        "url": "https://i.vimeocdn.com/video/1947494288-77e1395a6b168799b289a6c0a5057ee59a281a725a09478d1d25b2df207134eb-d?mw=3000&mh=1688&q=70",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://i.vimeocdn.com/video/1754772774-ea339a26e02d9dfe537a2e72fe59519db3e3d4e942f30c2ee20854a7c3fdf330-d?mw=80&q=85",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://tr-rc.lfeeder.com/?sid=lAxoEaKzNWW4OYGd&data=eyJnYVRyYWNraW5nSWRzIjpbIlVBLTE3MTU5Nzk5My0xIl0sImdhTWVhc3VyZW1lbnRJZHMiOlsiVUEtMTcxNTk3OTkzLTEiLCJHLVpRVjk2NlpGWDkiXSwiZ2FDbGllbnRJZHMiOlsiMTg4Mzg0NzMyOC4xNzc1NjI4MzgzIl0sImNvbnRleHQiOnsibGlicmFyeSI6eyJuYW1lIjoibGZ0cmFja2VyIiwidmVyc2lvbiI6IjIuNzAuMCJ9LCJwYWdlVXJsIjoiaHR0cHM6Ly9zb2x1Z2VuLmNvbS8iLCJwYWdlVGl0bGUiOiJIb21lIC0gTmV3IC0gU29sdWdlbiB8IFNvbHVnZW4iLCJyZWZlcnJlciI6Imh0dHBzOi8vc29sdWdlbi5jb20vIn0sImV2ZW50IjoidmlkZW8tc3RhcnQiLCJjbGllbnRFdmVudElkIjoiOTI3MjEwNGVmNWI4ZmIzNSIsInNjcmlwdElkIjoibEF4b0VhS3pOV1c0T1lHZCIsImNvb2tpZXNFbmFibGVkIjp0cnVlLCJjb25zZW50TGV2ZWwiOiJub25lIiwiYW5vbnltaXplSXAiOmZhbHNlLCJsZkNsaWVudElkIjoiTEYxLjEuMDY3ZjE1OGYwZDc5ODBiNC4xNzc1NjI4MzgzMzEyIiwiZm9yZWlnbkNvb2tpZXMiOltdLCJwcm9wZXJ0aWVzIjp7InZpZGVvVXJsIjoiaHR0cHM6Ly92aW1lby5jb20vODg1Mjk5ODY4IiwidmlkZW9UaXRsZSI6IlNvbHVnZW4gSGVybyAyIFtNb2JpbGVdIn0sImF1dG9UcmFja2luZ0VuYWJsZWQiOnRydWUsImF1dG9UcmFja2luZ01vZGUiOiJzcGEifQ==",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://tr-rc.lfeeder.com/?sid=lAxoEaKzNWW4OYGd&data=eyJnYVRyYWNraW5nSWRzIjpbIlVBLTE3MTU5Nzk5My0xIl0sImdhTWVhc3VyZW1lbnRJZHMiOlsiVUEtMTcxNTk3OTkzLTEiLCJHLVpRVjk2NlpGWDkiXSwiZ2FDbGllbnRJZHMiOlsiMTg4Mzg0NzMyOC4xNzc1NjI4MzgzIl0sImNvbnRleHQiOnsibGlicmFyeSI6eyJuYW1lIjoibGZ0cmFja2VyIiwidmVyc2lvbiI6IjIuNzAuMCJ9LCJwYWdlVXJsIjoiaHR0cHM6Ly9zb2x1Z2VuLmNvbS8iLCJwYWdlVGl0bGUiOiJIb21lIC0gTmV3IC0gU29sdWdlbiB8IFNvbHVnZW4iLCJyZWZlcnJlciI6Imh0dHBzOi8vc29sdWdlbi5jb20vIn0sImV2ZW50IjoidmlkZW8tc3RhcnQiLCJjbGllbnRFdmVudElkIjoiZDk0M2IyMGFiOTc5Yzg4NyIsInNjcmlwdElkIjoibEF4b0VhS3pOV1c0T1lHZCIsImNvb2tpZXNFbmFibGVkIjp0cnVlLCJjb25zZW50TGV2ZWwiOiJub25lIiwiYW5vbnltaXplSXAiOmZhbHNlLCJsZkNsaWVudElkIjoiTEYxLjEuMDY3ZjE1OGYwZDc5ODBiNC4xNzc1NjI4MzgzMzEyIiwiZm9yZWlnbkNvb2tpZXMiOltdLCJwcm9wZXJ0aWVzIjp7InZpZGVvVXJsIjoiaHR0cHM6Ly92aW1lby5jb20vMTAyNzUxMTYxMSIsInZpZGVvVGl0bGUiOiJJcmlkZXNjZW50IFRleHR1cmUgMTZ4OSJ9LCJhdXRvVHJhY2tpbmdFbmFibGVkIjp0cnVlLCJhdXRvVHJhY2tpbmdNb2RlIjoic3BhIn0=",
+        "resourceType": "image"
+      },
+      {
+        "url": "https://i.vimeocdn.com/video/1947494288-77e1395a6b168799b289a6c0a5057ee59a281a725a09478d1d25b2df207134eb-d?mw=80&q=85",
+        "resourceType": "image"
+      }
+    ]
+  }
+}
