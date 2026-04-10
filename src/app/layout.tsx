@@ -27,11 +27,11 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${inter.variable} ${outfit.variable} ${geistMono.variable} h-full overflow-x-hidden antialiased`}
+      className={`${inter.variable} ${outfit.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="flex min-h-full flex-col overflow-x-hidden">
+      <body className="flex min-h-full flex-col">
         <AppProviders>
-          <div className="min-w-0 overflow-x-hidden">
+          <div className="min-w-0">
             {children}
             <CookieBanner />
           </div>
