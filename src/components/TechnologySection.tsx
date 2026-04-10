@@ -170,7 +170,7 @@ export function TechnologySection({ className }: { className?: string }) {
             <div className="grid w-full max-w-full items-center gap-10 lg:grid-cols-[220px_minmax(0,1fr)_220px]">
               {/* Left sphere */}
               <div className="flex flex-col items-center justify-center gap-4">
-                <div className="relative h-[300px] w-[300px] bg-transparent sm:h-[336px] sm:w-[336px]">
+                <div className="relative h-[210px] w-[210px] bg-transparent sm:h-[336px] sm:w-[336px]">
                   <div className="pointer-events-none absolute left-1/2 top-[86%] h-10 w-52 -translate-x-1/2 rounded-full bg-black/30 blur-xl sm:h-12 sm:w-60" />
                   <div className="pointer-events-none absolute left-1/2 top-[89%] h-7 w-40 -translate-x-1/2 rounded-full bg-black/35 blur-md sm:h-8 sm:w-46" />
                   <Image
@@ -196,10 +196,10 @@ export function TechnologySection({ className }: { className?: string }) {
 
                 {/* Mobile/Tablet: vertical flow (no horizontal scroll) */}
                 <div className="relative lg:hidden">
-                  <div className="pointer-events-none absolute left-6 top-0 h-full w-px bg-foreground/12" />
+                  <div className="pointer-events-none absolute left-1/2 top-0 h-full w-px -translate-x-1/2 bg-foreground/12" />
                   <div className="grid gap-5">
                     {nodes.map((n) => (
-                      <div key={n.stepNumber} className="relative flex items-start gap-4">
+                      <div key={n.stepNumber} className="relative flex flex-col items-center gap-2 text-center">
                         <div
                           className={cn(
                             "relative z-10 flex h-12 w-12 items-center justify-center",
@@ -216,8 +216,8 @@ export function TechnologySection({ className }: { className?: string }) {
                           </span>
                         </div>
 
-                        <div className="pt-1">
-                          <div className="text-[12px] font-medium leading-snug tracking-[-0.01em] text-foreground/80 whitespace-pre-line">
+                        <div className="max-w-[90%] pt-1">
+                          <div className="whitespace-pre-line text-[12px] font-medium leading-snug tracking-[-0.01em] text-foreground/80">
                             {n.label}
                           </div>
                           {n.detail ? (
@@ -277,7 +277,7 @@ export function TechnologySection({ className }: { className?: string }) {
 
               {/* Right sphere */}
               <div className="flex flex-col items-center justify-center gap-4">
-                <div className="relative h-[300px] w-[300px] bg-transparent sm:h-[336px] sm:w-[336px]">
+                <div className="relative h-[210px] w-[210px] bg-transparent sm:h-[336px] sm:w-[336px]">
                   <div className="pointer-events-none absolute left-1/2 top-[86%] h-10 w-52 -translate-x-1/2 rounded-full bg-black/30 blur-xl sm:h-12 sm:w-60" />
                   <div className="pointer-events-none absolute left-1/2 top-[89%] h-7 w-40 -translate-x-1/2 rounded-full bg-black/35 blur-md sm:h-8 sm:w-46" />
                   <Image
