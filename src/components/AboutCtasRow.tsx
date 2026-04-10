@@ -13,27 +13,16 @@ const actions: readonly { label: string; inquiry: ContactInquiryId }[] = [
 
 export function AboutCtasRow({ className }: { className?: string }) {
   const { openContactModal } = useContactModal();
-  const mobileActions = actions.slice(0, 3);
 
   return (
     <div className={cn("w-full", className)}>
-      <div className="mx-auto grid w-full max-w-4xl grid-cols-1 gap-2 md:grid-cols-2 lg:grid-cols-4 lg:gap-4">
-        {mobileActions.map((a) => (
-          <button
-            key={a.label}
-            type="button"
-            onClick={() => openContactModal(a.inquiry)}
-            className="inline-flex h-8 w-full items-center justify-center rounded-full border border-white/35 px-3 text-center text-[9px] font-medium uppercase leading-tight tracking-[0.14em] text-white/90 transition-colors hover:border-white/60 hover:text-white focus:outline-none focus:ring-2 focus:ring-white/50 md:hidden"
-          >
-            <span>{a.label}</span>
-          </button>
-        ))}
+      <div className="mx-auto flex w-full max-w-4xl flex-col gap-2 md:grid md:grid-cols-2 lg:grid-cols-4 lg:gap-4">
         {actions.map((a) => (
           <button
             key={a.label}
             type="button"
             onClick={() => openContactModal(a.inquiry)}
-            className="hidden h-10 w-full items-center justify-center rounded-full border border-white/35 px-4 text-center text-[10px] font-medium uppercase leading-tight tracking-[0.14em] text-white/90 transition-colors hover:border-white/60 hover:text-white focus:outline-none focus:ring-2 focus:ring-white/50 md:inline-flex"
+            className="inline-flex h-auto w-full items-center justify-center rounded-full border border-white/35 px-3 py-2 text-center text-[10px] font-medium uppercase leading-tight tracking-[0.14em] text-white/90 transition-colors hover:border-white/60 hover:text-white focus:outline-none focus:ring-2 focus:ring-white/50 md:h-10 md:px-4 md:py-0"
           >
             <span>{a.label}</span>
           </button>
