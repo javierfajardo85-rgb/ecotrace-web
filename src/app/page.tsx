@@ -90,7 +90,7 @@ export default function Home() {
         <PartnerLinksStrip />
         <section
           id="contacto"
-          className="relative w-full bg-[#010101] pt-[20vh] pb-16 md:h-[calc((min(100vw,2492px)*1535/2492)/2)] md:pt-0 md:pb-0"
+          className="relative w-full bg-black pt-[20vh] pb-16 md:h-[calc((min(100vw,2492px)*1535/2492)/2)] md:pt-0 md:pb-0"
         >
           <div className="mx-auto flex h-full w-full max-w-6xl flex-col items-center justify-start px-6 sm:px-12 md:pt-8">
             <p className="text-center text-[11px] font-medium uppercase tracking-[0.18em] text-white/70">

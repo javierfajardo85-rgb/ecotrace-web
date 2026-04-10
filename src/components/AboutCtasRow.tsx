@@ -22,7 +22,7 @@ export function AboutCtasRow({ className }: { className?: string }) {
             key={a.label}
             type="button"
             onClick={() => openContactModal(a.inquiry)}
-            className="inline-flex h-auto w-full items-center justify-center rounded-full border border-white/35 px-3 py-2 text-center text-[10px] font-medium uppercase leading-tight tracking-[0.14em] text-white/90 transition-colors hover:border-white/60 hover:text-white focus:outline-none focus:ring-2 focus:ring-white/50 md:h-10 md:px-4 md:py-0"
+            className="mx-auto inline-flex h-auto w-[65%] items-center justify-center rounded-full border border-white/35 px-3 py-2 text-center text-[10px] font-medium uppercase leading-tight tracking-[0.14em] text-white/90 transition-colors hover:border-white/60 hover:text-white focus:outline-none focus:ring-2 focus:ring-white/50 md:mx-0 md:h-10 md:w-full md:px-4 md:py-0"
           >
             <span>{a.label}</span>
           </button>
