@@ -52,7 +52,9 @@ export default function NuestrosMercadosPage() {
     <main className="min-h-screen bg-background text-foreground">
       <HeaderNav />
       {/* Hero with cloud video as the single background source on mobile. */}
-      <header className="relative h-[62vh] min-h-[420px] overflow-hidden bg-black">
+      <header
+        className="relative h-[62vh] min-h-[420px] overflow-hidden bg-white bg-[url('/images/engine-digital-carbon-cloud.png')] bg-cover bg-center"
+      >
         <video
           className="absolute inset-0 z-0 h-full w-full object-cover"
           autoPlay
