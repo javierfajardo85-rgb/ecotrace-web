@@ -22,14 +22,14 @@ export function HeroPageLead({ className }: HeroPageLeadProps) {
          * the hero is taller than the viewport, but its visual layer is sticky (h-screen).
          * The next section can slide over it while the header stays fixed.
          */
-        "relative w-full overflow-x-hidden bg-background text-foreground",
+        "relative w-full overflow-x-hidden bg-background text-foreground md:overflow-visible",
         className,
       )}
     >
       {/* Scroll runway (mobile-first with svh to avoid Safari viewport jumps). */}
-      <div className="relative min-h-[250svh] sm:min-h-[270svh] md:min-h-[340vh]">
+      <div className="relative min-h-[280svh] sm:min-h-[300svh] md:min-h-[340vh]">
         {/* Sticky visual layer */}
-        <div className="sticky top-0 h-[100svh] overflow-hidden">
+        <div className="sticky top-0 h-[100lvh] overflow-hidden md:h-[100svh]">
           {/* Liquid background (EcoTrace x Solugen-like) */}
           <div className="absolute inset-0">
             {/* Base paper */}
@@ -61,7 +61,7 @@ export function HeroPageLead({ className }: HeroPageLeadProps) {
             <div className="absolute inset-0 opacity-[0.22] [background-image:linear-gradient(to_right,rgba(17,17,17,0.10)_1px,transparent_1px),linear-gradient(to_bottom,rgba(17,17,17,0.08)_1px,transparent_1px)] [background-size:96px_96px]" />
           </div>
 
-          <div className="relative flex h-[100svh] w-full items-center justify-center px-4 sm:px-8">
+          <div className="relative flex h-[100lvh] w-full items-center justify-center px-4 sm:px-8 md:h-[100svh]">
             <div className="mx-auto flex w-full max-w-7xl flex-col items-center justify-center text-center">
               <h1 className="mx-auto max-w-[min(92vw,1200px)] text-center font-heading text-[clamp(30px,9vw,76px)] font-light leading-[1.08] tracking-[0.01em] text-[#161616] [text-shadow:0_1px_0_rgba(255,255,255,0.48)]">
                 <span className="block">
