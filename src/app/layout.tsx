@@ -9,8 +9,10 @@ export const metadata: Metadata = {
   description: "Advanced autonomous scientific traceability platform.",
   manifest: "/favicon/site.webmanifest",
   icons: {
-    icon: "/icon.png",
-    shortcut: "/favicon.ico",
+    icon: [
+      { url: "/icon.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicon.ico", sizes: "any" },
+    ],
     apple: "/apple-icon.png",
   },
 };
