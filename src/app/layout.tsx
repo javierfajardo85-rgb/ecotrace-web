@@ -7,9 +7,15 @@ import { geistMono, inter, outfit } from "@/lib/fonts";
 export const metadata: Metadata = {
   title: "EcoTrace Green Solutions Ltd",
   description: "Advanced autonomous scientific traceability platform.",
+  manifest: "/favicon/site.webmanifest",
   icons: {
-    icon: [{ url: "/favicon.png?v=1" }, { url: "/icon.png?v=1" }],
-    apple: [{ url: "/apple-touch-icon.png?v=1" }],
+    icon: [
+      { url: "/icon.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicon/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+    ],
+    shortcut: [{ url: "/favicon.ico" }],
+    apple: [{ url: "/apple-icon.png", sizes: "180x180", type: "image/png" }],
   },
 };
 
