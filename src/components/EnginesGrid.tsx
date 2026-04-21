@@ -22,27 +22,27 @@ type Engine = {
 const engines: Engine[] = [
   {
     tag: "01",
-    title: "Gasoil-Audit (Logistics)",
+    title: "Road-Logistics (Core Ω)",
     description:
-      "We audit fuel invoices to meet 'Net Zero' targets required by major logistics operators.",
+      "Deterministic validation for heavy goods vehicles (HGV) and last-mile fleets. Our PINN-based inference resolves fuel consumption and load factors with a sub-1% error margin.",
     icon: Fuel,
     imageSrc: "/images/engine-gasoil-audit-sphere.png",
     imageAlt: "Gasoil carbon footprint audit visual",
   },
   {
     tag: "02",
-    title: "Electro-Cert (Industrial)",
+    title: "Rail-Infrastructure (Future-State)",
     description:
-      "Clean energy certification for exports and compliance with the CBAM carbon tariff.",
+      "High-precision telemetry processing for rail freight. Anchoring neural network architectures to the physical constraints of rail transport for autonomous Scope 3 reporting",
     icon: Factory,
     imageSrc: "/images/engine-electro-cert-sphere.png",
     imageAlt: "Electro-Cert clean energy certification visual",
   },
   {
     tag: "03",
-    title: "Water-Print (Food)",
+    title: "Maritime-Vector (Expansion)",
     description:
-      "Water footprint and water stress measurement to meet the requirements of major supermarket chains.",
+      "Advanced technical simulation for naval logistics. Expanding the Omega (Ω) Engine to maritime telemetry to validate emission integrity in global trade corridors.",
     icon: Droplets,
     imageSrc: "/images/engine-water-print-sphere.png",
     imageAlt: "Water-Print water footprint verification visual",
