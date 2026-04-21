@@ -1,3 +1,4 @@
+import { redirect } from "next/navigation";
 import { HeaderNav } from "@/components/HeaderNav";
 import { FloatingMarketSphere } from "@/components/FloatingMarketSphere";
 
@@ -48,6 +49,8 @@ const markets = [
 ] as const;
 
 export default function NuestrosMercadosPage() {
+  redirect("/");
+
   return (
     <main className="min-h-screen bg-background text-foreground">
       <HeaderNav />

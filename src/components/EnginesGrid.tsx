@@ -99,24 +99,28 @@ export function EnginesGrid({ className }: { className?: string }) {
       <div className="mx-auto max-w-6xl px-4 pb-16 pt-4 sm:px-6 sm:pb-20 sm:pt-6">
         <div className="mx-auto max-w-3xl text-center">
           <p className="text-xs font-medium uppercase tracking-[0.14em] text-muted-foreground">
-            MULTI-VECTOR VALIDATION INFRASTRUCTURE (SCVE)
+            SCIENTIFIC CARBON VALIDATION ENGINE (SCVE)
           </p>
           <h2 className="mt-3 font-heading text-[clamp(16px,3.2vw,36px)] leading-tight tracking-[-0.03em]">
             <span className="block text-center">
-              A modular architecture engineered
-            </span>
-            <span className="block text-center">
-              for the standardization and certification
-            </span>
-            <span className="block text-center">
-              of physical evidence on a global scale.
+              The proprietary R&amp;D infrastructure for the deterministic validation of
+              high-dimensional physical datasets
             </span>
           </h2>
           <p className="mt-4 text-base leading-relaxed text-muted-foreground sm:text-lg">
-            EcoTrace is not a calculator; it is a forensic validation engine. Through Algorithm Ω,
-            our infrastructure processes unstructured data from multiple industrial vectors,
-            transforming heterogeneous physical evidence into auditable data assets in compliance
-            with international standards (SDR, CSRD, GHG Protocol).
+            Exactamente, Javi! Tienes toda la razón. La coherencia debe ser total. Si en el
+            Business Plan (BP), en el Roadmap y en el Whitepaper hemos definido el SCVE como el
+            &quot;framework&quot; o la &quot;infraestructura&quot; que contiene al motor Omega (Ω),
+            en la web tiene que aparecer igual. Para que no haya ni una sola grieta entre la web y
+            el BP, la descripción del SCVE debería ser esta (que es la que hemos blindado para
+            HMRC): SCIENTIFIC CARBON VALIDATION ENGINE (SCVE) The proprietary R&amp;D
+            infrastructure for the deterministic validation of high-dimensional physical datasets.
+            EcoTrace is not a reporting tool; it is a forensic validation engine. Through the Omega
+            (Ω) architecture, the SCVE infrastructure processes unstructured telemetry from multiple
+            industrial vectors, resolving complex physical variables through PINN-based inference.
+            We transform heterogeneous industrial data into high-integrity technical assets,
+            providing the scientific foundation required for alignment with international frameworks
+            (ISO 14083, CSRD, GHG Protocol).
           </p>
         </div>
 
@@ -158,14 +162,7 @@ export function EnginesGrid({ className }: { className?: string }) {
           ))}
         </div>
 
-        <div className="mt-12 flex justify-center md:mt-14">
-          <a
-            href="/nuestros-mercados"
-            className="inline-flex items-center justify-center rounded-full border border-border bg-card px-6 py-3 text-xs font-medium uppercase tracking-[0.14em] text-foreground/80 shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:bg-background hover:text-foreground hover:shadow-md focus:outline-none focus:ring-2 focus:ring-ring"
-          >
-            View All
-          </a>
-        </div>
+        
       </div>
     </section>
   );
