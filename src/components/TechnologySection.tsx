@@ -69,12 +69,15 @@ export function TechnologySection({ className }: { className?: string }) {
             Technology
           </p>
           <h2 className="mt-3 font-heading text-3xl leading-tight tracking-[-0.03em] sm:text-4xl">
-            The Algorithm Ω
+            The Omega (Ω) Engine
           </h2>
           <p className="mt-4 text-base leading-relaxed text-muted-foreground sm:text-lg">
-            Our technology automates the data chain of custody from consumption extraction to
-            final certification. Through proprietary validation nodes, we deliver a definitive
-            technical response that allows companies to act with the backing of auditable
+            Our architecture bridges the gap between raw industrial telemetry and deterministic
+            carbon intelligence. By integrating Physics-Informed Neural Networks (PINNs), the
+            Omega (Ω) Engine validates energy consumption through the fundamental laws of
+            thermodynamics, purging statistical noise and ensuring data integrity. Through our
+            proprietary validation nodes, we deliver a high-precision technical framework that
+            enables global logistics to operate with the backing of auditable, physics-based
             evidence at all times.
           </p>
         </div>

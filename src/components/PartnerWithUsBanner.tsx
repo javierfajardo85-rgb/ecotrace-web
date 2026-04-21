@@ -28,9 +28,9 @@ export function PartnerWithUsBanner({ className }: { className?: string }) {
         {/* Content stays centered, background stays full-width */}
         <div className="relative mx-auto flex min-h-[100svh] w-full max-w-6xl flex-col items-center justify-center px-6 py-24 text-center sm:px-12 sm:py-32">
           <p className="mx-auto max-w-4xl font-heading text-[32px] leading-snug tracking-[-0.02em] text-white sm:text-[48px]">
-            We transform the most demanding challenges into automated traceability solutions,
-            putting the technical answers our clients need into their hands. We are here to solve
-            today’s problems and, together, anticipate what tomorrow will bring
+            We resolve complex environmental uncertainties through deterministic engineering,
+            providing the high-precision validation that global logistics demands. We are building
+            the foundational architecture for the next era of carbon intelligence
           </p>
         </div>
       </div>
