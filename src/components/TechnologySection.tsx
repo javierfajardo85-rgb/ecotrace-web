@@ -1,9 +1,5 @@
- "use client";
-
-import * as React from "react";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
-import { RoadLogisticsModal } from "@/components/RoadLogisticsModal";
 
 const veracityScore = 98;
 const carbonIntensity = 12;
@@ -65,20 +61,6 @@ const nodes: Node[] = [
 ];
 
 export function TechnologySection({ className }: { className?: string }) {
-  const [isRoadModalOpen, setIsRoadModalOpen] = React.useState(false);
-  const [roadModalOrigin, setRoadModalOrigin] = React.useState<{ x: number; y: number } | null>(
-    null,
-  );
-
-  function openRoadModal(e: React.MouseEvent<HTMLButtonElement>) {
-    const rect = e.currentTarget.getBoundingClientRect();
-    setRoadModalOrigin({
-      x: rect.left + rect.width / 2,
-      y: rect.top + rect.height / 2,
-    });
-    setIsRoadModalOpen(true);
-  }
-
   return (
     <section id="tecnologia" className={cn("bg-background text-foreground", className)}>
       <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20">
@@ -191,12 +173,7 @@ export function TechnologySection({ className }: { className?: string }) {
             <div className="grid w-full max-w-full items-center gap-10 lg:grid-cols-[220px_minmax(0,1fr)_220px]">
               {/* Left sphere */}
               <div className="flex flex-col items-center justify-center gap-4">
-                <button
-                  type="button"
-                  onClick={openRoadModal}
-                  className="group relative h-[147px] w-[147px] cursor-pointer bg-transparent text-left sm:h-[236px] sm:w-[236px]"
-                  aria-label="Open Road Logistics framework details"
-                >
+                <div className="relative h-[147px] w-[147px] bg-transparent sm:h-[236px] sm:w-[236px]">
                   <div className="pointer-events-none absolute left-1/2 top-[86%] h-10 w-52 -translate-x-1/2 rounded-full bg-black/30 blur-xl sm:h-12 sm:w-60" />
                   <div className="pointer-events-none absolute left-1/2 top-[89%] h-7 w-40 -translate-x-1/2 rounded-full bg-black/35 blur-md sm:h-8 sm:w-46" />
                   <Image
@@ -208,11 +185,11 @@ export function TechnologySection({ className }: { className?: string }) {
                     className="h-full w-full object-contain"
                   />
                   <div className="absolute inset-0 flex items-center justify-center px-6 text-center">
-                    <span className="font-heading text-[11px] font-medium tracking-[-0.02em] text-white/92 transition-opacity duration-200 group-hover:opacity-85">
+                    <span className="font-heading text-[11px] font-medium tracking-[-0.02em] text-white/92">
                       Physical Evidence
                     </span>
                   </div>
-                </button>
+                </div>
               </div>
 
               {/* Middle nodes */}
@@ -325,11 +302,6 @@ export function TechnologySection({ className }: { className?: string }) {
           </div>
         </div>
       </div>
-      <RoadLogisticsModal
-        isOpen={isRoadModalOpen}
-        onClose={() => setIsRoadModalOpen(false)}
-        origin={roadModalOrigin}
-      />
     </section>
   );
 }

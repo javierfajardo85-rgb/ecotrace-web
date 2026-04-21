@@ -1,3 +1,6 @@
+ "use client";
+
+import * as React from "react";
 import { cn } from "@/lib/utils";
 import type { LucideIcon } from "lucide-react";
 import {
@@ -9,6 +12,7 @@ import {
   Recycle,
 } from "lucide-react";
 import Image from "next/image";
+import { RoadLogisticsModal } from "@/components/RoadLogisticsModal";
 
 type Engine = {
   title: string;
@@ -78,6 +82,20 @@ const engines: Engine[] = [
 
 export function EnginesGrid({ className }: { className?: string }) {
   const previewEngines = engines.slice(0, 3);
+  const [isRoadModalOpen, setIsRoadModalOpen] = React.useState(false);
+  const [roadModalOrigin, setRoadModalOrigin] = React.useState<{ x: number; y: number } | null>(
+    null,
+  );
+
+  function handleEngineClick(engineTag: string, e: React.MouseEvent<HTMLDivElement>) {
+    if (engineTag !== "01") return;
+    const rect = e.currentTarget.getBoundingClientRect();
+    setRoadModalOrigin({
+      x: rect.left + rect.width / 2,
+      y: rect.top + rect.height / 2,
+    });
+    setIsRoadModalOpen(true);
+  }
 
   return (
     <section
@@ -122,6 +140,7 @@ export function EnginesGrid({ className }: { className?: string }) {
             <div
               key={engine.tag}
               className="group flex cursor-pointer flex-col text-center text-foreground"
+              onClick={(e) => handleEngineClick(engine.tag, e)}
             >
               {/* Floating sphere (no “window” container) */}
               <div className="relative mx-auto w-full max-w-[240px]">
@@ -157,6 +176,11 @@ export function EnginesGrid({ className }: { className?: string }) {
 
         
       </div>
+      <RoadLogisticsModal
+        isOpen={isRoadModalOpen}
+        onClose={() => setIsRoadModalOpen(false)}
+        origin={roadModalOrigin}
+      />
     </section>
   );
 }
