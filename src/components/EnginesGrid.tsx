@@ -13,6 +13,8 @@ import {
 } from "lucide-react";
 import Image from "next/image";
 import { RoadLogisticsModal } from "@/components/RoadLogisticsModal";
+import { RailInfrastructureModal } from "@/components/RailInfrastructureModal";
+import { MaritimeVectorModal } from "@/components/MaritimeVectorModal";
 
 type Engine = {
   title: string;
@@ -83,18 +85,38 @@ const engines: Engine[] = [
 export function EnginesGrid({ className }: { className?: string }) {
   const previewEngines = engines.slice(0, 3);
   const [isRoadModalOpen, setIsRoadModalOpen] = React.useState(false);
+  const [isRailModalOpen, setIsRailModalOpen] = React.useState(false);
+  const [isMaritimeModalOpen, setIsMaritimeModalOpen] = React.useState(false);
   const [roadModalOrigin, setRoadModalOrigin] = React.useState<{ x: number; y: number } | null>(
+    null,
+  );
+  const [railModalOrigin, setRailModalOrigin] = React.useState<{ x: number; y: number } | null>(
+    null,
+  );
+  const [maritimeModalOrigin, setMaritimeModalOrigin] = React.useState<{ x: number; y: number } | null>(
     null,
   );
 
   function handleEngineClick(engineTag: string, e: React.MouseEvent<HTMLDivElement>) {
-    if (engineTag !== "01") return;
     const rect = e.currentTarget.getBoundingClientRect();
-    setRoadModalOrigin({
+    const origin = {
       x: rect.left + rect.width / 2,
       y: rect.top + rect.height / 2,
-    });
-    setIsRoadModalOpen(true);
+    };
+    if (engineTag === "01") {
+      setRoadModalOrigin(origin);
+      setIsRoadModalOpen(true);
+      return;
+    }
+    if (engineTag === "02") {
+      setRailModalOrigin(origin);
+      setIsRailModalOpen(true);
+      return;
+    }
+    if (engineTag === "03") {
+      setMaritimeModalOrigin(origin);
+      setIsMaritimeModalOpen(true);
+    }
   }
 
   return (
@@ -180,6 +202,16 @@ export function EnginesGrid({ className }: { className?: string }) {
         isOpen={isRoadModalOpen}
         onClose={() => setIsRoadModalOpen(false)}
         origin={roadModalOrigin}
+      />
+      <RailInfrastructureModal
+        isOpen={isRailModalOpen}
+        onClose={() => setIsRailModalOpen(false)}
+        origin={railModalOrigin}
+      />
+      <MaritimeVectorModal
+        isOpen={isMaritimeModalOpen}
+        onClose={() => setIsMaritimeModalOpen(false)}
+        origin={maritimeModalOrigin}
       />
     </section>
   );
