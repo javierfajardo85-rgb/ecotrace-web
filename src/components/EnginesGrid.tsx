@@ -103,24 +103,17 @@ export function EnginesGrid({ className }: { className?: string }) {
           </p>
           <h2 className="mt-3 font-heading text-[clamp(16px,3.2vw,36px)] leading-tight tracking-[-0.03em]">
             <span className="block text-center">
-              The proprietary R&amp;D infrastructure for the deterministic validation of
-              high-dimensional physical datasets
+              The proprietary architecture engineered for the deterministic validation of
+              high-dimensional physical datasets on a global scale
             </span>
           </h2>
           <p className="mt-4 text-base leading-relaxed text-muted-foreground sm:text-lg">
-            Exactamente, Javi! Tienes toda la razón. La coherencia debe ser total. Si en el
-            Business Plan (BP), en el Roadmap y en el Whitepaper hemos definido el SCVE como el
-            &quot;framework&quot; o la &quot;infraestructura&quot; que contiene al motor Omega (Ω),
-            en la web tiene que aparecer igual. Para que no haya ni una sola grieta entre la web y
-            el BP, la descripción del SCVE debería ser esta (que es la que hemos blindado para
-            HMRC): SCIENTIFIC CARBON VALIDATION ENGINE (SCVE) The proprietary R&amp;D
-            infrastructure for the deterministic validation of high-dimensional physical datasets.
-            EcoTrace is not a reporting tool; it is a forensic validation engine. Through the Omega
-            (Ω) architecture, the SCVE infrastructure processes unstructured telemetry from multiple
-            industrial vectors, resolving complex physical variables through PINN-based inference.
-            We transform heterogeneous industrial data into high-integrity technical assets,
-            providing the scientific foundation required for alignment with international frameworks
-            (ISO 14083, CSRD, GHG Protocol).
+            EcoTrace is not a reporting tool; it is a Scientific Carbon Validation Engine.
+            Utilizing the Omega (Ω) architecture, our infrastructure processes unstructured
+            telemetry from multiple industrial vectors, resolving complex physical variables
+            through PINN-based inference. We transform heterogeneous industrial data into
+            high-integrity technical assets, providing the scientific foundation required for
+            alignment with international frameworks (ISO 14083, CSRD, GHG Protocol)
           </p>
         </div>
 

@@ -23,15 +23,19 @@ type ContactPayload = {
 };
 
 function pickRecipients(payload: ContactPayload) {
-  const subjectContext = `${payload.inquiry} ${payload.message}`.toLowerCase();
+  const inquiry = payload.inquiry.toLowerCase();
 
-  const isLegal = /(legal|privacy|gdpr|terms|cookie|compliance)/i.test(subjectContext);
-  if (isLegal) return [...LEGAL_RECIPIENTS];
+  const inquiryRecipientMap: Record<string, readonly string[]> = {
+    general: GENERAL_RECIPIENTS,
+    sales: GENERAL_RECIPIENTS,
+    demo: GENERAL_RECIPIENTS,
+    whitepaper: ADMIN_RECIPIENTS,
+    partnerships: ADMIN_RECIPIENTS,
+    legal: LEGAL_RECIPIENTS,
+    admin: ADMIN_RECIPIENTS,
+  };
 
-  const isAdmin = /(admin|invoice|billing|payment|account)/i.test(subjectContext);
-  if (isAdmin) return [...ADMIN_RECIPIENTS];
-
-  return [...GENERAL_RECIPIENTS];
+  return [...(inquiryRecipientMap[inquiry] ?? GENERAL_RECIPIENTS)];
 }
 
 function sanitize(value: string | undefined) {
