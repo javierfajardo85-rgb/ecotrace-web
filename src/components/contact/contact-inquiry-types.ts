@@ -11,9 +11,8 @@ export type ContactInquiryOption = {
 };
 
 export const CONTACT_INQUIRY_OPTIONS: readonly ContactInquiryOption[] = [
-  { id: "general", label: "General Contact" },
-  { id: "sales", label: "Contact Sales" },
-  { id: "whitepaper", label: "Technical Whitepaper" },
+  { id: "general", label: "General Inquiry" },
+  { id: "demo", label: "Alpha Access" },
+  { id: "whitepaper", label: "Whitepaper Access" },
   { id: "partnerships", label: "Strategic Partnerships" },
-  { id: "demo", label: "Request Demo" },
 ] as const;
