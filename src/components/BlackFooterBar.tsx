@@ -17,7 +17,7 @@ export function BlackFooterBar({ className }: { className?: string }) {
     <footer className={cn("relative w-full bg-black pt-[10vh] text-white md:pt-0", className)}>
       <div className="mx-auto flex w-full max-w-7xl flex-col items-center gap-8 px-6 pt-14 pb-10 text-center sm:px-12 md:py-10 lg:flex-row lg:items-center lg:justify-between lg:gap-6 lg:text-left">
         <div className="text-xs leading-relaxed text-white/80">
-            ©2026 EcoTrace Green Solutions. All rights reserved
+            © 2026 EcoTrace Green Technologies Ltd. All rights reserved. London, United Kingdom.
         </div>
 
         <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-xs text-white/80 lg:justify-start">

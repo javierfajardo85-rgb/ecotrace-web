@@ -5,8 +5,7 @@ import type { ContactInquiryId } from "@/components/contact/contact-inquiry-type
 import { cn } from "@/lib/utils";
 
 const actions: readonly { label: string; inquiry: ContactInquiryId }[] = [
-  { label: "Request Demo", inquiry: "demo" },
-  { label: "Contact Sales", inquiry: "sales" },
+  { label: "Alpha Access", inquiry: "demo" },
   { label: "Technical Whitepaper", inquiry: "whitepaper" },
   { label: "Strategic Partnerships", inquiry: "partnerships" },
 ];

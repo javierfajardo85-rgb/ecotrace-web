@@ -7,7 +7,6 @@ import { X } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
-import { BrandWordmark } from "@/components/BrandWordmark";
 import { cn } from "@/lib/utils";
 import {
   CONTACT_INQUIRY_OPTIONS,
@@ -244,9 +243,11 @@ export function ContactInquiryModal({
                   <div className="absolute inset-0 bg-black/25" />
                   <div className="absolute inset-0 flex items-center justify-center px-4 text-center">
                     <div className="flex flex-col items-center">
-                      <BrandWordmark className="text-3xl text-white drop-shadow-[0_6px_18px_rgba(0,0,0,0.35)]" />
+                      <span className="text-3xl font-light tracking-tight text-white drop-shadow-[0_6px_18px_rgba(0,0,0,0.35)]">
+                        EcoTrace
+                      </span>
                       <span className="mt-0.5 text-[6px] font-medium uppercase tracking-[0.22em] text-white/88">
-                        GREEN SOLUTIONS
+                        Green Technologies
                       </span>
                     </div>
                   </div>
