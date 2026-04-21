@@ -68,18 +68,14 @@ export function HeroPageLead({ className }: HeroPageLeadProps) {
                   <BrandWordmark className="text-[1em]" />
                   <span>:</span>
                 </span>
-                <span className="block">
-                  <span>Autonomous </span>
-                  <span className="font-semibold text-white">Scientific</span>
-                  <span> Traceability</span>
-                </span>
-                <span className="block">for Global Supply Chains</span>
+                <span className="block">Scientific Carbon Validation</span>
+                <span className="block">for Global Logistics</span>
               </h1>
               <p className="mx-auto mt-8 max-w-3xl text-center text-base font-light leading-relaxed text-gray-600 sm:mt-10 sm:text-lg">
-                Advancing the UK’s technical infrastructure for Scope 3 visibility. Through{" "}
-                <strong className="text-[1.08em] font-semibold text-foreground">Algorithm Ω</strong>
-                , we provide an R&amp;D-driven SaaS platform that automates the transition from
-                industrial data to verifiable, evidence-based environmental reporting.
+                Advancing the UK&apos;s Deep-Tech infrastructure for high-precision Scope 3
+                visibility. Powered by the Omega (Ω) Engine, we provide a proprietary PINN-based
+                architecture that transforms raw industrial telemetry into deterministic,
+                evidence-based environmental intelligence.
               </p>
 
               <div className="mt-8 flex flex-wrap justify-center gap-3 pb-10 sm:pb-0">
