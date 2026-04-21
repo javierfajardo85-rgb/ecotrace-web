@@ -16,8 +16,6 @@ type ContactPayload = {
   company?: string;
   jobTitle?: string;
   inquiry: string;
-  productVertical?: string;
-  industrySector?: string;
   productOfInterest?: string;
   message: string;
 };
@@ -76,8 +74,6 @@ export async function POST(request: Request) {
     company: sanitize(body.company),
     jobTitle: sanitize(body.jobTitle),
     inquiry: sanitize(body.inquiry),
-    productVertical: sanitize(body.productVertical),
-    industrySector: sanitize(body.industrySector),
     productOfInterest: sanitize(body.productOfInterest),
     message: sanitize(body.message),
   };
@@ -101,8 +97,6 @@ export async function POST(request: Request) {
     `Company: ${payload.company || "N/A"}`,
     `Job Title: ${payload.jobTitle || "N/A"}`,
     `Inquiry Type: ${payload.inquiry}`,
-    `Product Vertical: ${payload.productVertical || "N/A"}`,
-    `Industry Sector: ${payload.industrySector || "N/A"}`,
     `Product of Interest: ${payload.productOfInterest || "N/A"}`,
     "",
     "Message:",
@@ -125,8 +119,6 @@ export async function POST(request: Request) {
           <p><strong>Company:</strong> ${payload.company || "N/A"}</p>
           <p><strong>Job Title:</strong> ${payload.jobTitle || "N/A"}</p>
           <p><strong>Inquiry Type:</strong> ${payload.inquiry}</p>
-          <p><strong>Product Vertical:</strong> ${payload.productVertical || "N/A"}</p>
-          <p><strong>Industry Sector:</strong> ${payload.industrySector || "N/A"}</p>
           <p><strong>Product of Interest:</strong> ${payload.productOfInterest || "N/A"}</p>
           <hr style="margin: 16px 0;" />
           <p style="white-space: pre-line;"><strong>Message:</strong><br/>${payload.message}</p>

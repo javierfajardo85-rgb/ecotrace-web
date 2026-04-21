@@ -3,7 +3,7 @@
 import * as React from "react";
 import { createPortal } from "react-dom";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
-import { ChevronDown, X } from "lucide-react";
+import { X } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -25,148 +25,6 @@ const inputClass =
 const inputClassCompact =
   "w-full rounded-2xl border border-foreground/12 bg-white/45 px-4 py-2.5 text-sm text-foreground shadow-[inset_0_1px_0_rgba(255,255,255,0.65)] outline-none transition-[border-color,box-shadow] placeholder:text-foreground/35 focus:border-foreground/25 focus:ring-2 focus:ring-[#3b82f6]/25";
 
-type GlassSelectOption = {
-  value: string;
-  label: string;
-};
-
-function GlassSelect({
-  id,
-  label,
-  required,
-  placeholder,
-  value,
-  onChange,
-  options,
-  error,
-}: {
-  id: string;
-  label: string;
-  required?: boolean;
-  placeholder: string;
-  value: string | null;
-  onChange: (next: string) => void;
-  options: readonly GlassSelectOption[];
-  error?: string | null;
-}) {
-  const [open, setOpen] = React.useState(false);
-  const buttonRef = React.useRef<HTMLButtonElement | null>(null);
-  const listRef = React.useRef<HTMLDivElement | null>(null);
-
-  React.useEffect(() => {
-    if (!open) return;
-    function onKeyDown(e: KeyboardEvent) {
-      if (e.key === "Escape") {
-        e.preventDefault();
-        setOpen(false);
-        buttonRef.current?.focus();
-      }
-    }
-    document.addEventListener("keydown", onKeyDown);
-    return () => document.removeEventListener("keydown", onKeyDown);
-  }, [open]);
-
-  React.useEffect(() => {
-    if (!open) return;
-    function onPointerDown(e: PointerEvent) {
-      const t = e.target as Node | null;
-      if (!t) return;
-      if (buttonRef.current?.contains(t)) return;
-      if (listRef.current?.contains(t)) return;
-      setOpen(false);
-    }
-    document.addEventListener("pointerdown", onPointerDown);
-    return () => document.removeEventListener("pointerdown", onPointerDown);
-  }, [open]);
-
-  const selected = value ? options.find((o) => o.value === value) : null;
-
-  return (
-    <div className="relative">
-      <label
-        htmlFor={id}
-        className="mb-1.5 block text-xs font-medium text-foreground/70"
-      >
-        {label}{" "}
-        {required ? <span className="text-red-600">*</span> : null}
-      </label>
-      <button
-        ref={buttonRef}
-        id={id}
-        type="button"
-        aria-haspopup="listbox"
-        aria-expanded={open}
-        onClick={() => setOpen((v) => !v)}
-        className={cn(
-          "flex w-full items-center justify-between gap-3 rounded-2xl border border-foreground/12 bg-white/45 px-4 py-3 text-sm shadow-[inset_0_1px_0_rgba(255,255,255,0.65)] outline-none transition-[border-color,box-shadow,background-color] focus:border-foreground/25 focus:ring-2 focus:ring-[#3b82f6]/25",
-          error ? "border-red-500/40 focus:ring-red-500/20" : null,
-          selected ? "text-black" : "text-gray-400",
-        )}
-      >
-        <span className="truncate">
-          {selected ? selected.label : placeholder}
-        </span>
-        <ChevronDown
-          className={cn(
-            "h-4 w-4 shrink-0 text-foreground/45 transition-transform duration-200",
-            open && "rotate-180",
-          )}
-          aria-hidden
-        />
-      </button>
-
-      <AnimatePresence>
-        {open ? (
-          <motion.div
-            ref={listRef}
-            role="listbox"
-            aria-labelledby={id}
-            className={cn(
-              "absolute left-0 right-0 z-30 mt-2 overflow-hidden rounded-2xl border border-white/20",
-              "bg-white/78 shadow-[0_18px_55px_rgba(0,0,0,0.16),0_0_0_1px_rgba(255,255,255,0.10)_inset]",
-              "backdrop-blur-xl",
-            )}
-            initial={{ opacity: 0, y: -6, filter: "blur(10px)" }}
-            animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
-            exit={{ opacity: 0, y: -6, filter: "blur(10px)" }}
-            transition={{ duration: 0.18, ease: [0.22, 1, 0.36, 1] }}
-          >
-            <div className="max-h-56 overflow-auto p-1">
-              {options.map((opt) => {
-                const active = opt.value === value;
-                return (
-                  <button
-                    key={opt.value}
-                    type="button"
-                    role="option"
-                    aria-selected={active}
-                    className={cn(
-                      "flex w-full items-center justify-between rounded-xl px-3 py-2.5 text-left text-sm transition-colors",
-                      active
-                        ? "bg-foreground/6 text-foreground"
-                        : "text-foreground/85 hover:bg-foreground/5",
-                    )}
-                    onClick={() => {
-                      onChange(opt.value);
-                      setOpen(false);
-                      buttonRef.current?.focus();
-                    }}
-                  >
-                    <span className="truncate">{opt.label}</span>
-                  </button>
-                );
-              })}
-            </div>
-          </motion.div>
-        ) : null}
-      </AnimatePresence>
-      {error ? (
-        <p className="mt-1 text-[11px] font-medium text-red-600/90">{error}</p>
-      ) : null}
-    </div>
-  );
-}
-
 export function ContactInquiryModal({
   isOpen,
   onClose,
@@ -179,16 +37,6 @@ export function ContactInquiryModal({
   const [selectedId, setSelectedId] = React.useState<ContactInquiryId>(
     defaultInquiryId,
   );
-  const [productVertical, setProductVertical] = React.useState<string | null>(
-    null,
-  );
-  const [industrySector, setIndustrySector] = React.useState<string | null>(
-    null,
-  );
-  const [selectorErrors, setSelectorErrors] = React.useState<{
-    productVertical?: string;
-    industrySector?: string;
-  }>({});
   const [submitState, setSubmitState] = React.useState<"idle" | "submitting" | "success" | "error">(
     "idle",
   );
@@ -199,9 +47,6 @@ export function ContactInquiryModal({
   React.useEffect(() => {
     if (isOpen) {
       setSelectedId(defaultInquiryId);
-      setProductVertical(null);
-      setIndustrySector(null);
-      setSelectorErrors({});
       setSubmitState("idle");
       setSubmitFeedback("");
     }
@@ -261,15 +106,6 @@ export function ContactInquiryModal({
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    if (selectedId === "demo") {
-      const nextErrors: typeof selectorErrors = {};
-      if (!productVertical) nextErrors.productVertical = "Required";
-      if (!industrySector) nextErrors.industrySector = "Required";
-      if (Object.keys(nextErrors).length > 0) {
-        setSelectorErrors(nextErrors);
-        return;
-      }
-    }
 
     const form = e.currentTarget;
     const formData = new FormData(form);
@@ -290,9 +126,6 @@ export function ContactInquiryModal({
       setSubmitState("success");
       setSubmitFeedback("Message sent successfully. We will get back to you shortly.");
       form.reset();
-      setProductVertical(null);
-      setIndustrySector(null);
-      setSelectorErrors({});
     } catch (error) {
       const message =
         error instanceof Error ? error.message : "Unable to send message. Please try again.";
@@ -304,29 +137,9 @@ export function ContactInquiryModal({
   const needsPartnerExtras = selectedId === "partnerships";
   const needsDemoExtras = selectedId === "demo";
   const isWhitepaper = selectedId === "whitepaper";
-  const showSelectors = !isWhitepaper;
-  const selectorsRequired = needsDemoExtras;
   const compactQuestionnaire = needsPartnerExtras || needsDemoExtras;
   const compactTight = needsPartnerExtras; // partnerships still needs a bit more tightening to avoid scroll
   const activeInputClass = compactQuestionnaire ? inputClassCompact : inputClass;
-
-  const productVerticalOptions: readonly GlassSelectOption[] = [
-    { value: "fuels", label: "Fuels & Hydrocarbons" },
-    { value: "power", label: "Power & Energy" },
-    { value: "water", label: "Water Resources" },
-    { value: "waste", label: "Waste & Circular Flows" },
-    { value: "digital", label: "Digital & Carbon Assets" },
-    { value: "materials", label: "Industrial Materials" },
-  ];
-
-  const industrySectorOptions: readonly GlassSelectOption[] = [
-    { value: "logistics", label: "Logistics & Mobility" },
-    { value: "manufacturing", label: "Advanced Manufacturing" },
-    { value: "agrifood", label: "Agri-Food Systems" },
-    { value: "construction", label: "Infrastructure & Construction" },
-    { value: "cloud", label: "Cloud & Digital Infra" },
-    { value: "recovery", label: "Resource Recovery" },
-  ];
 
   const transition = reduceMotion
     ? { duration: 0.01 }
@@ -509,42 +322,6 @@ export function ContactInquiryModal({
                       </div>
                     </div>
 
-                    {showSelectors ? (
-                      <div
-                        className={cn(
-                          "grid sm:grid-cols-2",
-                          compactTight ? "gap-3" : compactQuestionnaire ? "gap-4" : "gap-5",
-                        )}
-                      >
-                        <GlassSelect
-                          id="contact-product-vertical"
-                          label="Product Vertical"
-                          required={selectorsRequired}
-                          placeholder="Select a product vertical"
-                          value={productVertical}
-                          onChange={(v) => {
-                            setProductVertical(v);
-                            setSelectorErrors((prev) => ({ ...prev, productVertical: undefined }));
-                          }}
-                          options={productVerticalOptions}
-                          error={selectorsRequired ? selectorErrors.productVertical ?? null : null}
-                        />
-                        <GlassSelect
-                          id="contact-industry-sector"
-                          label="Industry Sector"
-                          required={selectorsRequired}
-                          placeholder="Select an industry sector"
-                          value={industrySector}
-                          onChange={(v) => {
-                            setIndustrySector(v);
-                            setSelectorErrors((prev) => ({ ...prev, industrySector: undefined }));
-                          }}
-                          options={industrySectorOptions}
-                          error={selectorsRequired ? selectorErrors.industrySector ?? null : null}
-                        />
-                      </div>
-                    ) : null}
-
                     {(needsPartnerExtras || needsDemoExtras || isWhitepaper) ? (
                       <div
                         className={cn(
@@ -704,20 +481,6 @@ export function ContactInquiryModal({
                   </div>
 
                   <input type="hidden" name="inquiry" value={selectedId} />
-                  {showSelectors ? (
-                    <>
-                      <input
-                        type="hidden"
-                        name="productVertical"
-                        value={productVertical ?? ""}
-                      />
-                      <input
-                        type="hidden"
-                        name="industrySector"
-                        value={industrySector ?? ""}
-                      />
-                    </>
-                  ) : null}
 
                   <div className="flex justify-center pt-1">
                     <button

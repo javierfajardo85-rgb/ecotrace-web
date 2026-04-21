@@ -31,7 +31,7 @@ const engines: Engine[] = [
   },
   {
     tag: "02",
-    title: "Rail-Infrastructure (Future-State)",
+    title: "Rail-Infrastructure (Expansion)",
     description:
       "High-precision telemetry processing for rail freight. Anchoring neural network architectures to the physical constraints of rail transport for autonomous Scope 3 reporting",
     icon: Factory,

@@ -173,15 +173,15 @@ export function TechnologySection({ className }: { className?: string }) {
             <div className="grid w-full max-w-full items-center gap-10 lg:grid-cols-[220px_minmax(0,1fr)_220px]">
               {/* Left sphere */}
               <div className="flex flex-col items-center justify-center gap-4">
-                <div className="relative h-[210px] w-[210px] bg-transparent sm:h-[336px] sm:w-[336px]">
+                <div className="relative h-[147px] w-[147px] bg-transparent sm:h-[236px] sm:w-[236px]">
                   <div className="pointer-events-none absolute left-1/2 top-[86%] h-10 w-52 -translate-x-1/2 rounded-full bg-black/30 blur-xl sm:h-12 sm:w-60" />
                   <div className="pointer-events-none absolute left-1/2 top-[89%] h-7 w-40 -translate-x-1/2 rounded-full bg-black/35 blur-md sm:h-8 sm:w-46" />
                   <Image
                     src="/images/technology-end-sphere.png"
                     alt=""
-                    width={336}
-                    height={336}
-                    sizes="168px"
+                    width={236}
+                    height={236}
+                    sizes="118px"
                     className="h-full w-full object-contain"
                   />
                   <div className="absolute inset-0 flex items-center justify-center px-6 text-center">
@@ -280,15 +280,15 @@ export function TechnologySection({ className }: { className?: string }) {
 
               {/* Right sphere */}
               <div className="flex flex-col items-center justify-center gap-4">
-                <div className="relative h-[210px] w-[210px] bg-transparent sm:h-[336px] sm:w-[336px]">
+                <div className="relative h-[147px] w-[147px] bg-transparent sm:h-[236px] sm:w-[236px]">
                   <div className="pointer-events-none absolute left-1/2 top-[86%] h-10 w-52 -translate-x-1/2 rounded-full bg-black/30 blur-xl sm:h-12 sm:w-60" />
                   <div className="pointer-events-none absolute left-1/2 top-[89%] h-7 w-40 -translate-x-1/2 rounded-full bg-black/35 blur-md sm:h-8 sm:w-46" />
                   <Image
                     src="/images/technology-end-sphere.png"
                     alt=""
-                    width={336}
-                    height={336}
-                    sizes="168px"
+                    width={236}
+                    height={236}
+                    sizes="118px"
                     className="h-full w-full object-contain"
                   />
                   <div className="absolute inset-0 flex items-center justify-center px-6 text-center">
