@@ -43,43 +43,37 @@ type Milestone = {
   description: string;
 };
 
-// 6 milestones (quarters only, no years).
+// 5 milestones (quarters only, no years).
 const milestones: Milestone[] = [
   {
     quarter: "Q1",
-    title: "Algorithm Ω Core Deployment",
+    title: "Foundational Infrastructure",
     description:
-      "Establishment of our proprietary SaaS architecture within high-availability UK cloud environments. This phase ensures the integrity of data processing and the protection of our initial Intellectual Property.",
+      "Establishment of our proprietary HPC environment and deployment of the Omega (Ω) Data-Vault. This phase secures our deterministic physics baseline and sovereign data architecture.",
   },
   {
     quarter: "Q2",
-    title: "IP Protection & Certification",
+    title: "Neural Core Training",
     description:
-      "Execution of the intangible asset protection protocol and attainment of ISO/IEC security certifications. We ensure the validation engine meets the rigorous international standards required by major industrial corporations.",
+      "Large-scale execution of 1M synthetic route simulations. Intensive training of the PINN Engine to resolve high-dimensional physics and achieve our sub-1% accuracy target.",
   },
   {
     quarter: "Q3",
-    title: "ERP Ecosystem Integration and UK & International Regulatory Alignment",
+    title: "Enterprise Integration",
     description:
-      "Development of native API connectors for seamless interoperability with SAP, Oracle, and Microsoft Dynamics ecosystems. We automate the chain of custody, eliminating manual data entry friction within the platform.\n\nPriority launch of compliance modules for the UK Sustainability Disclosure Requirements (SDR) and the UK CBAM framework. This provides the technical foundation for seamless expansion into EU CSRD and global ESG reporting standards.",
+      "Engineering of proprietary R&D data bridges for global ERP ecosystems. Initiation of alpha-stage technical collaborations to validate the Omega (Ω) Engine in industrial environments.",
   },
   {
     quarter: "Q4",
-    title: "UK Strategic Pilot Program",
+    title: "Scientific Validation",
     description:
-      "Deployment of the solution across a selected ecosystem of high-value UK manufacturers for market validation. This milestone generates the primary case studies that back the commercial viability and scalability of the model.",
+      "Industrial stress-testing of the SCVE infrastructure using high-density datasets. Final engineering alignment with ISO 14083 to ensure global carbon reporting standards.",
   },
   {
     quarter: "Q5",
-    title: "International Node Scaling",
+    title: "Multi-Modal Expansion",
     description:
-      "Systematic expansion of the infrastructure into key European and North American markets. Our decentralized architecture allows global emissions traceability to scale without a linear increase in operating costs.",
-  },
-  {
-    quarter: "Q6",
-    title: "Predictive Intelligence Engine",
-    description:
-      "Implementation of advanced predictive analytics models for supply chain risk management. The system evolves from reactive certification to strategic foresight, consolidating our long-term competitive advantage.",
+      "Expanding the PINN architectures beyond road transport. Initial R&D and simulation for Maritime and Rail sectors, bringing high-precision validation to the entire supply chain.",
   },
 ];
 
@@ -269,12 +263,12 @@ export function GrowthRoadmapSection({ className }: { className?: string }) {
       ref={sectionRef}
       id="roadmap"
       className={cn("overflow-x-hidden bg-background text-foreground", className)}
-      aria-label="Growth & Scalability Roadmap"
+      aria-label="The Omega (Ω) Journey"
     >
       <div className="mx-auto max-w-6xl px-4 pb-16 pt-32 sm:px-6 sm:pb-20 sm:pt-40">
         <div className="mx-auto max-w-3xl text-center">
           <p className="text-xs font-medium uppercase tracking-[0.14em] text-muted-foreground">
-            Growth &amp; Scalability Roadmap
+            The Omega (Ω) Journey
           </p>
         </div>
 

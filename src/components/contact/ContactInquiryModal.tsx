@@ -189,6 +189,10 @@ export function ContactInquiryModal({
     productVertical?: string;
     industrySector?: string;
   }>({});
+  const [submitState, setSubmitState] = React.useState<"idle" | "submitting" | "success" | "error">(
+    "idle",
+  );
+  const [submitFeedback, setSubmitFeedback] = React.useState<string>("");
 
   React.useEffect(() => setMounted(true), []);
 
@@ -198,6 +202,8 @@ export function ContactInquiryModal({
       setProductVertical(null);
       setIndustrySector(null);
       setSelectorErrors({});
+      setSubmitState("idle");
+      setSubmitFeedback("");
     }
   }, [isOpen, defaultInquiryId]);
 
@@ -253,7 +259,7 @@ export function ContactInquiryModal({
     return () => document.removeEventListener("keydown", onTab);
   }, [isOpen]);
 
-  function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     if (selectedId === "demo") {
       const nextErrors: typeof selectorErrors = {};
@@ -264,7 +270,35 @@ export function ContactInquiryModal({
         return;
       }
     }
-    onClose();
+
+    const form = e.currentTarget;
+    const formData = new FormData(form);
+    const payload = Object.fromEntries(formData.entries());
+
+    setSubmitState("submitting");
+    setSubmitFeedback("");
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
+      if (!res.ok) {
+        const data = (await res.json().catch(() => null)) as { error?: string } | null;
+        throw new Error(data?.error || "Unable to send message.");
+      }
+      setSubmitState("success");
+      setSubmitFeedback("Message sent successfully. We will get back to you shortly.");
+      form.reset();
+      setProductVertical(null);
+      setIndustrySector(null);
+      setSelectorErrors({});
+    } catch (error) {
+      const message =
+        error instanceof Error ? error.message : "Unable to send message. Please try again.";
+      setSubmitState("error");
+      setSubmitFeedback(message);
+    }
   }
 
   const needsPartnerExtras = selectedId === "partnerships";
@@ -688,6 +722,7 @@ export function ContactInquiryModal({
                   <div className="flex justify-center pt-1">
                     <button
                       type="submit"
+                      disabled={submitState === "submitting"}
                       className={cn(
                         "group relative mx-auto inline-flex w-full max-w-xs items-center justify-center rounded-full p-[1.25px]",
                         isWhitepaper
@@ -700,7 +735,7 @@ export function ContactInquiryModal({
                         isWhitepaper
                           ? "hover:shadow-[0_18px_54px_rgba(37,99,235,0.52)]"
                           : "hover:shadow-[0_12px_40px_rgba(59,130,246,0.38)]",
-                        "focus:outline-none focus-visible:ring-2 focus-visible:ring-[#3b82f6]/50",
+                        "focus:outline-none focus-visible:ring-2 focus-visible:ring-[#3b82f6]/50 disabled:cursor-not-allowed disabled:opacity-70",
                       )}
                     >
                       <span
@@ -709,10 +744,24 @@ export function ContactInquiryModal({
                           "transition-colors group-hover:bg-white",
                         )}
                       >
-                        {isWhitepaper ? "Access Whitepaper" : "Submit"}
+                        {submitState === "submitting"
+                          ? "Enviando..."
+                          : isWhitepaper
+                            ? "Access Whitepaper"
+                            : "Submit"}
                       </span>
                     </button>
                   </div>
+                  {submitFeedback ? (
+                    <p
+                      className={cn(
+                        "text-center text-xs",
+                        submitState === "success" ? "text-emerald-600/90" : "text-red-600/90",
+                      )}
+                    >
+                      {submitFeedback}
+                    </p>
+                  ) : null}
                   <p className="text-center text-[11px] font-light text-foreground/55">
                     By submitting, you agree to our{" "}
                     <Link
