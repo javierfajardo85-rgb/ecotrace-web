@@ -32,11 +32,12 @@ export function PartnerLinksStrip({ className }: { className?: string }) {
                     About us
                   </p>
                   <p className="mt-2 text-xs font-light leading-normal tracking-[-0.01em] text-white/78 md:mt-4 md:text-base md:leading-relaxed">
-                    EcoTrace was established as a high-scalability SaaS infrastructure designed to
-                    automate industrial data integrity within global supply chains. Our mission is
-                    to eliminate reliance on manual processes through Algorithm Ω, transforming
-                    regulatory compliance into a flow of auditable, truthful digital assets
-                    available in real-time.
+                    EcoTrace is a Deep-Tech R&amp;D enterprise established to engineer the
+                    foundational infrastructure for high-precision carbon validation. Our mission
+                    is to resolve the inherent uncertainties of global supply chain data through
+                    the Omega (Ω) Engine-a proprietary architecture that integrates
+                    Physics-Informed Neural Networks (PINNs) to transform raw industrial telemetry
+                    into deterministic, auditable assets.
                   </p>
                 </div>
               </div>
