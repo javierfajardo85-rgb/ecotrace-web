@@ -8,7 +8,6 @@ import { cn } from "@/lib/utils";
 import { useContactModal } from "@/components/contact/ContactModalProvider";
 import { useSwallowHeaderMotion } from "@/hooks/useSwallowHeaderMotion";
 import { BrandWordmark } from "@/components/BrandWordmark";
-import Image from "next/image";
 
 const navItems = [
   { label: "Solutions", href: "#motores" },
@@ -53,14 +52,12 @@ export function HeaderNav() {
           className="group inline-flex max-w-[72vw] items-center gap-2 text-sm font-medium tracking-tight text-foreground sm:max-w-none"
         >
           <span className="relative inline-flex h-7 w-7 items-center justify-center rounded-full border border-foreground/20 bg-white/50 backdrop-blur">
-            <Image
-              src="/images/ecotrace-symbol.png"
-              alt=""
-              width={18}
-              height={18}
-              className="h-[18px] w-[18px]"
-              priority
-            />
+            <span
+              aria-hidden
+              className="text-[18px] font-light leading-none text-foreground/90"
+            >
+              Ω
+            </span>
           </span>
           <span className="min-w-0 leading-none">
             <span className="opacity-95">
