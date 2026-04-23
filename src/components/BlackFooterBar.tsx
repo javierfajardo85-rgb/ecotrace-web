@@ -5,9 +5,8 @@ import { cn } from "@/lib/utils";
 import Link from "next/link";
 
 const social = [
-  { label: "in", href: "#" },
-  { label: "X", href: "#" },
-  { label: "IG", href: "#" },
+  { label: "in", href: "https://linkedin.com/company/ecotracegreen" },
+  { label: "X", href: "https://x.com/EcoTraceTech" },
 ] as const;
 
 export function BlackFooterBar({ className }: { className?: string }) {
@@ -35,6 +34,8 @@ export function BlackFooterBar({ className }: { className?: string }) {
             <a
               key={s.label}
               href={s.href}
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-white/25 text-xs font-medium text-white/90 transition-colors hover:border-white/45 hover:text-white"
               aria-label={s.label}
             >
