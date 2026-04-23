@@ -58,6 +58,12 @@ export async function POST(request: Request) {
       { status: 500 },
     );
   }
+  if (!process.env.CONTACT_FROM_EMAIL) {
+    return NextResponse.json(
+      { error: "Sender email is not configured. Set CONTACT_FROM_EMAIL in environment." },
+      { status: 500 },
+    );
+  }
 
   let body: Partial<ContactPayload>;
   try {
@@ -85,8 +91,7 @@ export async function POST(request: Request) {
     );
   }
 
-  const recipients = pickRecipients(payload);
-  const from = process.env.CONTACT_FROM_EMAIL ?? "EcoTrace Contact <onboarding@resend.dev>";
+  const recipients = ["javier@ecotracegreen.com"];
   const replyTo = payload.email;
   const subject = `EcoTrace contact inquiry: ${payload.inquiry}`;
 
@@ -105,7 +110,7 @@ export async function POST(request: Request) {
 
   try {
     await resend.emails.send({
-      from,
+      from: process.env.CONTACT_FROM_EMAIL,
       to: recipients,
       replyTo,
       subject,
