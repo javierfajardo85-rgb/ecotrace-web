@@ -5,8 +5,8 @@ const GENERAL_RECIPIENTS = ["info@ecotracegreen.com", "hello@ecotracegreen.com"]
 const LEGAL_RECIPIENTS = ["legal@ecotracegreen.com"] as const;
 const ADMIN_RECIPIENTS = ["admin@ecotracegreen.com"] as const;
 
-const resendApiKey = process.env.RESEND_API_KEY;
-const resend = resendApiKey ? new Resend(resendApiKey) : null;
+const resendKey = process.env.RESEND_API_KEY;
+const resend = resendKey ? new Resend(resendKey) : null;
 
 type ContactPayload = {
   firstName: string;
@@ -52,6 +52,7 @@ function validate(payload: Partial<ContactPayload>): payload is ContactPayload {
 }
 
 export async function POST(request: Request) {
+  console.log("API Key Status:", process.env.RESEND_API_KEY ? "Present" : "Missing");
   if (!resend) {
     return NextResponse.json(
       { error: "Email service is not configured. Set RESEND_API_KEY in environment." },
@@ -91,7 +92,6 @@ export async function POST(request: Request) {
     );
   }
 
-  const recipients = ["javier@ecotracegreen.com"];
   const replyTo = payload.email;
   const subject = `EcoTrace contact inquiry: ${payload.inquiry}`;
 
@@ -111,7 +111,7 @@ export async function POST(request: Request) {
   try {
     await resend.emails.send({
       from: process.env.CONTACT_FROM_EMAIL,
-      to: recipients,
+      to: ["javier@ecotracegreen.com"],
       replyTo,
       subject,
       text: lines.join("\n"),
