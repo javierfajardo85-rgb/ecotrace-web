@@ -2,6 +2,7 @@
 
 import { Inter, Lora } from "next/font/google";
 import { motion, useInView, useMotionValue, animate } from "framer-motion";
+import type { Variants } from "framer-motion";
 import { useRef, useEffect, useState } from "react";
 
 const investorInter = Inter({
@@ -142,7 +143,7 @@ const investorCss = `
 
 // ─── Shared animation variants ───────────────────────────────────────────────
 
-const fadeUp = {
+const fadeUp: Variants = {
   hidden: { opacity: 0, y: 24 },
   show: {
     opacity: 1,
@@ -165,7 +166,7 @@ const dotPop = {
   },
 };
 
-const tqSlide = {
+const tqSlide: Variants = {
   hidden: { opacity: 0, x: -10 },
   show: { opacity: 1, x: 0, transition: { duration: 0.38, ease: "easeOut" } },
 };
