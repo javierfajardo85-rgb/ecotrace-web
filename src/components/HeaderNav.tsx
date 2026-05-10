@@ -12,6 +12,7 @@ import { BrandWordmark } from "@/components/BrandWordmark";
 const navItems = [
   { label: "Solutions", href: "#motores" },
   { label: "Technology", href: "#tecnologia" },
+  { label: "Product", href: "/product" },
   { label: "Roadmap", href: "#roadmap" },
   { label: "About us", href: "#about" },
   { label: "Blog", href: "/blog" },
