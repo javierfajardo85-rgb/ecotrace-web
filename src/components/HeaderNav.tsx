@@ -14,6 +14,7 @@ const navItems = [
   { label: "Technology", href: "#tecnologia" },
   { label: "Roadmap", href: "#roadmap" },
   { label: "About us", href: "#about" },
+  { label: "Blog", href: "/blog" },
   { label: "Contact", href: "#contacto" },
 ] as const;
 
@@ -82,7 +83,13 @@ export function HeaderNav() {
             ) : (
               <a
                 key={item.href}
-                href={isHome ? item.href : `/${item.href}`}
+                href={
+                  item.href.startsWith("/")
+                    ? item.href
+                    : isHome
+                      ? item.href
+                      : `/${item.href}`
+                }
                 className="text-[10px] font-medium uppercase tracking-[0.14em] text-foreground/70 transition-colors hover:text-foreground/90"
               >
                 <span className="relative">
@@ -129,7 +136,13 @@ export function HeaderNav() {
               ) : (
                 <a
                   key={item.href}
-                  href={isHome ? item.href : `/${item.href}`}
+                  href={
+                  item.href.startsWith("/")
+                    ? item.href
+                    : isHome
+                      ? item.href
+                      : `/${item.href}`
+                }
                   className="rounded-xl px-3 py-3 text-left text-sm font-medium uppercase tracking-[0.14em] text-foreground/70 transition-colors hover:bg-foreground/5 hover:text-foreground/90"
                   onClick={() => setOpen(false)}
                 >
