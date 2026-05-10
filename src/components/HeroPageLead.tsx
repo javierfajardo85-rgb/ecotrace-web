@@ -3,7 +3,6 @@
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import { useParallax } from "@/hooks/useParallax";
-import { BrandWordmark } from "@/components/BrandWordmark";
 
 type HeroPageLeadProps = {
   className?: string;
@@ -64,18 +63,14 @@ export function HeroPageLead({ className }: HeroPageLeadProps) {
           <div className="relative flex h-[100dvh] w-full items-center justify-center px-4 sm:px-8 md:h-[100vh]">
             <div className="mx-auto flex w-full max-w-7xl flex-col items-center justify-center text-center">
               <h1 className="mx-auto max-w-[min(92vw,1200px)] text-center font-heading text-[clamp(30px,9vw,76px)] font-light leading-[1.08] tracking-[0.01em] text-[#161616] [text-shadow:0_1px_0_rgba(255,255,255,0.48)]">
-                <span className="block">
-                  <BrandWordmark className="text-[1em]" />
-                  <span>:</span>
-                </span>
-                <span className="block">Scientific Carbon Validation</span>
-                <span className="block">for Global Logistics</span>
+                <span className="block">Precise CO2e Measurement</span>
+                <span className="block">for Every HGV Journey</span>
               </h1>
               <p className="mx-auto mt-8 max-w-3xl text-center text-base font-light leading-relaxed text-gray-600 sm:mt-10 sm:text-lg">
-                Advancing the UK&apos;s Deep-Tech infrastructure for high-precision Scope 3
-                visibility. Powered by the Omega (Ω) Engine, we provide a proprietary PINN-based
-                architecture that transforms raw industrial telemetry into deterministic,
-                evidence-based environmental intelligence.
+                EcoTrace calculates the exact CO2e footprint of each heavy goods vehicle journey —
+                derived from vehicle physics, not statistical averages. Per-trip carbon data your
+                sustainability team, logistics partners, and auditors can rely on. Aligned with ISO
+                14083.
               </p>
 
               <div className="mt-8 flex flex-wrap justify-center gap-3 pb-10 sm:pb-0">

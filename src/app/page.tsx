@@ -12,19 +12,28 @@ import { AboutCtasRow } from "@/components/AboutCtasRow";
 const SITE_URL = "https://ecotracegreen.com";
 
 export const metadata: Metadata = {
-  title: "EcoTrace | Autonomous Scientific Traceability & Scope 3 Auditing",
+  title: "EcoTrace | CO2 Measurement Software for HGV Fleets | ISO 14083",
   description:
-    "EcoTrace is a trust settlement layer for global supply chains. Powered by Algorithm Ω, we replace industrial estimations with verifiable scientific evidence for UK SDR and CBAM compliance. High-fidelity data auditing for autonomous Scope 3 visibility.",
+    "EcoTrace calculates the precise CO2e footprint of every HGV journey using physics-based software — not statistical averages. Per-trip carbon data aligned with ISO 14083 for logistics operators and sustainability teams.",
   keywords: [
-    "Autonomous Scientific Traceability",
-    "Algorithm Ω",
-    "Scope 3 Industrial Data Auditing",
-    "UK SDR compliance",
+    "CO2 measurement HGV",
+    "fleet carbon tracking software",
+    "ISO 14083 compliance",
+    "per trip CO2e calculation",
+    "heavy goods vehicle emissions",
+    "logistics carbon footprint",
+    "freight emissions software UK",
+    "carbon data logistics",
+    "HGV fuel consumption tracking",
+    "Scope 3 transport emissions",
   ],
+  alternates: {
+    canonical: SITE_URL,
+  },
   openGraph: {
-    title: "EcoTrace | Autonomous Scientific Traceability & Scope 3 Auditing",
+    title: "EcoTrace | CO2 Measurement Software for HGV Fleets",
     description:
-      "EcoTrace is a trust settlement layer for global supply chains. Powered by Algorithm Ω, we replace industrial estimations with verifiable scientific evidence for UK SDR and CBAM compliance. High-fidelity data auditing for autonomous Scope 3 visibility.",
+      "Physics-based software that calculates the precise CO2e footprint of every HGV journey. Per-trip carbon data for logistics operators — aligned with ISO 14083.",
     type: "website",
     url: SITE_URL,
     siteName: "EcoTrace",
@@ -33,42 +42,21 @@ export const metadata: Metadata = {
 
 const homeStructuredData = {
   "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "SoftwareApplication",
-      name: "EcoTrace",
-      applicationCategory: "BusinessApplication",
-      operatingSystem: "Web",
-      url: SITE_URL,
-      description:
-        "EcoTrace is a trust settlement layer for global supply chains. Powered by Algorithm Ω, we replace industrial estimations with verifiable scientific evidence for UK SDR and CBAM compliance. High-fidelity data auditing for autonomous Scope 3 visibility.",
-      keywords:
-        "Autonomous Scientific Traceability, Algorithm Ω, Scope 3 Industrial Data Auditing, UK SDR compliance",
-    },
-    {
-      "@type": "Service",
-      name: "EcoTrace Scientific Traceability Service",
-      provider: {
-        "@type": "Organization",
-        name: "EcoTrace Green Solutions Ltd",
-        url: SITE_URL,
-      },
-      serviceType: "Scope 3 Industrial Data Auditing",
-      areaServed: "Global",
-      url: SITE_URL,
-      description:
-        "Autonomous Scientific Traceability powered by Algorithm Ω for UK SDR and CBAM-aligned industrial data auditing.",
-      keywords:
-        "Autonomous Scientific Traceability, Algorithm Ω, Scope 3 Industrial Data Auditing, UK SDR compliance",
-    },
-    {
-      "@type": "DefinedTerm",
-      name: "Autonomous Scientific Traceability",
-      description:
-        "A methodology for replacing estimation-based reporting with verifiable scientific evidence in industrial supply chains.",
-      inDefinedTermSet: `${SITE_URL}/#terminology`,
-      url: `${SITE_URL}/#autonomous-scientific-traceability`,
-    },
+  "@type": "Organization",
+  name: "EcoTrace Green Technologies Ltd",
+  url: SITE_URL,
+  logo: `${SITE_URL}/images/logoEcoTrace.jpg`,
+  description:
+    "Software R&D company developing physics-based CO2e calculation software for HGV logistics fleets. Aligned with ISO 14083.",
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "London",
+    addressCountry: "GB",
+  },
+  foundingDate: "2026",
+  sameAs: [
+    "https://linkedin.com/company/ecotracegreen",
+    "https://x.com/EcoTraceTech",
   ],
 };
 

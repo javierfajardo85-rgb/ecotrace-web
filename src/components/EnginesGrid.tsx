@@ -143,17 +143,17 @@ export function EnginesGrid({ className }: { className?: string }) {
           </p>
           <h2 className="mt-3 font-heading text-[clamp(16px,3.2vw,36px)] leading-tight tracking-[-0.03em]">
             <span className="block text-center">
-              The proprietary architecture engineered for the deterministic validation of
-              high-dimensional physical datasets on a global scale
+              HGV carbon data calculated from physics — not estimates
             </span>
           </h2>
           <p className="mt-4 text-base leading-relaxed text-muted-foreground sm:text-lg">
-            EcoTrace is not a reporting tool; it is a Scientific Carbon Validation Engine.
-            Utilizing the Omega (Ω) architecture, our infrastructure processes unstructured
-            telemetry from multiple industrial vectors, resolving complex physical variables
-            through PINN-based inference. We transform heterogeneous industrial data into
-            high-integrity technical assets, providing the scientific foundation required for
-            alignment with international frameworks (ISO 14083, CSRD, GHG Protocol)
+            EcoTrace is a software R&amp;D company developing the Scientific Carbon Validation
+            Engine (SCVE) — a calculation system that derives CO2e data from the physical laws
+            governing vehicle motion. Unlike conventional methods that apply average emission
+            factors to distance travelled, the SCVE processes telemetry data through coupled
+            physical equations to calculate fuel consumption and carbon output at the level of
+            individual journeys. Designed for alignment with ISO 14083 and CSRD reporting
+            requirements.
           </p>
         </div>
 
