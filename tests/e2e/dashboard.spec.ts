@@ -49,3 +49,11 @@ test.describe("Fleet", () => {
     await expect(page.getByText("Route map")).toBeVisible();
   });
 });
+
+test.describe("Reports", () => {
+  test("lists generated reports", async ({ page }) => {
+    await page.goto("/dashboard/reports");
+    await expect(page.getByText("ISO 14083 methodology statement")).toBeVisible();
+    await expect(page.getByRole("button", { name: "Generate report" })).toBeVisible();
+  });
+});
