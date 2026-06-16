@@ -41,3 +41,11 @@ test.describe("Operations", () => {
     await expect(page.getByText("Overload", { exact: true })).toBeVisible();
   });
 });
+
+test.describe("Fleet", () => {
+  test("shows vehicle inventory and a map placeholder", async ({ page }) => {
+    await page.goto("/dashboard/fleet");
+    await expect(page.getByText("HGV-018")).toBeVisible();
+    await expect(page.getByText("Route map")).toBeVisible();
+  });
+});
