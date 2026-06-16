@@ -31,3 +31,13 @@ test.describe("Compliance", () => {
     await expect(page.getByText("Verified").first()).toBeVisible();
   });
 });
+
+test.describe("Operations", () => {
+  test("shows intensity bars and a routes table with flags", async ({ page }) => {
+    await page.goto("/dashboard/operations");
+    await expect(page.getByText("City · high traffic")).toBeVisible();
+    await expect(page.getByText("Hull → Bristol")).toBeVisible();
+    await expect(page.getByText("Anomaly")).toBeVisible();
+    await expect(page.getByText("Overload")).toBeVisible();
+  });
+});
