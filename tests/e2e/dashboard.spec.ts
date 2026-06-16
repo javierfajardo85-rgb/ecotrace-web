@@ -1,4 +1,17 @@
-import { test, expect } from "@playwright/test";
+import { test, expect, request as apiRequest } from "@playwright/test";
+
+test.describe("Auth gate", () => {
+  test("dashboard rejects bad credentials but the public site stays open", async () => {
+    const api = await apiRequest.newContext({
+      httpCredentials: { username: "nobody", password: "wrong" },
+    });
+    const dash = await api.get("http://localhost:3000/dashboard");
+    expect(dash.status()).toBe(401); // wrong password → blocked
+    const home = await api.get("http://localhost:3000/");
+    expect(home.status()).toBe(200); // marketing site untouched by the gate
+    await api.dispose();
+  });
+});
 
 test.describe("Overview", () => {
   test("shows measured hero, average-factor comparison, metrics and compliance", async ({ page }) => {
