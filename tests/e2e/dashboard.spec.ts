@@ -37,7 +37,7 @@ test.describe("Operations", () => {
     await page.goto("/dashboard/operations");
     await expect(page.getByText("City · high traffic")).toBeVisible();
     await expect(page.getByText("Hull → Bristol")).toBeVisible();
-    await expect(page.getByText("Anomaly")).toBeVisible();
-    await expect(page.getByText("Overload")).toBeVisible();
+    await expect(page.getByText("Anomaly", { exact: true })).toBeVisible();
+    await expect(page.getByText("Overload", { exact: true })).toBeVisible();
   });
 });

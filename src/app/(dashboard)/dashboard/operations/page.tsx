@@ -12,7 +12,7 @@ export default function OperationsPage() {
       <div className="grid grid-cols-3 gap-2">
         <MetricCard label="Routes analysed" value={summary.routesAnalysed.toLocaleString()} />
         <MetricCard label="Avg intensity" value={String(summary.intensity)} unit="gCO₂e/t·km" />
-        <MetricCard label="Flagged" value={`${summary.anomalies} + ${overloads}`} unit="flags" />
+        <MetricCard label="Flagged" value={`${summary.anomalies} anomaly · ${overloads} overload`} />
       </div>
       <div className="rounded-lg border p-3">
         <div className="mb-2.5 text-xs text-muted-foreground">Intensity by route type (gCO₂e/t·km)</div>
