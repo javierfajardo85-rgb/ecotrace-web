@@ -9,7 +9,7 @@ export default function CompliancePage() {
     <div className="space-y-4">
       <div className="flex items-center justify-between">
         <h1 className="text-lg font-medium">Compliance & reporting</h1>
-        <span className="rounded-md bg-accent/10 px-2.5 py-1 text-xs font-medium text-accent-foreground">Assurance-ready</span>
+        <span className="rounded-md bg-accent/10 px-2.5 py-1 text-xs font-medium text-green-700">Assurance-ready</span>
       </div>
       <ComplianceCards frameworks={compliance} />
       <ProvenancePanel items={provenance} />

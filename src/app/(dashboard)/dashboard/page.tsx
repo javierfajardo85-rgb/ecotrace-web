@@ -15,7 +15,7 @@ export default function OverviewPage() {
           </div>
         </div>
         <div className="text-right">
-          <span className="rounded-md bg-accent/10 px-2 py-1 text-xs font-medium text-accent-foreground">
+          <span className="rounded-md bg-accent/10 px-2 py-1 text-xs font-medium text-green-700">
             measured ±{summary.precisionPct}%
           </span>
           <div className="mt-1.5 text-xs text-muted-foreground">
@@ -36,7 +36,7 @@ export default function OverviewPage() {
       <div className="flex flex-wrap items-center gap-1.5 text-xs">
         <span className="mr-1 text-muted-foreground">Compliance:</span>
         {compliance.map((c) => (
-          <span key={c.name} className="rounded-full border border-accent/30 px-2 py-0.5 text-accent-foreground">
+          <span key={c.name} className="rounded-full border border-accent/30 px-2 py-0.5 text-green-700">
             ✓ {c.name}
           </span>
         ))}
@@ -54,7 +54,7 @@ export default function OverviewPage() {
       </div>
 
       <div className="flex justify-end">
-        <button className="rounded-md border border-accent px-3 py-1.5 text-xs font-medium text-accent-foreground">
+        <button className="rounded-md border border-accent px-3 py-1.5 text-xs font-medium text-green-700">
           Download audit report (PDF)
         </button>
       </div>

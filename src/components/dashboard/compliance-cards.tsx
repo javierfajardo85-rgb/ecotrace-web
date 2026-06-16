@@ -2,7 +2,7 @@ import type { ComplianceFramework, ComplianceStatus } from "@/lib/dashboard";
 
 const statusText: Record<ComplianceStatus, string> = { verified: "Verified", ready: "Ready", draft: "Draft" };
 const statusClass: Record<ComplianceStatus, string> = {
-  verified: "text-accent-foreground", ready: "text-accent-foreground", draft: "text-amber-700",
+  verified: "text-green-700", ready: "text-green-700", draft: "text-amber-700",
 };
 
 export function ComplianceCards({ frameworks }: { frameworks: ComplianceFramework[] }) {

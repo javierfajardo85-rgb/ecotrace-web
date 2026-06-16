@@ -2,7 +2,7 @@ import { cn } from "@/lib/utils";
 import type { RouteStatus } from "@/lib/dashboard";
 
 const styles: Record<RouteStatus, string> = {
-  ok: "bg-accent/10 text-accent-foreground",
+  ok: "bg-accent/10 text-green-700",
   anomaly: "bg-amber-100 text-amber-800",
   overload: "bg-red-100 text-red-800",
 };
