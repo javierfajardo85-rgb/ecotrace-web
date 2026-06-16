@@ -21,3 +21,13 @@ test.describe("Shell", () => {
     }
   });
 });
+
+test.describe("Compliance", () => {
+  test("shows frameworks, provenance and reports", async ({ page }) => {
+    await page.goto("/dashboard/compliance");
+    await expect(page.getByText("GLEC Framework v3")).toBeVisible();
+    await expect(page.getByText("Omega Engine · physics-informed NN")).toBeVisible();
+    await expect(page.getByText("Scope 3 transport emissions report")).toBeVisible();
+    await expect(page.getByText("Verified").first()).toBeVisible();
+  });
+});
