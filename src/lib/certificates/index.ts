@@ -8,3 +8,9 @@ const REGISTRY: Record<string, CertRecord> = { op0000, op0001 };
 export function getCertRecord(id: string): CertRecord | null {
   return REGISTRY[id] ?? null;
 }
+
+export function getAllCertRecords(): CertRecord[] {
+  return Object.values(REGISTRY);
+}
+
+export type { CertRecord } from "./types";
