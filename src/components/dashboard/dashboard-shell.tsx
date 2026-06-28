@@ -1,11 +1,18 @@
+import Image from "next/image";
 import { SidebarNav } from "./sidebar-nav";
+import { ibmPlexSans, ibmPlexMono } from "@/lib/fonts";
+import { C, SANS } from "@/lib/certificates/theme";
 
 export function DashboardShell({ children }: { children: React.ReactNode }) {
   return (
-    <div className="mx-auto flex min-h-svh max-w-6xl">
-      <aside className="w-52 shrink-0 border-r bg-muted/30">
-        <div className="flex items-center gap-2 px-4 py-3 font-medium">
-          <span className="size-2.5 rounded-full bg-accent" /> EcoTrace
+    <div
+      className={`${ibmPlexSans.variable} ${ibmPlexMono.variable} mx-auto flex min-h-svh max-w-6xl`}
+      style={{ fontFamily: SANS, color: C.ink, background: "#fff" }}
+    >
+      <aside className="w-52 shrink-0 border-r" style={{ borderColor: C.line, background: C.panel }}>
+        <div className="px-4 py-4">
+          <Image src="/images/ecotrace-logo.png" alt="EcoTrace" width={120} height={28}
+                 style={{ height: 24, width: "auto" }} priority />
         </div>
         <SidebarNav />
       </aside>

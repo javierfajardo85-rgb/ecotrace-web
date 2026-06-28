@@ -2,6 +2,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import type { CertRecord } from "@/lib/certificates/types";
+import { C, MONO } from "@/lib/certificates/theme";
 
 async function sha256Hex(text: string): Promise<string> {
   const buf = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(text));
@@ -32,60 +33,62 @@ export default function VerifyClient({
 
   const s = record.summary;
   const anchored = record.anchor.status === "confirmed";
-  return (
-    <div style={{ maxWidth: 640, margin: "0 auto", padding: "2rem 1rem" }}>
-      <h1 style={{ fontWeight: 700 }}>Certificate verification</h1>
-      <p style={{ color: "var(--muted-foreground)" }}>Operation {record.op_id}</p>
+  const ok = verdict === "match";
+  const card: React.CSSProperties = { border: `1px solid ${C.line}`, borderRadius: 12, padding: 18, background: "#fff" };
 
-      <div
-        style={{
-          marginTop: 16,
-          padding: 16,
-          borderRadius: 10,
-          border: "1px solid var(--border)",
-          background:
-            verdict === "match" ? "#eafaef" : verdict === "mismatch" ? "#fdecea" : "var(--card)",
-        }}
-      >
-        <strong>
+  return (
+    <div style={{ marginTop: 28 }}>
+      <h1 style={{ fontSize: 24, fontWeight: 600, letterSpacing: "-0.01em", color: C.navy, margin: 0 }}>
+        Certificate verification
+      </h1>
+      <p style={{ fontFamily: MONO, fontSize: 12.5, color: C.mut, marginTop: 4 }}>Operation {record.op_id}</p>
+
+      <div style={{ ...card, marginTop: 16,
+        border: `1px solid ${verdict === "mismatch" ? "#e8c9c5" : verdict === "match" ? "#cfe6da" : C.line}`,
+        background: verdict === "match" ? "#f1f8f4" : verdict === "mismatch" ? "#fcf4f3" : "#fff" }}>
+        <strong style={{ color: ok ? C.green : verdict === "mismatch" ? C.red : C.ink, fontWeight: 600 }}>
           {verdict === "checking" && "Recomputing hash…"}
           {verdict === "match" && "✓ Hash matches — document is intact"}
           {verdict === "mismatch" && "✗ Hash mismatch — document may be altered"}
         </strong>
-        <div
-          style={{
-            fontFamily: "var(--font-mono)",
-            fontSize: 12,
-            wordBreak: "break-all",
-            marginTop: 8,
-          }}
-        >
+        <div style={{ fontFamily: MONO, fontSize: 11, color: C.navy, wordBreak: "break-all", marginTop: 8 }}>
           {computed || "…"}
+        </div>
+        <div style={{ display: "flex", alignItems: "center", gap: 6, fontSize: 11.5, marginTop: 10, color: C.ink }}>
+          <span style={{ width: 6, height: 6, borderRadius: 999, background: anchored ? C.green : C.amber }} />
+          {anchored
+            ? `Anchored on Bitcoin via OpenTimestamps (${record.anchor.anchored_at}).`
+            : "Timestamp pending — awaiting Bitcoin confirmation (OpenTimestamps)."}
         </div>
       </div>
 
-      <p style={{ marginTop: 16 }}>
-        {anchored
-          ? `Anchored on Bitcoin via OpenTimestamps (${record.anchor.anchored_at}).`
-          : "Timestamp pending — awaiting Bitcoin confirmation (OpenTimestamps)."}
-      </p>
+      <div style={{ ...card, marginTop: 16 }}>
+        <div style={{ fontSize: 11, fontWeight: 600, letterSpacing: "0.13em", textTransform: "uppercase",
+          color: C.mut2, marginBottom: 12 }}>Summary</div>
+        <Row label="CO₂e" value={`${s.total_co2e_kg.toFixed(2)} ± ${s.interval_Y_kg.toFixed(2)} kgCO₂e`} sub={s.standard} />
+        <Row label="Carbon Intensity (ECI)" value={`grade ${s.eci_grade ?? "N/A"}`} />
+        <Row label="Veracity (VCI)" value={`${s.operation_vci.toFixed(1)}%`} last />
+      </div>
 
-      <h2 style={{ marginTop: 24, fontWeight: 700 }}>Summary</h2>
-      <ul>
-        <li>
-          CO₂e: {s.total_co2e_kg.toFixed(2)} ± {s.interval_Y_kg.toFixed(2)} kgCO₂e{" "}
-          <em>({s.standard})</em>
-        </li>
-        <li>Carbon Intensity (ECI): grade {s.eci_grade ?? "N/A"}</li>
-        <li>Veracity (VCI): {s.operation_vci.toFixed(1)}%</li>
-      </ul>
-      <p style={{ color: "var(--muted-foreground)", fontSize: 13, marginTop: 16 }}>
-        CO₂e is computed to ISO 14083 / GLEC. ECI and VCI are proprietary EcoTrace indices, not
-        regulatory standards.
+      <p style={{ color: C.mut, fontSize: 12.5, marginTop: 16, lineHeight: 1.6 }}>
+        CO₂e is computed to ISO 14083 / GLEC (an audited standard). ECI and VCI are proprietary
+        EcoTrace indices — they are not regulatory standards.
       </p>
-      <footer style={{ marginTop: 24, color: "var(--muted-foreground)", fontSize: 11 }}>
-        EcoTrace Green Technologies Ltd — Company No. 17180344 — CONFIDENTIAL
+      <footer style={{ marginTop: 24, color: C.mut2, fontSize: 11 }}>
+        EcoTrace Green Technologies Ltd · Company No. 17180344 — CONFIDENTIAL
       </footer>
+    </div>
+  );
+}
+
+function Row({ label, value, sub, last }: { label: string; value: string; sub?: string; last?: boolean }) {
+  return (
+    <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline",
+      padding: "9px 0", borderBottom: last ? "none" : `1px solid ${C.line2}` }}>
+      <span style={{ fontSize: 12.5, color: C.mut }}>{label}</span>
+      <span style={{ fontFamily: MONO, fontSize: 12.5, fontWeight: 500, color: C.navy, textAlign: "right" }}>
+        {value}{sub && <span style={{ color: C.mut2, fontWeight: 400 }}> · {sub}</span>}
+      </span>
     </div>
   );
 }

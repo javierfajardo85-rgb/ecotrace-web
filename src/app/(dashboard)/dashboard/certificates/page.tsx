@@ -2,45 +2,54 @@
 import Link from "next/link";
 import { getAllCertRecords } from "@/lib/certificates";
 import { ECIBadge } from "@/components/dashboard/eci-badge";
+import { C, MONO } from "@/lib/certificates/theme";
 
 function routeLabel(legs: { origin: string; dest: string }[] | undefined): string {
   if (!legs || !legs.length) return "—";
-  const stops = [legs[0].origin, ...legs.map((l) => l.dest)];
-  return stops.join(" → ");
+  return [legs[0].origin, ...legs.map((l) => l.dest)].join(" → ");
 }
 
 export default function CertificatesPage() {
   const certs = getAllCertRecords();
   return (
-    <div className="space-y-4">
-      <div>
-        <h1 className="text-lg font-medium">Certificates</h1>
-        <p className="text-xs text-muted-foreground">
-          ISO 14083 Operation Certificates. CO₂e is ISO 14083 / GLEC; ECI and VCI are proprietary
-          EcoTrace indices.
-        </p>
-      </div>
-      <div className="rounded-lg border text-sm overflow-x-auto">
-        <div className="grid grid-cols-[1fr_1.6fr_0.8fr_0.6fr_0.9fr_0.8fr] gap-2 bg-muted/50 px-3 py-2 text-xs text-muted-foreground">
-          <span>Operation</span><span>Route</span><span className="text-right">t CO₂e</span>
-          <span className="text-center">ECI</span><span className="text-right">VCI</span><span className="text-right">Anchor</span>
+    <div style={{ maxWidth: 920 }}>
+      <h1 style={{ fontSize: 22, fontWeight: 600, letterSpacing: "-0.01em", color: C.navy, margin: 0 }}>
+        Certificates
+      </h1>
+      <p style={{ fontSize: 13, color: C.mut, margin: "6px 0 24px", lineHeight: 1.5 }}>
+        ISO 14083 Operation Certificates. CO₂e is ISO 14083 / GLEC; ECI and VCI are proprietary
+        EcoTrace indices.
+      </p>
+
+      <div style={{ border: `1px solid ${C.line}`, borderRadius: 12, overflow: "hidden" }}>
+        <div style={{ display: "grid", gridTemplateColumns: "1fr 1.7fr 0.8fr 0.5fr 1fr 0.8fr",
+                      gap: 12, padding: "12px 18px", background: C.panel, borderBottom: `1px solid ${C.line2}`,
+                      fontSize: 10.5, fontWeight: 600, letterSpacing: "0.08em", textTransform: "uppercase", color: C.mut2 }}>
+          <span>Operation</span><span>Route</span><span style={{ textAlign: "right" }}>t CO₂e</span>
+          <span style={{ textAlign: "center" }}>ECI</span><span style={{ textAlign: "right" }}>VCI</span>
+          <span style={{ textAlign: "right" }}>Anchor</span>
         </div>
-        {certs.map((c) => {
+        {certs.map((c, i) => {
           const certified = c.summary.operation_vci >= 50;
           return (
-            <Link
-              key={c.op_id}
-              href={`/dashboard/certificates/${c.op_id}`}
-              className="grid grid-cols-[1fr_1.6fr_0.8fr_0.6fr_0.9fr_0.8fr] gap-2 border-t px-3 py-2 hover:bg-muted"
-            >
-              <span className="font-medium">{c.op_id}</span>
-              <span className="text-muted-foreground truncate">{routeLabel(c.legs)}</span>
-              <span className="text-right">{(c.summary.total_co2e_kg / 1000).toFixed(2)}</span>
-              <span className="text-center"><ECIBadge grade={c.summary.eci_grade} /></span>
-              <span className={`text-right ${certified ? "text-green-700" : "text-red-700"}`}>
-                {c.summary.operation_vci.toFixed(1)}% {certified ? "Certified" : "REJECTED"}
+            <Link key={c.op_id} href={`/dashboard/certificates/${c.op_id}`}
+              style={{ display: "grid", gridTemplateColumns: "1fr 1.7fr 0.8fr 0.5fr 1fr 0.8fr",
+                       gap: 12, padding: "14px 18px", alignItems: "center",
+                       borderTop: i ? `1px solid ${C.line2}` : "none", color: C.ink, textDecoration: "none" }}>
+              <span style={{ fontFamily: MONO, fontSize: 12.5, color: C.navy }}>{c.op_id}</span>
+              <span style={{ fontSize: 13, color: C.mut, overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>
+                {routeLabel(c.legs)}
               </span>
-              <span className="text-right text-muted-foreground capitalize">{c.anchor.status}</span>
+              <span style={{ textAlign: "right", fontFamily: MONO, fontSize: 13 }}>
+                {(c.summary.total_co2e_kg / 1000).toFixed(2)}
+              </span>
+              <span style={{ display: "flex", justifyContent: "center" }}><ECIBadge grade={c.summary.eci_grade} size={22} /></span>
+              <span style={{ textAlign: "right", fontSize: 12.5, fontWeight: 600, color: certified ? C.green : C.red }}>
+                {c.summary.operation_vci.toFixed(1)}% · {certified ? "Certified" : "REJECTED"}
+              </span>
+              <span style={{ textAlign: "right", fontSize: 12, color: C.mut2, textTransform: "capitalize" }}>
+                {c.anchor.status}
+              </span>
             </Link>
           );
         })}

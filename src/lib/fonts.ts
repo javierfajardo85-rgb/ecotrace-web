@@ -1,4 +1,17 @@
-import { Geist_Mono, Inter, Outfit } from "next/font/google";
+import { Geist_Mono, Inter, Outfit, IBM_Plex_Sans, IBM_Plex_Mono } from "next/font/google";
+
+// Certificate / Trust-layer aesthetic (matches the PDF design).
+export const ibmPlexSans = IBM_Plex_Sans({
+  variable: "--font-ibm-plex-sans",
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+});
+
+export const ibmPlexMono = IBM_Plex_Mono({
+  variable: "--font-ibm-plex-mono",
+  subsets: ["latin"],
+  weight: ["400", "500"],
+});
 
 export const inter = Inter({
   variable: "--font-inter",
