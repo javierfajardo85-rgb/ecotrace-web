@@ -1,13 +1,14 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { LayoutDashboard, BadgeCheck, LineChart, Truck, FileText } from "lucide-react";
+import { LayoutDashboard, BadgeCheck, LineChart, Truck, FileText, ShieldCheck } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const items = [
   { href: "/dashboard", label: "Overview", icon: LayoutDashboard },
   { href: "/dashboard/compliance", label: "Compliance", icon: BadgeCheck },
   { href: "/dashboard/operations", label: "Operations", icon: LineChart },
+  { href: "/dashboard/certificates", label: "Certificates", icon: ShieldCheck },
   { href: "/dashboard/fleet", label: "Fleet & routes", icon: Truck },
   { href: "/dashboard/reports", label: "Reports", icon: FileText },
 ];
