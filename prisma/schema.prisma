@@ -1,0 +1,18 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+// Client portal accounts (sub-project 2). Certificates themselves are NOT stored
+// here — they stay in src/lib/certificates/*.ts and are filtered by clientName
+// matching CertRecord.facts.operator.
+model ClientAccount {
+  id         String   @id @default(cuid())
+  email      String   @unique
+  password   String
+  clientName String
+  createdAt  DateTime @default(now())
+}
