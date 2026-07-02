@@ -32,7 +32,7 @@ export default function VerifyClient({
   }, [record, claimedHash]);
 
   const s = record.summary;
-  const anchored = record.anchor.status === "confirmed";
+  const anchored = record.anchor.status === "stamped";
   const ok = verdict === "match";
   const card: React.CSSProperties = { border: `1px solid ${C.line}`, borderRadius: 12, padding: 18, background: "#fff" };
 
@@ -57,8 +57,8 @@ export default function VerifyClient({
         <div style={{ display: "flex", alignItems: "center", gap: 6, fontSize: 11.5, marginTop: 10, color: C.ink }}>
           <span style={{ width: 6, height: 6, borderRadius: 999, background: anchored ? C.green : C.amber }} />
           {anchored
-            ? `Anchored on Bitcoin via OpenTimestamps (${record.anchor.anchored_at}).`
-            : "Timestamp pending — awaiting Bitcoin confirmation (OpenTimestamps)."}
+            ? `Timestamped via RFC 3161 (${record.anchor.tsa}) at ${record.anchor.timestamp}.`
+            : "Not yet timestamped."}
         </div>
       </div>
 

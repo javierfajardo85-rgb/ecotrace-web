@@ -189,10 +189,10 @@ export default async function CertificateDetail({ params }: { params: Promise<{ 
         <div style={{ fontSize: 10.5, color: C.mut }}>Certificate SHA-256</div>
         <div style={{ fontFamily: MONO, fontSize: 11, color: C.navy, wordBreak: "break-all", lineHeight: 1.5 }}>{c.sha256}</div>
         <div style={{ display: "flex", alignItems: "center", gap: 6, fontSize: 11.5, marginTop: 10 }}>
-          <span style={{ width: 6, height: 6, borderRadius: 999, background: c.anchor.status === "confirmed" ? C.green : C.amber }} />
-          {c.anchor.status === "confirmed"
-            ? `Anchored — OpenTimestamps (Bitcoin) · ${c.anchor.anchored_at}`
-            : "Pending — OpenTimestamps (Bitcoin)"}
+          <span style={{ width: 6, height: 6, borderRadius: 999, background: c.anchor.status === "stamped" ? C.green : C.amber }} />
+          {c.anchor.status === "stamped"
+            ? `Timestamped — RFC 3161 (${c.anchor.tsa}) · ${c.anchor.timestamp}`
+            : "Not yet timestamped"}
         </div>
         <div style={{ display: "flex", gap: 12, marginTop: 16 }}>
           {c.pdf && (

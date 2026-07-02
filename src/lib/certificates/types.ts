@@ -39,7 +39,8 @@ export interface CertRecord {
   op_id: string;
   canonical: string; // exact bytes the engine hashed
   sha256: string;
-  anchor: { status: "confirmed" | "pending" | "unstamped"; anchored_at: string | null };
+  // RFC 3161 Trusted Timestamp (no cryptocurrency/blockchain) — a granted stamp is immediate.
+  anchor: { status: "stamped" | "unstamped"; tsa: string | null; timestamp: string | null };
   summary: CertSummary;
   // Dashboard fields (piece 3) — optional so the public verify page is unaffected.
   facts?: CertFacts;
